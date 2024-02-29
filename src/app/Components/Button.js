@@ -1,6 +1,6 @@
 
 
-function Button({bg , fs, p, color , border , br , width , height , title}) {
+function Button({bg , fs, p, color , border , br , width , height , title , lineHeight, fontWeight , mt}) {
     return (
         <button style={{
             background: bg,
@@ -10,7 +10,10 @@ function Button({bg , fs, p, color , border , br , width , height , title}) {
             border: border,
             borderRadius: br,
             width: width,
-            height: height
+            height: height,
+            lineHeight: lineHeight,
+            fontWeight: fontWeight,
+            marginTop: mt
         }}>{title}
         </button>
     )
