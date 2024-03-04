@@ -24,6 +24,14 @@ const homePageData =  [
             'Personalized health messaging and notifications',
             'Healthcare services offered in both English and Urdu'
         ]
+    },
+    {
+        Question1: 'How do I install the Healthx app?',
+        Question2: 'Can I sign up from anywhere in the world?',
+        Answer1: 'The Healthx app is available on both the iOS App Store and Google Play Store for free, depending on your device.',
+    },
+    {
+        solution: 'As a multinational healthcare management company, we take pride in our team of experienced healthcare professionals.'
     }
 ];
 export default homePageData;

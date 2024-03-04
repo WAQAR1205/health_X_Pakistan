@@ -6,27 +6,22 @@ export default function Heading({number , heading , content , numberColor , head
             display: 'flex',
             justifyContent: 'space-evenly',
             flexFlow: flexFlow,
-            padding: '0px',
-            gap: '33px',
-            // marginLef
-            // position: absolute; 
-            width: '394px',
-            height: '38px',
+            flexDirection: 'row',
+            gap: '10px', 
+            width: {md:'394px' , xs:'90%' , sm: '90%'},
+            // height: '38px',
             // top: 1250px;
 
           }}>
             <Typography sx={{
               width: '58px',
-              height: '33px',   
+              // height: '33px',   
               fontStyle: 'normal',
               fontWeight: '700',
-              fontSize: '47px',
+              fontSize: {md:'47px', xs: '30px' , sm: '30px'},
               lineHeight: '112.64%',
               /* or 52px */
-              /* leading-trim and text-edge are draft CSS properties.
-              
-              Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
-              */
+
               leadingTrim: 'both',
               textEdge: 'cap',
               color: numberColor,
@@ -34,45 +29,39 @@ export default function Heading({number , heading , content , numberColor , head
             }}>
               {number}
             </Typography>
-            {/* and commited to your health */}
+
             <Box>
               <Typography sx={{
-                width: '150px',
-                height: '13px',
-
+                width: {md: '150px' , xs: '30%' , sm: '30%'},
+                // height: '13px',
                 fontStyle: 'normal',
                 fontWeight: '500',
-                fontSize: '19px',
+                fontSize: {md: '19px' , xs: '14px' , sm: '14px'},
                 lineHeight: '27px',
-                /* leading-trim and text-edge are draft CSS properties.
                 
-                Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
-                */
                 leadingTrim: 'both',
                 textEdge: 'cap',
-
+                
                 color: headingColor,
               }}>
                 {heading}
               </Typography>
 
               <Typography sx={{
-
+                
                 width: '303px',
-                height: '13px',
+                // height: '13px',
                 marginTop: '3%',
                 fontStyle: 'normal',
                 fontWeight: '300',
-                fontSize: '19px',
+                fontSize: {md: '19px' , xs: '14px' , sm: '14px'},
                 lineHeight: '27px',
-                /* leading-trim and text-edge are draft CSS properties.
                 
-                Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
-                */
                 leadingTrim: 'both',
                 textEdge: 'cap',
-
+                
                 color: contentColor,
+                marginTop: {md: '0%' , sm: '-2' , xs: '-2%'},
               }}>
                 {content}
               </Typography>

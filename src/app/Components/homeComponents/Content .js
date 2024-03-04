@@ -5,27 +5,24 @@ export default function Content({headingOne , headingTwo , content}) {
             <>
         <Box>
         <Typography sx={{
-            // position: absolute;
-            width: '656px',
+            width: {sm: '656px' , xs: '90%'},
             height: '52px',
-            // left: 745px;
-            // top: 1250px;
             
             fontStyle: 'normal',
             fontWeight: '700',
-            fontSize: '37px',
+            fontSize: {sm: '37px' , xs: '25px'},
             lineHeight: '112%',
             /* or 52px */
             
           color: '#1F8B7B',
-
+            marginTop : {xs: '3%'}
         }}>
           {headingOne}
           <Typography sx={{
               display: 'inline-block',
               fontStyle: 'normal',
               fontWeight: '700',
-              fontSize: '37px',
+              fontSize: {sm: '37px' , xs: '25px'},
               lineHeight: '112%',
               /* or 52px */
               
@@ -38,15 +35,12 @@ export default function Content({headingOne , headingTwo , content}) {
 
       <Box>
         <Typography sx={{
-            // position: absolute;
-            width: '458px',
+            width: {sm: '458px' , xs: '90%'},
             height: '42px',
-            // left: 745px;
-            // top: 1317px;
             marginTop: '3%',
             fontStyle: 'normal',
             fontWeight: '275',
-            fontSize: '30px',
+            fontSize: {sm: '30px' , xs: '20px'},
             lineHeight: '112%',
             /* or 42px */
             
