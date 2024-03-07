@@ -1,9 +1,19 @@
-import React from 'react'
+'use client'
+import { Box } from "@mui/material"
+import Content from '../Components/homeComponents/Content '
+import Question from "../Components/Question"
 
-export default function page() {
+export default function ContactUs() {
   return (
-    <div>
-        Contact Us
-    </div>
+    <Box>
+        <Box>
+            <Box>
+                <Content headingTwo='Get in Touch' content='Connecting for Care'/>
+            </Box>
+        </Box>
+        <Box>
+            <Question />
+        </Box>
+    </Box>
   )
 }

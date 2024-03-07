@@ -10,8 +10,8 @@ export default function Points() {
             {homePageData[2].appIntegration.map((content, index) => (
                 <Box key={index} sx={{
                     display: 'flex',
-                    alignItems: 'center',
                     width: { sm: '100%', xs: '90%' },
+                    marginTop: '3%',
                 }}>
                     <Image src={tick} width={20} height={20} /> {/* Adjust the width and height of the tick image */}
                     <Typography sx={{ marginLeft: '10px' }}>{content}</Typography> {/* Adjust the margin as needed */}

@@ -3,22 +3,23 @@ export default function Heading({number , heading , content , numberColor , head
     return(
         <Box sx={{
             /* Auto layout */
+            // width: '100%',
             display: 'flex',
             justifyContent: 'space-evenly',
             flexFlow: flexFlow,
             flexDirection: 'row',
             gap: '10px', 
-            width: {md:'394px' , xs:'90%' , sm: '90%'},
-            // height: '38px',
-            // top: 1250px;
-
+            width: {md:'394px' , xs:'100%' , sm: '90%'},
+            marginTop: {md: '0' , xs: '4%'},
+            // marginRight: '0',
+            // background: "red",
           }}>
             <Typography sx={{
-              width: '58px',
+              width: {md: '58px' , xs: '5%'},
               // height: '33px',   
               fontStyle: 'normal',
               fontWeight: '700',
-              fontSize: {md:'47px', xs: '30px' , sm: '30px'},
+              fontSize: {md:'47px', xs: '36px' , sm: '30px'},
               lineHeight: '112.64%',
               /* or 52px */
 
@@ -30,19 +31,21 @@ export default function Heading({number , heading , content , numberColor , head
               {number}
             </Typography>
 
-            <Box>
+            <Box sx={{
+              width: {xs: '70%'}
+            }}>
               <Typography sx={{
-                width: {md: '150px' , xs: '30%' , sm: '30%'},
+                width: {md: '150px' , xs: '50%' },
                 // height: '13px',
                 fontStyle: 'normal',
                 fontWeight: '500',
-                fontSize: {md: '19px' , xs: '14px' , sm: '14px'},
+                fontSize: {md: '19px' , xs: '13px' , sm: '14px'},
                 lineHeight: '27px',
                 
                 leadingTrim: 'both',
                 textEdge: 'cap',
                 
-                color: headingColor,
+                color: headingColor,  
               }}>
                 {heading}
               </Typography>
@@ -54,7 +57,7 @@ export default function Heading({number , heading , content , numberColor , head
                 marginTop: '3%',
                 fontStyle: 'normal',
                 fontWeight: '300',
-                fontSize: {md: '19px' , xs: '14px' , sm: '14px'},
+                fontSize: {md: '19px' , xs: '13px' , sm: '14px'},
                 lineHeight: '27px',
                 
                 leadingTrim: 'both',
