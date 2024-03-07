@@ -15,16 +15,16 @@ export default function Cart({ src, heading, content }) {
     >
       <Box sx={{
         // background: 'red',
-        width: {md: '50%' , sm: '40%' , xs: '40%'},
+        width: {md: '50%' ,  xs: '60%'},
         marginTop: '15%',
         marginLeft: {md: '0' , sm: '5%' , xs: '5%'},
       }}>
-      <Image src={src}  style={{width: '100%'}} />
+      <Image src={src}  style={{width: '90%'}} />
       </Box>
 
       <Typography
         sx={{
-          width: {md: '90%', sm: '60%' , xs: '60%'},
+          width: {md: '90%', sm: '60%' , xs: '100%'},
           height: {md: '78px', sm: 'auto'},
           marginLeft: '5%',
           marginTop: '3%',
