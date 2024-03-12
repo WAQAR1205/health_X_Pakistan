@@ -1,4 +1,5 @@
-import { Box, Typography, Input, Button } from '@mui/material';
+'use client'
+import { Box, Typography, Input , useMediaQuery} from '@mui/material';
 import img from '../../Images/footer.png'
 import Image from 'next/image';
 import facebook from '../../Images/ph_facebook-logo.png'
@@ -6,31 +7,36 @@ import linkedin from '../../Images/ri_linkedin-line.png'
 import insta from '../../Images/iconoir_instagram.png'
 import twitter from '../../Images/pajamas_twitter.png'
 import sms from '../../Images/sms.png'
-// import Button from '../Components/Button'
+import Button from './Button'
+import {useTheme} from '@mui/material';
 
 function Footer() {
+    const theme = useTheme();
+    const xs = useMediaQuery(theme.breakpoints.down('750'))
+    const md = useMediaQuery('(max-width: 900px)')
+    const lg = useMediaQuery('(max-width: 1200px)')
     return (
         <Box sx={{
             background: "#253239",
             fontFamily: 'Poppins',
             color: '#FFFFFF',
-            width: '100vw',
+            width: '98%',
+            margin: '0 auto'
         }} >
 
             <Box sx={{
                 display: 'flex',
-                justifyContent: 'space-evenly',
+                justifyContent: 'space-between',
                 flexWrap: {md: 'nowrap' , xs: 'warp'},
                 flexDirection: {md: 'row' , xs : 'column'},
-                // textAlign: {xs: 'center'}
             }}>
                 <Box sx={{
                     marginTop: '10%',
                     marginLeft: {md: '100px' , xs: '0'},
+                    width: {md: '20%' , xs: '100%' , lg: '25%'},
                 }}>
                     <Box sx={{
-                        width: {md: '189px' , xs : '90%'},
-                        // height: '77.91px',
+                        width: {md: '90%' , xs : '90%' , lg: '90%'},
                     }}>
                         <Image
                             src={img}
@@ -39,8 +45,7 @@ function Footer() {
                     </Box>
 
                     <Box sx={{
-                        width: {md: '350px' , xs : '90%'},
-                        // height: '78px',
+                        width: {md: '90%' , xs : '90%' , lg: '90%'},
                         marginTop: '7%',
                     }}>
                         <Typography sx={{
@@ -55,7 +60,7 @@ function Footer() {
                     </Box>
 
                     <Box sx={{
-                        width: {md: '259px' , xs : '90%'},
+                        width: '90%',
                         // height: '20px',
                         // marginLeft: '100px',
                         marginTop: '7%',
@@ -75,7 +80,7 @@ function Footer() {
                         display: 'flex',
                         justifyContent: 'space-evenly',
                         gap: '10px',
-                        width: {md: '132px' , xs : '90%'},
+                        width: '90%',
                         marginTop: '13%',
                     }}>
                         <Image src={facebook} />
@@ -87,10 +92,10 @@ function Footer() {
 
                 <Box sx={{
                     marginTop: '10%',
+                    width: {md: '20%' , xs : '100%' , lg: '20%'}
                 }}>
                     <Box sx={{
-                        width: {md: '101px' , xs: "90%"},
-                        // height: '27px',
+                        width: '90%',
                     }}>
                         <Typography sx={{
                             fontStyle: 'normal',
@@ -105,7 +110,7 @@ function Footer() {
                     </Box>
 
                     <Box sx={{
-                        width: {md: '108px' , xs : '90%'},
+                        width: '90%',
                         // height: '24px',
                         marginTop: {md: '20%' , xs: '7%'},
                     }}>
@@ -123,7 +128,7 @@ function Footer() {
                     </Box>
 
                     <Box sx={{
-                        width: {md: '108px' , xs : "90%"},
+                        width: '90%',
                         // height: '24px',
                         marginTop: '5%',
                     }}>
@@ -141,7 +146,7 @@ function Footer() {
                     </Box>
 
                     <Box sx={{
-                        width: {md: '130px' , xs : '90%'},
+                        width: '90%',
                         // height: '24px',
                         marginTop: '5%',
                     }}>
@@ -159,7 +164,7 @@ function Footer() {
                     </Box>
 
                     <Box sx={{
-                        width: {md: '108px'  , xs : '90%'},
+                        width: '90%',
                         // height: '24px',
                         marginTop: '5%',
                     }}>
@@ -177,7 +182,7 @@ function Footer() {
                     </Box>
 
                     <Box sx={{
-                        width: {md: '108px' , xs : '90%'},
+                        width: '90%',
                         // height: '24px',
                         marginTop: '5%',
                     }}>
@@ -197,10 +202,10 @@ function Footer() {
 
                 <Box sx={{
                     marginTop: '10%',
+                    width: {md: '20%' , xs: "100%" , lg: '20%'},
                 }}>
                     <Box sx={{
-                        width: {md: '101px' , xs : '90%'},
-                        // height: '27px',
+                        width: {md: '100%' , xs : '90%'},
                     }}>
                         <Typography sx={{
                             fontStyle: 'normal',
@@ -215,8 +220,7 @@ function Footer() {
                     </Box>
 
                     <Box sx={{
-                        width: {md: '180px' , xs : '90%'},
-                        // height: '24px',
+                        width: {md: '100%' , xs : '90%'},
                         marginTop: {md: '20%' ,  xs : '5%'},
                     }}>
                         <Typography sx={{
@@ -233,7 +237,7 @@ function Footer() {
                     </Box>
 
                     <Box sx={{
-                        width: {md: '200px' , xs : '90%'},
+                        width: {md: '100%' , xs : '90%'},
                         // height: '24px',
                         marginTop: '5%',
                     }}>
@@ -251,7 +255,7 @@ function Footer() {
                     </Box>
 
                     <Box sx={{
-                        width: {md: '130px' , xs : '90%'},
+                        width: {md: '100%' , xs : '90%'},
                         // height: '24px',
                         marginTop: '5%',
                     }}>
@@ -269,7 +273,7 @@ function Footer() {
                     </Box>
 
                     <Box sx={{
-                        width: {md: '200px' , xs : '90%'},
+                        width: {md: '100%' , xs : '90%'},
                         // height: '24px',
                         marginTop: '5%',
                     }}>
@@ -290,9 +294,10 @@ function Footer() {
 
                 <Box sx={{
                     marginTop: '10%',
+                    width: {md: '20%' , xs: '100%'},
                 }}>
                     <Box sx={{
-                        width: {md: '120px' , xs : '90%'},
+                        width: {md: '100%' , xs : '90%'},
                         // height: '27px',
                     }}>
                         <Typography sx={{
@@ -309,16 +314,17 @@ function Footer() {
 
                     <Box sx={{
                         // background: 'red',
-                        width: {md: '220px' , xs : '50%'},
+                        width: {md: '100%' , xs : '50%'},
                         // height: '24px',
                         marginTop: {md: '20%' , xs: '5%'},
                         display: 'flex',
-                        justifyContent: 'space-between',
+                        justifyContent: 'space-evenly',
                         alignItems: 'center',
                         // gap: '1%',
                     }}>
                         <Typography sx={{
-                            marginLeft: {md: '0' , xs :'38%'}
+                            marginLeft: {md: '0' , xs :'38%'},
+                            width: '20%',
                         }}>
                             <Image src={sms} alt='Mail' />
                         </Typography>
@@ -330,13 +336,14 @@ function Footer() {
                             /* identical to box height */
                             marginBottom: '2%',
                             color: '#9E9E9E',
+                            width: '100%'
                         }}>
                             info@healthxpakistan.com
                         </Typography>
                     </Box>
 
                     <Box sx={{
-                        width: {md: '200px' , xs : '90%'},
+                        width: {md: '100%' , xs : '90%'},
                         height: '24px',
                         marginTop: '5%',
                     }}>
@@ -354,7 +361,7 @@ function Footer() {
                     </Box>
 
                     <Box sx={{
-                        width: {md: '130px' , xs : '90%'},
+                        width: {md: '100%' , xs : '90%'},
                         // height: '24px',
                         marginTop: '5%',
                     }}>
@@ -372,7 +379,7 @@ function Footer() {
                     </Box>
 
                     <Box sx={{
-                        width: {md: '200px' , xs : '90%'},
+                        width: {md: '100%' , xs : '90%'},
                         // height: '24px',
                         marginTop: '5%',
                     }}>
@@ -408,7 +415,7 @@ function Footer() {
             }}>
                 <Box>
                     <Typography sx={{
-                        width: {md: '214px' , xs: '90%'},
+                        width: {md: '100%' , xs: '90%'},
                         // height: '27px',
                         fontStyle: 'normal',
                         fontWeight: '500',
@@ -448,15 +455,18 @@ function Footer() {
                             fontWeight: '300',
                             fontSize: '13px',
                             lineHeight: '18px',
-                            padding: '1%',
+                             padding: '1%',
+                             width:'65%'
                         }} />
-                        <Button sx={{
-                            background: '#E9501D',
-                            color: '#FFFFFF',
-                            fontWeight: '500',
-                            fontSize: '16px',
-                            lineHeight: '24px',
-                        }}>Subscribe</Button>
+                        <Button 
+                            bg= '#E9501D'
+                            color= '#FFFFFF'
+                            fontWeight= '500'
+                            fs= '16px'
+                            lineHeight= '24px'
+                            title = 'Subscribe'
+                            width='33%'
+                         />
                     </Box>
                 </Box>
             </Box>

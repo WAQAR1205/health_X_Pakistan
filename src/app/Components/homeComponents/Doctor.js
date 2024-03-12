@@ -1,21 +1,19 @@
 import { useState } from "react";
 import { Box, Typography } from "@mui/material";
-import lady from '../../../Images/lady.png'
 import Image from "next/image";
-import canada from '../../../Images/canada.png'
-import male from '../../../Images/male.png'
+
 
 function Doctor({ Name, Country, img , Speciality}) {
-    const [isHovered, setIsHovered] = useState(false);
+    // const [isHovered, setIsHovered] = useState(false);
     return (
         <Box sx={{
-            boxShadow: isHovered ? '0px 4px 20px 0px #0000001A' : 'none',
-            // zIndex: isHovered ? '0':'100',
+            // transform: isHovered ?  'translateZ(42px);' : 'none;',
+            margin: '0 auto',
         }}>
             <Box sx={{
                 display: 'flex',
                 justifyContent: 'space-evenly',
-                width: '90%'
+                width: {md: '100%' , xs: '80%'},
             }}
             
             >
@@ -23,23 +21,22 @@ function Doctor({ Name, Country, img , Speciality}) {
                 <Image src={img} style={{
                     width: '100%',
                 }}
-                onMouseEnter={() => setIsHovered(true)}
-                onMouseLeave={() => setIsHovered(false)}
+                // onMouseEnter={() => setIsHovered(true)}
+                // onMouseLeave={() => setIsHovered(false)}
                 />
                 <Box sx={{
-                    width: '28%',
-                    // height: ''
+                    width: {xs: '15%'  , md: '26%'},
                     height: '30px',
                     background: '#1F8B7B',
                     borderRadius: '29px',
                     zIndex: '2',
-                    marginLeft: '-38%',
-                    marginTop: '12%'
+                    marginLeft: {md: '-36%' , sm: '-30%' , xs: '-34%'},
+                    marginTop: {md: '15%' , xs: '9%'}
                 }}>
                     <Typography sx={{
                         width: '70%',
                         fontWeight: '400',
-                        fontSize: '18px',
+                        fontSize: {md: '10px' , xs: '10px' , lg: '12px'},
                         lineHeight: '27px',
                         leadingTrim: 'both',
                         textEdge: 'cap',
@@ -57,7 +54,7 @@ function Doctor({ Name, Country, img , Speciality}) {
             <Box sx={{
                 width: '100%',
                 marginLeft: '2%',
-                visibility: isHovered ? 'visible' : 'hidden',
+                // visibility: isHovered ? 'visible' : 'hidden',
             }}
 
             >

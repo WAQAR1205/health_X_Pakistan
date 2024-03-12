@@ -33,6 +33,9 @@ const homePageData =  [
     },
     {
         solution: 'As a multinational healthcare management company, we take pride in our team of experienced healthcare professionals.'
+    },
+    {
+        Blog1: 'AUSTIN, Texas, Jan. 11, 2024 — Ambiq@, a recognized technology leader in ultra-low power semiconductors for IoT endpoints. today announced that it...'
     }
 ];
 export default homePageData;

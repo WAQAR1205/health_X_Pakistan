@@ -2,14 +2,12 @@ import {Box , Typography} from '@mui/material'
 export default function Heading({number , heading , content , numberColor , headingColor , contentColor , flexFlow}){
     return(
         <Box sx={{
-            /* Auto layout */
-            // width: '100%',
             display: 'flex',
             justifyContent: 'space-evenly',
             flexFlow: flexFlow,
             flexDirection: 'row',
             gap: '10px', 
-            width: {md:'394px' , xs:'100%' , sm: '90%'},
+            width: {md:'394px' , xs:'90%' , sm: '90%' , lg: '100%' , xl: '100%'},
             marginTop: {md: '0' , xs: '4%'},
             // marginRight: '0',
             // background: "red",

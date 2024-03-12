@@ -1,6 +1,6 @@
 import { Button as MuiButton } from '@mui/material';
 
-function Button({ bg, fs, p, color, border, br, width, height, title, lineHeight, fontWeight, mt }) {
+function Button({ bg, fs, p, color, border, br, width, height, title, lineHeight, fontWeight, mt , pt}) {
     return (
         <MuiButton
             sx={{
@@ -14,7 +14,8 @@ function Button({ bg, fs, p, color, border, br, width, height, title, lineHeight
                 height: height,
                 lineHeight: lineHeight,
                 fontWeight: fontWeight,
-                marginTop: mt
+                marginTop: mt,
+                paddingTop: pt
             }}
         >
             {title}

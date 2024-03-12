@@ -153,7 +153,7 @@ function AppT() {
 
   useEffect(() =>{
     const el = imgref.current ;
-gsap.fromTo(el,{rotation: 45},{
+gsap.fromTo(el,{rotation: 90},{
   rotation: 90,   
   scrollTrigger:{
  trigger : el,
@@ -186,7 +186,7 @@ gsap.fromTo(el,{rotation: 45},{
           // autoRotate // Auto-rotate on
           autoRotateSpeed={-4} // Auto-rotate speed
           // enableZoom={true} // Disable zoom
-          enablePan={true} // Disable pan
+          enablePan={false} // Disable pan
           // enableRotate={true} // Disable manual rotation
           target={[ 0 , 0 , 0]} // Target position
     

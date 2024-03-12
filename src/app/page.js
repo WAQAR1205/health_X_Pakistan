@@ -28,16 +28,17 @@ import Question from './Components/Question'
 import Appp from './Components/homeComponents/model/Model'
 import AppT from './Components/homeComponents/model/ModelT'
 import Team from './Components/homeComponents/Team'
-import Blog from './Components/Blog'
+import BlogNnews from './Components/homeComponents/BlogNnews'
 
 export default function Home() {
   return (
 
     <Box sx={{
-      width: '100%',
+      width: '99%',
       fontFamily: 'Poppins',
       alignItems: 'center',
-      marginTop: '4%'
+      marginTop: '4%',
+      overflow: 'hidden'
     }}>
 
       {/* hero section content */}
@@ -48,8 +49,7 @@ export default function Home() {
     rgba(31, 139, 123, 0.12) 47.64%,
     rgba(235, 198, 98, 0.12) 97.13%
     )`,
-        maxWidth: '100%',
-        height: 'auto',
+        maxWidth: '96%',
         borderRadius: '5px',
         margin: '0 auto'
       }}>
@@ -62,20 +62,20 @@ export default function Home() {
         }}>
 
           <Box sx={{
-            marginTop: '25%',
+            marginTop: '30%',
             padding: '4%',
-            width: { md: '50%', xs: '100%', lg: '50%', xl: '50%' },
+            width: { md: '100%', xs: '100%', lg: '50%', xl: '50%' },
           }}>
             <Box>
               {/* HealthX content */}
 
               <Box>
                 <Typography sx={{
-                  width: '100%',
+                  width: { md: '160%', lg: '170%' },
                   fontStyle: 'normal',
                   fontWeight: '400',
-                  fontSize: { md: '70px', xs: '20px', lg: '70px', xl: '70px' },
-                  lineHeight: '100%',
+                  fontSize: { md: '36px', xs: '20px', sm: '20px', lg: '50px', xl: '60px' },
+                  lineHeight: '120%',
                   /* or 52px */
 
                   background: `linear-gradient(90deg, #1F8B7B 0%, #E9501D 100%)`,
@@ -87,58 +87,46 @@ export default function Home() {
                   Healthx Pakistan
                 </Typography>
 
-                <Content headingOne='Healthcare with a&nbsp;' mdfs='70px' xsfs='30px' headingTwo='Heart' content='Where Every Life Matters' mdfsc='50px' xsfsc='20px' />
+                <Content headingOne='Healthcare with a&nbsp;' mdfs='36px' xsfs='30px' mdfsc='28px' xsfsc='20px' headingTwo='Heart' content='Where Every Life Matters' md='240%' mdc='180%' lgH='240%' LgC='180%' xlH='240%' XlC='180%' />
 
                 <Link href='/ContactUs'>
                   <Button
-                    width='30%'
+                    width={{ xs: '23%', sm: '20%', md: '80%', lg: '90%', xl: '100%' }}
                     bg='#E9501D'
                     fontWeight='500'
-                    fs={{ md: '18px', lg: '18px', xl: '18px', xs: '13px' }}
+                    fs={{ md: '16px', lg: '18px', xl: '30px', xs: '10px', sm: '12px' }}
                     lineHeight='100%'
                     color='#FFFFFF'
                     br='5px'
                     p='3%'
                     title='contact us'
                     mt='5%'
+                    pt='5%'
                   />
                 </Link>
               </Box>
+
             </Box>
           </Box>
 
           {/* Model  */}
           <Box sx={{
-            flexBasis: { md: '50%', sm: '100%', xs: '100%' }, // Width adjustment for small screens
-            marginTop: { md: '35%', xs: '0%' }, // Margin adjustment for small screens
-            paddingLeft: '4%'
+            flexBasis: { md: '40%', sm: '100%', xs: '100%' }, // Width adjustment for small screens
+            marginTop: { md: '0', xs: '1%' }, // Margin adjustment for small screens
           }}>
             <Appp />
           </Box>
 
-          {/* slider */}
 
-          <Box sx={{
-            visibility: { md: 'visible', xs: 'hidden' },
-          }}>
-            <Typography>01</Typography>
-            <Typography>02</Typography>
-            <Typography>03</Typography>
-            <Typography>04</Typography>
-            <Typography>05</Typography>
-            <Typography>06</Typography>
-            <Typography>07</Typography>
-            <Typography>08</Typography>
-          </Box>
         </Box>
       </Box>
 
 
       {/* Rating */}
       <Box sx={{
-        marginTop: { xs: '10%', sm: '5%', md: '4%' },
+        marginTop: { sm: '5%', md: '4%' },
         display: 'flex',
-        flexDirection: { xs: 'column', sm: 'row' }, // On small screens, stack items vertically; on larger screens, arrange them horizontally
+        flexDirection: { xs: 'column', sm: 'column' }, // On small screens, stack items vertically; on larger screens, arrange them horizontally
         justifyContent: 'space-around',
         alignItems: 'flex-start', // Align items at the start of the container
         flexWrap: 'wrap', // Allow items to wrap on smaller screens
@@ -156,33 +144,31 @@ export default function Home() {
         }}>
           {/* active user */}
           <Box sx={{
-            width: { md: '60%', sm: '90%', xs: '90%' },
-            height: '57px',
+            width: { md: '130%', sm: '80%', xs: '80%', lg: '95%', xl: '75%' },
           }}>
             <Typography sx={{
               fontFamily: 'Poppins',
               fontStyle: 'normal',
               fontWeight: '300',
-              fontSize: { xs: '14px', sm: '18px' },
+              fontSize: { xs: '13px', sm: '15px', md: '15px', lg: '18px', xl: '20px' },
               lineHeight: '27px',
               color: '#2D4755',
-              width: '120%',
+              width: '90%',
               // background: 'red',
             }}>
               Trusted by more than <span style={{
-                color: '#E9501D', fontWeight: '800', fontSize: '19px', lineHeight: '27px', display: 'inline-block'
+                color: '#E9501D', fontWeight: '800', fontSize: { xs: '15px', sm: '17px', md: '15px', lg: '18px', xl: '20%' }, lineHeight: '27px', display: 'inline-block'
               }}>500,000+</span>
               &nbsp;active users across the globe
             </Typography>
           </Box>
 
-
           {/* User rating */}
-          <Rating number='50K' content='Rating Users' contentWidth='10%' numberWidth='5%' />
+          <Rating number='50K' content='Rating Users' contentWidth='1%' numberWidth='40%' lg='20%' sm='20%' xsC='30%' xlC='10%' />
           {/* experinced client */}
-          <Rating number='95K' content='Experienced Clinics' contentWidth='10%' numberWidth='5%' />
+          <Rating number='95K' content='Experienced Clinics' contentWidth='25%' numberWidth='50%' lg='40%' sm='26%' xsC='35%' />
           {/* satisfied and happy clent */}
-          <Rating number='80%' content='Satisfied and Happy Clients' contentWidth='25%' numberWidth='15%' />
+          <Rating number='80%' content='Satisfied and Happy Clients' contentWidth='40%' numberWidth='70%' lg='40%' sm='30%' xsC='40%' />
 
         </Box>
       </Box>
@@ -191,15 +177,15 @@ export default function Home() {
       <Box sx={{
         width: '100%',
         display: 'flex',
-        flexWrap: { md: 'nowarp', xs: 'warp', sm: 'wrap' },
-        flexDirection: { md: 'row', xs: 'column', xs: 'column' },
-        justifyContent: "space-between",
-        marginTop: '5%',
+        // flexWrap: { md: 'nowarp', xs: 'warp', sm: 'wrap' },
+        flexDirection: { md: 'row', xs: 'column', sm: 'column', lg: 'row', xl: 'row' },
+        justifyContent: "space-evenly",
+        marginTop: { md: '5%' },
       }}>
 
         {/* Box1 */}
         <Box sx={{
-          marginLeft: '4%'
+          // marginLeft: '4%',
         }}>
           {/* 02  */}
           <Heading
@@ -213,7 +199,8 @@ export default function Home() {
           {/* Rectanglr */}
           <Box sx={{
             marginTop: { md: '55%', xs: '10%' },
-            // width: {md: '100%' , sm: '40%' },
+            width: { md: '100%', xs: '80%' },
+            marginLeft: { xs: '5%', sm: '5%' }
           }}>
             <Image src={reactangle}
               style={{
@@ -227,16 +214,16 @@ export default function Home() {
           </Box>
 
           {/* data from home page Data index 1 name about */}
-          <Box>
+          <Box sx={{ marginLeft: { xs: '5%', sm: '5%' } }}>
             <Typography sx={{
               width: { md: '475px', xs: '97%', sm: '97%' },
               height: '108px',
 
               fontStyle: 'normal',
               fontWeight: '300',
-              fontSize: { md: '19px', xs: '14px', sm: '14px' },
-              lineHeight: '27px',
-              marginTop: '10%',
+              fontSize: { md: '17px', xs: '12px', sm: '12px', lg: '19px', xl: '21px' },
+              lineHeight: { xl: '35px', lg: '30px', md: '27px', xs: '32px' },
+              marginTop: { xs: '10%' },
               color: '#2D4755',
 
             }}>
@@ -245,19 +232,20 @@ export default function Home() {
           </Box>
 
           <Box sx={{
-            marginTop: '5%'
+            marginTop: { md: '5%' },
+            marginLeft: { xs: '5%', sm: '5%' }
           }}>
             <Button
               bg='#1F8B7B'
-              fs={{ md: '18px', xs: "14px" }}
-              p='1%'
+              fs={{ md: '18px', xs: "10px", sm: '12px', xl: '22px' }}
+              p='2%'
               color='#FFFFFF'
               br='5px'
-              width={{ md: '161px', xs: '30%' }}
-              height='52px'
+              width={{ md: '161px', xs: '20%', sm: '18%', xl: "40%" }}
               lineHeight='20px'
               fontWeight='500'
               title='Read more'
+              mt={{ xl: '6%' }}
             />
           </Box>
         </Box>
@@ -266,19 +254,19 @@ export default function Home() {
         <Box sx={{
           marginLeft: '5%',
           marginTop: { md: '0%', xs: '7%' },
+          width: { md: '45%', xs: '100%' }
         }}>
-          <Content headingOne='Healthcare ' headingTwo='Management for All' content='A Global Approach in Pakistan' />
+          <Content headingOne='Healthcare ' headingTwo='Management for All' content='A Global Approach in Pakistan' mdfs='25px' xsfs='25px' mdfsc='24px' xsfsc='20px' md='100%' mdc='100%' lg='35px' lgC='30px' xl='45px' xlC='40' />
           <Box>
             <Typography sx={{
               // position: 'absolute',
-              width: { md: '900px', xs: '95%', sm: '95%' },
-              height: '108px',
+              width: { md: '100%', xs: '95%', sm: '95%' },
 
               marginTop: { sm: '7%', xs: '3%' },
               fontStyle: 'normal',
               fontWeight: '300',
-              fontSize: { sm: '17px', xs: '12px' },
-              lineHeight: '27px',
+              fontSize: { md: '17px', xs: '12px', sm: '12px', lg: '19px', xl: '21px' },
+              lineHeight: { xl: '35px', lg: '30px', md: '27px', xs: '32px' },
 
               color: '#2D4755'
             }}>
@@ -288,9 +276,8 @@ export default function Home() {
 
           <Box sx={{
             visibility: { md: 'visible', xs: 'hidden' },
-            marginTop: { md: '13%', xs: '15%' },
-            width: { md: '80%', xs: '90%' },
-            height: { md: '450px', xs: '100px' },
+            marginTop: { md: '13%' },
+            width: { md: '80%' },
             background: 'linear-gradient(80.65deg, rgba(233, 80, 29, 0.12) 5.4%, rgba(31, 139, 123, 0.12) 47.64%, rgba(235, 198, 98, 0.12) 97.13%)',
             borderRadius: '20px',
           }}>
@@ -303,29 +290,28 @@ export default function Home() {
       <Box sx={{
         width: { md: '95%', xs: '90%', sm: '90%' },
         margin: '0 auto',
-        marginTop: { md: '5%', xs: "-20%" },
+        marginTop: { xs: "-90%", sm: '-70%', md: '3%' },
         background: '#253239',
       }}>
         <Box sx={{
           display: 'flex',
-          flexWrap: { md: 'nowrap', xs: 'wrap', sm: 'warp' },
+          // flexWrap: { md: 'nowrap', xs: 'wrap', sm: 'warp' },
           flexDirection: { md: 'row', sm: 'column', xs: 'column' },
           justifyContent: 'space-around',
           alignItems: 'center',
         }}>
           <Box sx={{
-            textAlign: { xs: 'center' }
+            textAlign: { xs: 'center' },
+            width: { md: '50%', xs: '100%' }
           }}>
             <Typography sx={{
               // background: 'red',
               width: { md: '105%', xs: '100%', sm: '100%' },
-              height: { md: '52px', xs: 'auto', sm: 'auto' },
-              // marginLeft: '8%',
               marginTop: '10%',
 
               fontStyle: 'normal',
               fontWeight: '700',
-              fontSize: { md: '47px', xs: '22px', sm: '25px' },
+              fontSize: { md: '33px', xs: '26px', sm: '30px', lg: '35px', xl: '37px' },
               lineHeight: { md: '112%', xs: '90%', sm: '90%' },
               /* or 52px */
 
@@ -338,12 +324,10 @@ export default function Home() {
               // position: absolute;
 
               width: { md: '100%', xs: '100%' },
-              height: { md: '42px', xs: '45px', sm: 'auto' },
-              // marginLeft: '8%',
-              marginTop: { md: '2%', sm: '7%', xs: '3%' },
+              marginTop: { md: '2%', sm: '5%', xs: '3%' },
               fontStyle: 'normal',
               fontWeight: '275',
-              fontSize: { md: '38px', xs: '16px', sm: '19px' },
+              fontSize: { md: '22px', xs: '16px', sm: '22px', xl: '26px', lg: '24px' },
               lineHeight: '112%',
               /* or 42px */
 
@@ -354,10 +338,14 @@ export default function Home() {
             </Typography>
           </Box>
 
-          <Heading number='03' numberColorolor='#1F8B7B' heading='Our Solution'
-            headingColor='#FFFFFF' content='We are committed to your Health' contentColor='#FFFFFF'
-            flexFlow='row-reverse'
-          />
+          <Box sx={{
+            width: { md: '45%', xs: '100%' },
+          }}>
+            <Heading number='03' numberColorolor='#1F8B7B' heading='Our Solution'
+              headingColor='#FFFFFF' content='We are committed to your Health' contentColor='#FFFFFF'
+              flexFlow='row-reverse'
+            />
+          </Box>
 
         </Box>
 
@@ -379,12 +367,12 @@ export default function Home() {
 
         <Box>
           <Typography sx={{
-            width: { md: '96%', xs: '80%' },
+            width: { md: '90%', xs: '80%' },
             margin: { xs: '0 auto' },
 
             fontStyle: 'normal',
             fontWeight: '300',
-            fontSize: { md: '18px', sm: '12px' },
+            fontSize: { md: '18px', xs: '12px', sm: '14px' },
             lineHeight: '27px',
 
             color: '#FFFFFF',
@@ -404,17 +392,17 @@ export default function Home() {
       }}>
 
         <Box sx={{
-          float: {md: 'right' , xs: 'right'},
-          width: {md: '40%' , xs: '80%'},
+          float: { md: 'right', xs: 'right' },
+          width: { md: '40%', xs: '80%' },
           // background: 'red',
         }}>
           <Heading number='04' numberColor='#E9501D' heading='Our Team' headingColor='#2D4755' content='We are committed to your Health' contentColor='#2D4755' />
         </Box>
 
         <Box sx={{
-          marginTop : '3%',
+          marginTop: '3%',
         }}>
-        <Team />
+          <Team />
         </Box>
       </Box>
 
@@ -438,7 +426,7 @@ export default function Home() {
         }}>
           <Box sx={{
             width: { md: '100%', xs: '90%' },
-            height: { md: '600px', xs: '250px' },
+            height: { md: '500px', xs: '250px' },
             marginTop: { md: '0', xs: '8%' },
             margin: '0 auto'
             // background: 'red'
@@ -452,14 +440,14 @@ export default function Home() {
             marginLeft: '7%',
             width: { md: '100%', xs: '100%' },
           }}>
-            <Content headingOne='INTEGRATED ' headingTwo='HEALTHCARE' content='MANAGEMENT APPLICATION' />
+            <Content headingOne='INTEGRATED ' headingTwo='HEALTHCARE' content='MANAGEMENT APPLICATION' md='140%' lg='40px' lgC='35px' xl='40px' />
             <Box sx={{ marginTop: '10%' }}>
               <Point />
             </Box>
             <Box sx={{
               textAlign: { xs: 'center' },
             }}>
-              <Button title='Download App' bg='#E9501D' border='1px solid' width={{ md: '30%', xs: '45%' }} br='5px' fs={{ md: '20px', xs: '14px' }} fontWeight='500' lineHeight='21px' color='#FFFFFF' mt='10%' p='2%' />
+              <Button title='Download App' bg='#E9501D' border='1px solid' width={{ md: ' 36%', xs: '25%' }} br='5px' fs={{ md: '13px', xs: '10px', lg: '15px', xl: '18px' }} fontWeight='500' lineHeight='21px' color='#FFFFFF' mt='10%' p='2%' />
             </Box>
           </Box>
         </Box>
@@ -468,12 +456,12 @@ export default function Home() {
       {/* FQA */}
       <Box sx={{
         marginTop: '5%',
-        width: '96%',
+        width: '98%',
         margin: '0 auto'
       }}>
         <Box sx={{
           display: 'flex',
-          justifyContent: 'space-evenly',
+          justifyContent: 'space-between',
           flexWrap: { md: 'nowrap', xs: 'wrap' },
           flexDirection: { md: 'row', xs: 'column' },
         }}>
@@ -482,7 +470,7 @@ export default function Home() {
             margin: '0 auto',
             marginTop: '4%',
           }}>
-            <Content headingOne='Frequently' headingTwo=' Asked Question' />
+            <Content headingOne='Frequently' headingTwo=' Asked Question' md='120%' xlH='120%' />
           </Box>
 
           <Box sx={{
@@ -505,7 +493,7 @@ export default function Home() {
       }}>
         <Box sx={{
           display: 'flex',
-          justifyContent: 'space-between',
+          justifyContent: 'space-evenly',
           marginLeft: { md: '0', xs: '5%' },
         }}>
           <Box sx={{
@@ -516,7 +504,7 @@ export default function Home() {
           </Box>
 
           <Box sx={{
-            width: '100%',
+            width: '70%',
             marginTop: '3%',
             textAlign: 'center'
           }}>
@@ -539,54 +527,95 @@ export default function Home() {
           </Box>
         </Box>
 
-        <Box sx={{
-          width: '100%',
-          margin: '0 auto',
-          marginTop: '3%',
-          display: 'flex',
-          justifyContent: 'space-evenly',
-        }}>
+        <Box
+       sx = {{
+        width:'100% ', 
+        display : "flex" ,justifyContent : " cneter",
+        alignItems : " center" ,
+        overflow : "hidden"
 
-          <Box sx={{
-            width: {md: '20%' , xs: '16%' }
-          }}>
-            <Image src={grp32} style={{
-              width: '100%'
-            }} />
-          </Box>
 
-          <Box sx={{
-            width: { xs: '16%' }
-          }} >
-            <Image src={grp33} style={{
-              width: '100%'
-            }} />
-          </Box>
+       }}
+        
+        
+        >
 
-          <Box sx={{
-            width: { xs: '16%' }
-          }}>
-            <Image src={grp34} style={{
-              width: '100%'
-            }} />
-          </Box>
+        <Box 
+    
+    // ref = {svgRef}
+    sx={{
+      animationName : 'move' , 
+      animationDuration : '10s' ,
+      animationTimingFunction : 'linear' ,
+      animationIterationCount :  ' infinite' ,
 
-          <Box sx={{
-            width: { xs: '16%' }
-          }}>
-            <Image src={grp35} style={{
-              width: '100%'
-            }} />
-          </Box>
+      display: 'flex',
+      gap: '10px', // Adjust the gap between grid items as needed
+      width: '100%' ,
 
-          <Box sx={{
-            width: { xs: '19%' }
-          }}>
-            <Image src={grp36} style={{
-              width: '100%'
-            }} />
-          </Box>
-        </Box>
+      margin: ' 0  auto',
+      marginTop: '3%',
+      
+       // Enable smooth scrolling on iOS devices
+       WebkitOverflowScrolling :  'touch' ,
+       '&::-webkit-scrollbar': {
+        display: 'none' // Hide the scrollbar
+      }
+    }}>
+      
+
+<Box
+  sx={{
+    display : 'inline-block',
+    width: { xs: '16%' }
+  }}
+ // Assign the ref
+>
+  <Image
+    src={grp32} // Assuming the image names are sequential (grp32, grp33, ...)
+    style={{ width: '100%' }}
+  />
+</Box>
+
+      <Box sx={{
+        display : 'inline-block' ,
+        width: {xs: '16%'}
+      }} >
+      <Image src={grp33} style={{
+        width: '100%'
+      }} />
+      </Box>
+
+      <Box sx={{
+                       display : 'inline-block' ,
+
+       width: {xs: '16%'}
+      }}>
+      <Image src={grp34} style={{
+        width: '100%'
+      }} />
+      </Box>
+
+      <Box sx={{
+                        display : 'inline-block' ,
+
+        width: {xs: '16%'}
+      }}>
+      <Image src={grp35} style={{
+        width: '100%'
+      }} />
+      </Box>
+
+      <Box sx={{
+                        display : 'inline-block' ,
+width: {xs: '19%'}
+      }}>
+      <Image src={grp36} style={{
+        width: '100%'
+      }} />
+      </Box>
+    </Box>
+    </Box>
 
         <Box sx={{
           display: 'flex',
@@ -594,17 +623,17 @@ export default function Home() {
           marginTop: '3%',
           flexWrap: { md: 'nowrap', xs: 'warp' },
           flexDirection: { md: 'row', xs: 'column' },
-          textAlign: 'center',
         }}>
           <Box sx={{
             width: { md: '45%', xs: '100%' },
+            margin: '0 auto',
           }}>
             <Typography sx={{
-              width: '100%',
-              height: '52px',
+              margin: '0 auto',
+              width: { xs: '80%', md: '100%' },
               fontStyle: 'normal',
               fontWeight: '400',
-              fontSize: { md: '47px', xs: '20px' },
+              fontSize: { md: '38px', xs: '20px', lg: '41', xl: '44px' },
               lineHeight: '111%',
               /* or 52px */
               background: `linear-gradient(90deg, #1F8B7B 0%, #E9501D 100%)`,
@@ -616,30 +645,28 @@ export default function Home() {
               Healthx Pakistan
             </Typography>
             <Typography sx={{
-              width: { md: '125%', xs: '100%' },
+              width: { md: '125%', xs: '80%' },
               height: '79px',
               fontStyle: 'normal',
               fontWeight: '600',
-              fontSize: { md: '55px', xs: '30px' },
+              fontSize: { md: '40px', xs: '30px', lg: '44px', xl: '47px' },
               lineHeight: '112%',
               /* identical to box height, or 79px */
-
+              margin: '0 auto',
               color: '#E9501D',
-              marginTop: { md: '2%', xs: '-4%' },
             }}>
               Healthcare Solution
             </Typography>
             <Typography sx={{
               width: { md: '100%', xs: '80%' },
-              // height: '69px',
               fontStyle: 'normal',
               fontWeight: '265',
-              fontSize: { md: '40px', xs: '20px' },
+              fontSize: { md: '40px', xs: '20px', lg: '42px', xl: '44px' },
               lineHeight: '112%',
               /* or 69px */
-              marginTop: { md: '0', xs: '-8%' },
+              marginTop: { xs: '-8%', lg: '-5%', xl: '-2%' },
               color: '#1E1E1E',
-              margin: '0 auto'
+              margin: '0 auto',
             }}>
               For All
             </Typography>
@@ -649,9 +676,9 @@ export default function Home() {
               padding: { md: '0', xs: '2%' },
               fontStyle: 'normal',
               fontWeight: '300',
-              fontSize: { md: '19px', xs: '14px' },
+              fontSize: { md: '19px', xs: '14px', lg: '21px', xl: '23px' },
               lineHeight: '27px',
-
+              margin: '0 auto',
               color: '#2D4755',
             }}>
               {homePageData[4].solution}
@@ -661,16 +688,16 @@ export default function Home() {
               width: { md: '90%', xs: '70%' },
               marginTop: { md: '5%', xs: '5%' },
               display: { md: 'flex', xs: 'flex' },
-              justifyContent: { md: 'space-evenly', xs: 'space-evenly' },
-              margin: '0 auto',
+              justifyContent: { md: 'start', xs: 'space-evenly' },
               marginBottom: { xs: '4%' },
+              gap: '10px'
             }}>
-              <Image src={grp37} style={{ width: '40%' }} />
-              <Image src={grp38} style={{ width: '40%' }} />
+              <Image src={grp37} style={{ width: '35%' }} />
+              <Image src={grp38} style={{ width: '35%' }} />
             </Box>
           </Box>
           <Box sx={{
-            width: { md: '45%', xs: '100%' },
+            width: { md: '45%', xs: '80%' },
             // marginTop: {md: '0' , xs : '29%'},
             margin: { xs: '0 auto' },
           }}>
@@ -679,27 +706,36 @@ export default function Home() {
         </Box>
       </Box>
 
-          {/* Blog and News */}
+      {/* Blog and News */}
 
+      <Box sx={{
+        width: '96%',
+        margin: '0 auto',
+        marginTop: '3%',
+      }}>
+        <Box sx={{
+          display: 'flex',
+          justifyContent: 'space-between',
+          flexDirection: { md: 'row', xs: 'column' },
+          width: '98%',
+          margin: '0 auto',
+        }}>
+          <Box>
+            <Content headingOne='Blog' headingTwo='&nbsp;News &' content='Events' />
+          </Box>
           <Box sx={{
-            width: '96%',
-            margin: '0 auto',
             marginTop: '3%',
           }}>
-            <Box sx={{
-              display: 'flex',
-              justifyContent: 'space-between',
-            }}>
-              <Box>
-              <Content headingOne='Blog' headingTwo='&nbsp;News &' content='Events'/>
-              </Box>
-              <Heading number='08' numberColor='#E9501D' heading='Blog' headingColor='#2D4755' content='We are committed to your Health' contentColor='#2D4755'/> 
-            </Box>
-
-            <Box>
-              <Blog />             
-            </Box>
+            <Heading number='08' numberColor='#E9501D' heading='Blog' headingColor='#2D4755' content='We are committed to your Health' contentColor='#2D4755' />
           </Box>
+        </Box>
+
+        <Box sx={{
+          marginTop: { md: '3%', xs: '-10%' }
+        }}>
+          <BlogNnews />
+        </Box>
+      </Box>
     </Box >
   );
 }

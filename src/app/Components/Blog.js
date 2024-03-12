@@ -1,42 +1,73 @@
 import { Box, Typography } from "@mui/material"
 import Image from "next/image"
-import blog from '../../Images/Blog.png'
+import { useState } from "react"
 
-export default function Blog(){
+export default function Blog({img , head , Content , type}){
+
+    const [isHover , setIsHover] = useState(false)
+
+    const onMouseEnter = () =>{
+        setIsHover(true)
+    }
+
+    const onMouseLeave = () => {
+        setIsHover(false)
+    }
     return(
         <Box sx={{
-            width: '25%',
-        }}>
-        <Typography>Jan 11 24</Typography>
+            width: {md: '100%' , xs: '80%'},
+            margin: '0 auto',
+            // marginTop: {xs:'3%', md: '-20%'},
+            height: 'auto'
+        }}
+        onMouseEnter={onMouseEnter} 
+        onMouseLeave={onMouseLeave}  
+        >
+        <Typography sx={{
+            marginLeft: '1vw',
+
+        }}>Jan 11 24</Typography>
               <Typography sx={{
-                width: '90%',
+                width: {xs:'80%' , sm: '100%'},
                 fontStyle: 'normal',
                 fontWeight: '500',
-                fontSize: '24px',
+                fontSize: {md: '17px' , xs: '15px'},
                 lineHeight: '111.64%',
                 /* or 27px */
-                color: '#E9501D',
+                color: isHover ? '#E9501D' : 'black',
+                margin: {xs: '0 auto'},
+                // marginTop: '20%'
+                // margin: '0 auto'
               }}>
-                Mental health Services should count as Healthcare
+                {head}
                 </Typography>
-              <Image src={blog}/>
+                <Box sx={{
+                    marginTop: '1vw',
+                    width: {xs: '90%'},
+                    // margin: '0 auto',
+                }}>
+              <Image src={img} style={{
+                width: '100%'
+              }}/>
+                </Box>
               <Typography sx={{
                 padding: '1%',
                 gap: '10px',
                 width: '60px',
                 background: '#D3FFF9',
                 borderRadius: '49px',
-                color: '#1F8B7B',                
-              }}>News
+                color: '#1F8B7B',
+                marginTop: '1vw',
+                marginLeft: '1vw',
+              }}>{type}
               </Typography>
               <Typography sx={{
                 margin: '0 auto',
                 width: '90%',
-                marginTop: '2%'
+                marginTop: '1vw',
+                visibility: isHover ? 'visible' : 'hidden'
               }}>
-              AUSTIN, Texas, Jan. 11, 2024 — Ambiq@, a recognized
-technology leader in ultra-low power semiconductors for IoT
-endpoints. today announced that it...
+              {Content}
               </Typography>
         </Box>
     )
