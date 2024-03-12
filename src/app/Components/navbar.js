@@ -32,26 +32,20 @@ function Navbar() {
                         justifyContent: 'space-between',    
                     }}>
                         <Box sx={{
-                            width: {md: '50%' , xs: '50%'}, // Adjust width for different screen sizes
-                            // background:"red",
-                            // overflow: 'hidden'
+                            width: '50%', 
                         }}>
                             <Link href='/'>
                                 <Image
                                     src={img}
                                     alt="Example Image"
-                                    // width={400}
                                     style={{
-                                        width: '90%',
-                                        height: 'auto',
-                                        // background: 'red',
-                                        visibility: {xs: 'visible'}
+                                    width: '90%',
                                     }}
                                     />
                             </Link>
                            </Box>
 
-                        <Box sx={{ display: { xs: 'block', md: 'none' } , width: '50%' , height: 'auto'}}>
+                        <Box sx={{ display: { xs: 'block', md: 'none' , sm: 'inline-block'} , width: '100%%' , height: 'auto'}}>
                             <IconButton
                                 size="large"
                                 edge="start"
@@ -63,13 +57,12 @@ function Navbar() {
                             </IconButton>
                         </Box>
 
-
                         <List sx={{
                             color: 'black',
                             width: '100%',
                             display: 'flex',
                             justifyContent: 'space-between',
-                            visibility: { md: 'visible', xs: 'hidden' },
+                            visibility: { md: 'visible', xs: 'hidden' , sm: 'hidden'},
                             
                         }}>
                             <ListItem sx={{
@@ -80,7 +73,7 @@ function Navbar() {
                                 },
                             }}>
                                 <Link href="/Solution">
-                                    <Typography variant="body2" fontWeight="light" fontSize="18px">
+                                    <Typography variant="body2" fontWeight="light" fontSize={{md: "10px" , lg: '16px' , xl: '20px'}}>
                                         Solution
                                     </Typography>
                                 </Link>
@@ -93,20 +86,20 @@ function Navbar() {
                                 },
                             }}>
                                 <Link href="#">
-                                    <Typography variant="body2" fontWeight="light" fontSize="18px">
+                                    <Typography variant="body2" fontWeight="light" fontSize={{md: "10px" , lg: '16px' , xl: '20px'}}>
                                         Resources
                                     </Typography>
                                 </Link>
                             </ListItem>
                             <ListItem sx={{
-                                flexBasis: '10%',
+                                flexBasis: '15%',
                                 '& a': { // Apply styles to the anchor tag inside the ListItem
                                     color: 'black', // Change the color to black
                                     textDecoration: 'none', // Hide the underline
                                 },
                             }}>
                                 <Link href="#">
-                                    <Typography variant="body2" fontWeight="light" fontSize="18px">
+                                    <Typography variant="body2" fontWeight="light" fontSize={{md: "10px" , lg: '16px' , xl: '20px'}}>
                                         About us
                                     </Typography>
                                 </Link>
@@ -117,7 +110,7 @@ function Navbar() {
                                 <Select sx={{
                                     border: '1px solid grey !important',
                                     borderRadius: '8%',
-                                    fontSize: '16px',
+                                    fontSize: {md: "10px" , lg: '16px' , xl: '20px'},
                                     width: '100%',
                                     height: '40%',
                                     padding: '0.6%',
@@ -136,12 +129,12 @@ function Navbar() {
                             }}>
                                 <Button
                                     bg="#1F8B7B"
-                                    fs="15px"
+                                    fs={{md: "10px" , lg: '16px' , xl: '20px'}}
                                     p="1%"
                                     color="white"
                                     border="1px solid #1F8B7B"
                                     br="13"
-                                    width="50%"
+                                    width="60%"
                                     height="38px"
                                     title="Download App"
                                 />
@@ -151,6 +144,7 @@ function Navbar() {
                     </Box>
                 </Toolbar>
             </AppBar>
+
             <Drawer
                 anchor="right"
                 open={isDrawerOpen}

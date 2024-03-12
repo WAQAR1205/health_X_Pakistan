@@ -5,7 +5,8 @@ import { Suspense, useRef , useState ,useEffect} from 'react'
 import { Canvas  ,extend, useFrame , useThree} from '@react-three/fiber'
 import {OrbitControls , useGLTF , PerspectiveCamera , OrthographicCamera ,   } from '@react-three/drei'
 import { gsap  } from 'gsap';
-import { MeshBasicMaterial } from 'three';
+import { Grid } from '@mui/material';
+
 
 import ScrollTrigger from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
@@ -175,14 +176,19 @@ gsap.fromTo(el,{rotation: 0},{rotation: 90,
      
 
 
-<div className='relative'>
+<div className=''>
+<Grid container justifyContent="start">
+<Grid item xs={12} md={4}> {/* Adjust the column width as per your requirement */}
+
+
         {/* MODEL */}
 
         <Canvas
     ref={imgref}
     
-    style={{ position: 'absolute', top: 0 ,  right: 0, width: '100%', height: '100%'  }}
-  >
+    style={{ width: '100vw', height: '110vh' ,
+   minHeight : '10vh' }} // Adjust as per your requirements
+    >
          <OrbitControls
           // autoRotate // Auto-rotate on
           autoRotateSpeed={7} // Auto-rotate speed
@@ -209,6 +215,8 @@ gsap.fromTo(el,{rotation: 0},{rotation: 90,
         
          </Suspense>
           </Canvas>
+          </Grid>
+  </Grid>
           
           
     </div>
@@ -219,5 +227,3 @@ gsap.fromTo(el,{rotation: 0},{rotation: 90,
   }
 
   export default Appp;
-  
-  

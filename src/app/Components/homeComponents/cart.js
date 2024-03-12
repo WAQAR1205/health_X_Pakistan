@@ -7,7 +7,7 @@ export default function Cart({ src, heading, content }) {
       sx={{
         margin: '0 auto',
         width: {md: '22%' , sm: '70%' , xs: '70%'},
-        height: {md: '530px' , sm: 'auto' , sx: 'auto'},
+        height: {md: '530px' , sm: '430px' , sx: 'auto'},
         background: '#2D4755',
         filter: `drop-shadow(0px 4px 17.6px rgba(0, 0, 0, 0.1))`,
         marginTop: {md: '0%' , sm: '5%' , xs: '5%'},
@@ -15,7 +15,7 @@ export default function Cart({ src, heading, content }) {
     >
       <Box sx={{
         // background: 'red',
-        width: {md: '50%' ,  xs: '60%'},
+        width: {md: '70%' ,  xs: '50%'},
         marginTop: '15%',
         marginLeft: {md: '0' , sm: '5%' , xs: '5%'},
       }}>
@@ -24,13 +24,13 @@ export default function Cart({ src, heading, content }) {
 
       <Typography
         sx={{
-          width: {md: '90%', sm: '60%' , xs: '100%'},
+          width: {md: '100%', sm: '100%' , xs: '100%' , lg: '90%'},
           height: {md: '78px', sm: 'auto'},
           marginLeft: '5%',
           marginTop: '3%',
           fontStyle: 'normal',
           fontWeight: '600',
-          fontSize: {md: '26px' , sm: '13px'},
+          fontSize: {md: '20px' , xs: '16px' , sm: '18px' , lg: '22px'},
           lineHeight: '39px',
           color: '#FFFFFF',
         }}
@@ -46,7 +46,7 @@ export default function Cart({ src, heading, content }) {
           marginTop: '3%',
           fontStyle: 'normal',
           fontWeight: '300',
-          fontSize: {md: '19px' , sm: '13px'},
+          fontSize: {md: '15px' , xs: '13px' , sm:'15px' , lg: '17px'},
           lineHeight: '27px',
           color: '#FFFFFF',
         }}
@@ -60,10 +60,10 @@ export default function Cart({ src, heading, content }) {
           height: {md: '27px' , sm: 'auto'},
           float: 'right',
           marginRight: '5%',
-          marginTop: '18%',
+          marginTop: {xs:'18%' , sm: '10%' , md: '43%' , lg: '20%'},
           fontStyle: 'normal',
           fontWeight: '500',
-          lineHeight: {md: '27px' , sm: '14px'},
+          lineHeight: {md: '17px' , xs: '12px' , sm: '14px' , lg: '24px'},
           color: '#E9501D',
           fontSize: '19px',
         }}

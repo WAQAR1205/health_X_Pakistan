@@ -47,32 +47,36 @@ function SwipeableTextMobileStepper() {
       >
         <Typography sx={{
           width: "100%",
-          fontSize: '34px'
+          fontSize: {md:'34px' , xs: '26px' , lg: '42px' , xl: '50px'}
         }}>
           Visionaries of Health
         </Typography>
+
         <Box sx={{
           width: '100%',
+          display: 'flex',
+          flexDirection: {xs: 'row' , md: 'column'}
         }}>
           <Typography sx={{
             color: '#E9501D',
             fontWeight: '600',
-            fontSize: '46.88px',
+            fontSize: {md: '38px' , xs: '35px' , lg: '41px' , xl: '44px'},
             lineHeight: '52.33px',
           }}>
             Your
             <span sx={{
               color: '#1F8B7B',
             }}>
-              &nbsp;Partnerts
+              &nbsp;Partners
             </span>
           </Typography>
           <Typography sx={{
             color: '#E9501D',
             fontWeight: '600',
-            fontSize: '46.88px',
+            fontSize: {md: '38px' , xs: '35px' , lg: '41px' , xl: '44px'},
             lineHeight: '52.33px',
-          }}>in Health</Typography>
+            width: {md: '100%'},
+          }}>&nbsp;in Health</Typography>
         </Box>
 
       </Paper>
@@ -85,7 +89,7 @@ function SwipeableTextMobileStepper() {
       >
         {headings.map((step, index) => (
           <Box key={index} sx={{
-            marginTop: '13%',
+            marginTop: {xs:'0%' , md: '39%'},
           }}>
             {Math.abs(activeStep - index) <= 2 ? (
               <Box
@@ -118,7 +122,7 @@ function SwipeableTextMobileStepper() {
         nextButton={null}
         backButton={null}
         sx={{
-          marginTop: {xs: '-20%' , md: '0px'}
+          marginTop: {xs: '-20%' , md: '-13%'}
         }}
       />
     </Box >
