@@ -27,7 +27,7 @@ import Navbar from './Components/navbar';
 import Question from './Components/Question'
 import Appp from './Components/homeComponents/model/Model'
 import AppT from './Components/homeComponents/model/ModelT'
-import Team from './Components/homeComponents/Team'
+// import Team from './Components/homeComponents/Team'
 import BlogNnews from './Components/homeComponents/BlogNnews'
 
 export default function Home() {
@@ -402,7 +402,7 @@ export default function Home() {
         <Box sx={{
           marginTop: '3%',
         }}>
-          <Team />
+          {/* <Team /> */}
         </Box>
       </Box>
 

@@ -1,6 +1,6 @@
 import {Box , Typography} from '@mui/material'
 
-export default function Content({headingOne , headingTwo , content , mdfs = '33px' , xsfs = '30px' , mdfsc = '28px' , xsfsc = '20px' , md='100%' , mdc='120%' , lg='50px' , xl= '55px' , lgC='40px' , xlC='45px' , xlH='100%' , lgH='120%' , LgC='100%' , XlC='100%'}) {
+export default function Content({ htl = '120%' , lh = '40%' , headingOne , headingTwo , content , mdfs = '33px' , xsfs = '30px' , mdfsc  , xsfsc = '20px' , md='100%' , mdc='120%' , lg='50px' , xl= '55px' , lgC='40px' , xlC='45px' , xlH='100%' , lgH='120%' , LgC='100%' , XlC='100%'}) {
     return( 
             <>
         <Box>
@@ -9,7 +9,7 @@ export default function Content({headingOne , headingTwo , content , mdfs = '33p
             fontStyle: 'normal',
             fontWeight: '700',
             fontSize: {md: mdfs , xs: xsfs , lg: lg , xl: xl , sm: xsfs},
-            lineHeight: '112%',
+            lineHeight: htl,
             /* or 52px */
             
           color: '#1F8B7B',
@@ -33,7 +33,7 @@ export default function Content({headingOne , headingTwo , content , mdfs = '33p
             fontStyle: 'normal',
             fontWeight: '275',
             fontSize: {md: mdfsc , xs: xsfsc , lg: lgC , xl: xlC , sm: xsfsc},
-            lineHeight: '40%',
+            lineHeight: lh ,
             /* or 42px */
             
             color: '#1E1E1E',

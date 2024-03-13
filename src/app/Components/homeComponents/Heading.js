@@ -1,5 +1,5 @@
 import {Box , Typography} from '@mui/material'
-export default function Heading({number , heading , content , numberColor , headingColor , contentColor , flexFlow}){
+export default function Heading({ HLH = '112.64%' ,number , heading , content , numberColor , headingColor , contentColor , flexFlow}){
     return(
         <Box sx={{
             display: 'flex',
@@ -18,7 +18,7 @@ export default function Heading({number , heading , content , numberColor , head
               fontStyle: 'normal',
               fontWeight: '700',
               fontSize: {md:'47px', xs: '36px' , sm: '30px'},
-              lineHeight: '112.64%',
+              lineHeight: HLH,
               /* or 52px */
 
               leadingTrim: 'both',
