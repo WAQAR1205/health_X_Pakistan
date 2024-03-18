@@ -1,5 +1,5 @@
 import {Box , Typography} from '@mui/material'
-export default function Heading({number , heading , content , numberColor , headingColor , contentColor , flexFlow}){
+export default function Heading({number , heading , content , numberColor , headingColor , contentColor , flexFlow , md='150px' , mdc='303px'}){
     return(
         <Box sx={{
             display: 'flex',
@@ -9,12 +9,9 @@ export default function Heading({number , heading , content , numberColor , head
             gap: '10px', 
             width: {md:'394px' , xs:'90%' , sm: '90%' , lg: '100%' , xl: '100%'},
             marginTop: {md: '0' , xs: '4%'},
-            // marginRight: '0',
-            // background: "red",
           }}>
             <Typography sx={{
               width: {md: '58px' , xs: '5%'},
-              // height: '33px',   
               fontStyle: 'normal',
               fontWeight: '700',
               fontSize: {md:'47px', xs: '36px' , sm: '30px'},
@@ -33,8 +30,7 @@ export default function Heading({number , heading , content , numberColor , head
               width: {xs: '70%'}
             }}>
               <Typography sx={{
-                width: {md: '150px' , xs: '50%' },
-                // height: '13px',
+                width: {md: md , xs: '50%' },
                 fontStyle: 'normal',
                 fontWeight: '500',
                 fontSize: {md: '19px' , xs: '13px' , sm: '14px'},
@@ -50,7 +46,7 @@ export default function Heading({number , heading , content , numberColor , head
 
               <Typography sx={{
                 
-                width: '303px',
+                width: mdc,
                 // height: '13px',
                 marginTop: '3%',
                 fontStyle: 'normal',

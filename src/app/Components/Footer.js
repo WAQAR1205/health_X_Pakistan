@@ -9,6 +9,7 @@ import twitter from '../../Images/pajamas_twitter.png'
 import sms from '../../Images/sms.png'
 import Button from './Button'
 import {useTheme} from '@mui/material';
+import Link from 'next/link';
 
 function Footer() {
     const theme = useTheme();
@@ -116,12 +117,12 @@ function Footer() {
                             About us
                         </Typography>
                     </Box>
-
                     <Box sx={{
                         width: '90%',
                         // height: '24px',
                         marginTop: '5%',
                     }}>
+                        <Link href='/FAQ'>
                         <Typography sx={{
                             fontStyle: 'normal',
                             fontWeight: '300',
@@ -133,6 +134,7 @@ function Footer() {
                         }}>
                             FAQs
                         </Typography>
+                        </Link>
                     </Box>
 
                     <Box sx={{
@@ -140,17 +142,19 @@ function Footer() {
                         // height: '24px',
                         marginTop: '5%',
                     }}>
+                        <Link href='/NewsnMedia'>
                         <Typography sx={{
                             fontStyle: 'normal',
                             fontWeight: '300',
                             fontSize: {lg: '16px' , md: '12px' , xs: '11px'},
                             lineHeight: '24px',
                             /* identical to box height */
-
+                            
                             color: '#9E9E9E',
                         }}>
                             New’s and Media
                         </Typography>
+                            </Link>
                     </Box>
 
                     <Box sx={{
@@ -158,6 +162,7 @@ function Footer() {
                         // height: '24px',
                         marginTop: '5%',
                     }}>
+                        <Link href='/ContactUs'>
                         <Typography sx={{
                             fontStyle: 'normal',
                             fontWeight: '300',
@@ -169,6 +174,7 @@ function Footer() {
                         }}>
                             Contact us
                         </Typography>
+                        </Link>
                     </Box>
 
                     <Box sx={{
@@ -176,17 +182,19 @@ function Footer() {
                         // height: '24px',
                         marginTop: '5%',
                     }}>
+                        <Link href='#'>
                         <Typography sx={{
                             fontStyle: 'normal',
                             fontWeight: '300',
                             fontSize: {lg: '16px' , md: '12px' , xs: '11px'},
                             lineHeight: '24px',
                             /* identical to box height */
-
+                            
                             color: '#9E9E9E',
                         }}>
                             Digital Videos
                         </Typography>
+                            </Link>
                     </Box>
                 </Box>
 
@@ -213,17 +221,19 @@ function Footer() {
                         width: {md: '100%' , xs : '90%'},
                         marginTop: {md: '20%' ,  xs : '5%'},
                     }}>
+                        <Link href='/Individuals&Families'>
                         <Typography sx={{
                             fontStyle: 'normal',
                             fontWeight: '300',
                             fontSize: {lg: '16px' , md: '12px' , xs: '11px'},
                             lineHeight: '24px',
                             /* identical to box height */
-
+                            
                             color: '#9E9E9E',
                         }}>
                             Individuals & Families
                         </Typography>
+                            </Link>
                     </Box>
 
                     <Box sx={{
@@ -231,17 +241,19 @@ function Footer() {
                         // height: '24px',
                         marginTop: '5%',
                     }}>
+                        <Link href='CorporateHealthSolutions'>
                         <Typography sx={{
                             fontStyle: 'normal',
                             fontWeight: '300',
                             fontSize: {lg: '16px' , md: '12px' , xs: '11px'},
                             lineHeight: '24px',
                             /* identical to box height */
-
+                            
                             color: '#9E9E9E',
                         }}>
                             Corporate Health Solutions
                         </Typography>
+                            </Link>
                     </Box>
 
                     <Box sx={{
@@ -249,17 +261,19 @@ function Footer() {
                         // height: '24px',
                         marginTop: '5%',
                     }}>
+                        <Link href='/Health Incurrence'>
                         <Typography sx={{
                             fontStyle: 'normal',
                             fontWeight: '300',
                             fontSize: {lg: '16px' , md: '12px' , xs: '11px'},
                             lineHeight: '24px',
                             /* identical to box height */
-
+                            
                             color: '#9E9E9E',
                         }}>
                             Health Incurrence
                         </Typography>
+                            </Link>
                     </Box>
 
                     <Box sx={{
@@ -267,17 +281,19 @@ function Footer() {
                         // height: '24px',
                         marginTop: '5%',
                     }}>
+                        <Link href='/GovernmentHealthInitiate'>
                         <Typography sx={{
                             fontStyle: 'normal',
                             fontWeight: '300',
                             fontSize: {lg: '16px' , md: '12px' , xs: '11px'},
                             lineHeight: '24px',
                             /* identical to box height */
-
+                            
                             color: '#9E9E9E',
                         }}>
                             Government Health Initiate
                         </Typography>
+                            </Link>
                     </Box>
 
                 </Box>
@@ -337,17 +353,19 @@ function Footer() {
                         height: '24px',
                         marginTop: '5%',
                     }}>
+                        <Link href='/CorporateHealthSolutions'>
                         <Typography sx={{
                             fontStyle: 'normal',
                             fontWeight: '300',
                             fontSize: {lg: '16px' , md: '12px' , xs: '11px'},
                             lineHeight: '24px',
                             /* identical to box height */
-
+                            
                             color: '#9E9E9E',
                         }}>
                             Corporate Health Solutions
                         </Typography>
+                            </Link>
                     </Box>
 
                     <Box sx={{
@@ -355,17 +373,19 @@ function Footer() {
                         // height: '24px',
                         marginTop: '5%',
                     }}>
+                        <Link href='/HealthIncurrence'>
                         <Typography sx={{
                             fontStyle: 'normal',
                             fontWeight: '300',
                             fontSize: {lg: '16px' , md: '12px' , xs: '11px'},
                             lineHeight: '24px',
                             /* identical to box height */
-
+                            
                             color: '#9E9E9E',
                         }}>
                             Health Incurrence
                         </Typography>
+                            </Link>
                     </Box>
 
                     <Box sx={{
@@ -373,17 +393,19 @@ function Footer() {
                         // height: '24px',
                         marginTop: '5%',
                     }}>
+                        <Link href='GovernmentHealthInitiate'>
                         <Typography sx={{
                             fontStyle: 'normal',
                             fontWeight: '300',
                             fontSize: {lg: '16px' , md: '12px' , xs: '11px'},
                             lineHeight: '24px',
                             /* identical to box height */
-
+                            
                             color: '#9E9E9E',
                         }}>
                             Government Health Initiate
                         </Typography>
+                            </Link>
                     </Box>
 
                 </Box>
