@@ -21,7 +21,8 @@ function Footer() {
             fontFamily: 'Poppins',
             color: '#FFFFFF',
             width: '98%',
-            margin: '0 auto'
+            margin: '0 auto',
+            paddingLeft: {xs: '5%' , md: '0'}
         }} >
 
             <Box sx={{
@@ -33,14 +34,16 @@ function Footer() {
                 <Box sx={{
                     marginTop: '10%',
                     marginLeft: {md: '100px' , xs: '0'},
-                    width: {md: '20%' , xs: '100%' , lg: '25%'},
+                    width: {md: '30%' , xs: '100%' , lg: '25%'},
                 }}>
                     <Box sx={{
-                        width: {md: '90%' , xs : '90%' , lg: '90%'},
+                        width: {md: '40%' , xs : '90%' , lg: '90%'},
+                        
                     }}>
                         <Image
                             src={img}
                             alt='Footer'
+                
                         />
                     </Box>
 
@@ -51,7 +54,7 @@ function Footer() {
                         <Typography sx={{
                             fontStyle: 'normal',
                             /* or 39px */
-                            fontSize: {md: '36px' , xs : '20px'},
+                            fontSize: {lg: '36px' , xs : '20px' , md: '22px'},
                             lineHeight: '111.64%',
                             fontWeight: '500',
                         }}>
@@ -60,15 +63,13 @@ function Footer() {
                     </Box>
 
                     <Box sx={{
-                        width: '90%',
-                        // height: '20px',
-                        // marginLeft: '100px',
+                        width: '96%',
                         marginTop: '7%',
                     }}>
                         <Typography sx={{
                             fontStyle: 'normal',
                             fontWeight: '300',
-                            fontSize: '13px',
+                            fontSize: {lg: '13px' , xl: '15' , md: '11px' , xs: '10px'},
                             lineHeight: '20px',
                             // /* identical to box height */
                         }}>
@@ -76,18 +77,7 @@ function Footer() {
                         </Typography>
                     </Box>
 
-                    <Box sx={{
-                        display: 'flex',
-                        justifyContent: 'space-evenly',
-                        gap: '10px',
-                        width: '90%',
-                        marginTop: '13%',
-                    }}>
-                        <Image src={facebook} />
-                        <Image src={linkedin} />
-                        <Image src={twitter} />
-                        <Image src={insta} />
-                    </Box>
+                    
                 </Box>
 
                 <Box sx={{
@@ -100,7 +90,7 @@ function Footer() {
                         <Typography sx={{
                             fontStyle: 'normal',
                             fontWeight: '500',
-                            fontsize: '18px',
+                            fontsize: {lg: '18px' , md: '14px' , xs: '13px'},
                             lineHeight: '27px',
                             /* identical to box height */
 
@@ -117,7 +107,7 @@ function Footer() {
                         <Typography sx={{
                             fontStyle: 'normal',
                             fontWeight: '300',
-                            fontSize: '16px',
+                            fontsize: {lg: '16px' , md: '12px' , xs: '11px'},
                             lineHeight: '24px',
                             /* identical to box height */
 
@@ -135,7 +125,7 @@ function Footer() {
                         <Typography sx={{
                             fontStyle: 'normal',
                             fontWeight: '300',
-                            fontSize: '16px',
+                            fontsize: {lg: '16px' , md: '12px' , xs: '11px'},
                             lineHeight: '24px',
                             /* identical to box height */
 
@@ -153,7 +143,7 @@ function Footer() {
                         <Typography sx={{
                             fontStyle: 'normal',
                             fontWeight: '300',
-                            fontSize: '16px',
+                            fontSize: {lg: '16px' , md: '12px' , xs: '11px'},
                             lineHeight: '24px',
                             /* identical to box height */
 
@@ -171,7 +161,7 @@ function Footer() {
                         <Typography sx={{
                             fontStyle: 'normal',
                             fontWeight: '300',
-                            fontSize: '16px',
+                            fontSize: {lg: '16px' , md: '12px' , xs: '11px'},
                             lineHeight: '24px',
                             /* identical to box height */
 
@@ -189,7 +179,7 @@ function Footer() {
                         <Typography sx={{
                             fontStyle: 'normal',
                             fontWeight: '300',
-                            fontSize: '16px',
+                            fontSize: {lg: '16px' , md: '12px' , xs: '11px'},
                             lineHeight: '24px',
                             /* identical to box height */
 
@@ -210,7 +200,7 @@ function Footer() {
                         <Typography sx={{
                             fontStyle: 'normal',
                             fontWeight: '500',
-                            fontsize: '18px',
+                            fontsize: {lg: '18px' , md: '14px' , xs: '13px'},
                             lineHeight: '27px',
                             /* identical to box height */
 
@@ -226,7 +216,7 @@ function Footer() {
                         <Typography sx={{
                             fontStyle: 'normal',
                             fontWeight: '300',
-                            fontSize: '16px',
+                            fontSize: {lg: '16px' , md: '12px' , xs: '11px'},
                             lineHeight: '24px',
                             /* identical to box height */
 
@@ -244,7 +234,7 @@ function Footer() {
                         <Typography sx={{
                             fontStyle: 'normal',
                             fontWeight: '300',
-                            fontSize: '16px',
+                            fontSize: {lg: '16px' , md: '12px' , xs: '11px'},
                             lineHeight: '24px',
                             /* identical to box height */
 
@@ -262,7 +252,7 @@ function Footer() {
                         <Typography sx={{
                             fontStyle: 'normal',
                             fontWeight: '300',
-                            fontSize: '16px',
+                            fontSize: {lg: '16px' , md: '12px' , xs: '11px'},
                             lineHeight: '24px',
                             /* identical to box height */
 
@@ -280,7 +270,7 @@ function Footer() {
                         <Typography sx={{
                             fontStyle: 'normal',
                             fontWeight: '300',
-                            fontSize: '16px',
+                            fontSize: {lg: '16px' , md: '12px' , xs: '11px'},
                             lineHeight: '24px',
                             /* identical to box height */
 
@@ -303,7 +293,7 @@ function Footer() {
                         <Typography sx={{
                             fontStyle: 'normal',
                             fontWeight: '500',
-                            fontsize: '18px',
+                            fontsize: {lg: '18px' , md: '14px' , xs: '13px'},
                             lineHeight: '27px',
                             /* identical to box height */
 
@@ -314,7 +304,7 @@ function Footer() {
 
                     <Box sx={{
                         // background: 'red',
-                        width: {md: '100%' , xs : '50%'},
+                        width: {md: '100%' , xs : '10%'},
                         // height: '24px',
                         marginTop: {md: '20%' , xs: '5%'},
                         display: 'flex',
@@ -324,14 +314,14 @@ function Footer() {
                     }}>
                         <Typography sx={{
                             marginLeft: {md: '0' , xs :'38%'},
-                            width: '20%',
+                            width: {lg:'12%' , xs: '50%' , md: '12%'},
                         }}>
                             <Image src={sms} alt='Mail' />
                         </Typography>
                         <Typography sx={{
                             fontStyle: 'normal',
                             fontWeight: '300',
-                            fontSize: '16px',
+                            fontSize: {lg: '16px' , md: '12px' , xs: '11px'},
                             lineHeight: '24px',
                             /* identical to box height */
                             marginBottom: '2%',
@@ -350,7 +340,7 @@ function Footer() {
                         <Typography sx={{
                             fontStyle: 'normal',
                             fontWeight: '300',
-                            fontSize: '16px',
+                            fontSize: {lg: '16px' , md: '12px' , xs: '11px'},
                             lineHeight: '24px',
                             /* identical to box height */
 
@@ -368,7 +358,7 @@ function Footer() {
                         <Typography sx={{
                             fontStyle: 'normal',
                             fontWeight: '300',
-                            fontSize: '16px',
+                            fontSize: {lg: '16px' , md: '12px' , xs: '11px'},
                             lineHeight: '24px',
                             /* identical to box height */
 
@@ -386,7 +376,7 @@ function Footer() {
                         <Typography sx={{
                             fontStyle: 'normal',
                             fontWeight: '300',
-                            fontSize: '16px',
+                            fontSize: {lg: '16px' , md: '12px' , xs: '11px'},
                             lineHeight: '24px',
                             /* identical to box height */
 
@@ -398,7 +388,18 @@ function Footer() {
 
                 </Box>
             </Box>
-
+            <Box sx={{
+                        display: 'flex',
+                        justifyContent: 'space-evenly',
+                        width: {lg: '20%' , xs: '90%' , md: '30%'},
+                        marginTop: {xs: '5%' , md: '3%' , lg: '0'},
+                        marginLeft: {xs: '0' , lg: '5%' , md: '7%'}
+                    }}>
+                        <Image src={facebook} />
+                        <Image src={linkedin} />
+                        <Image src={twitter} />
+                        <Image src={insta} />
+                    </Box>
             <Box sx={{
                 margin: '5% auto',
                 width: {md: '80%' , xs : '90%'},
@@ -419,7 +420,7 @@ function Footer() {
                         // height: '27px',
                         fontStyle: 'normal',
                         fontWeight: '500',
-                        fontSize: '24px',
+                        fontSize: {lg: '24px' , md: '20px' , xs: '16px'},
                         lineHeight: '111.64%',
                         /* identical to box height, or 27px */
                     }}>Join or newsletter</Typography>
@@ -428,7 +429,7 @@ function Footer() {
                         // height: '20px',
                         fontStyle: 'normal',
                         fontWeight: '300',
-                        fontSize: '13px',
+                        fontSize: {lg: '13px' , md: '12px' , xs: '11px'},
                         lineHeight: '20px',
                         /* identical to box height */
                         marginTop: {md: '0' , xs:"3%"},
@@ -442,7 +443,7 @@ function Footer() {
                 }}>
 
                     <Box sx={{
-                        width: {md: '87.5%' , xs: '70%'},
+                        width: {lg: '87.5%' , xs: '70%' , md: '130%'},
                         height: '80%',
                         border: '1px solid',
                         background: 'white',
@@ -453,19 +454,20 @@ function Footer() {
                         <Input disableUnderline placeholder="email" sx={{
                             // border:'none',
                             fontWeight: '300',
-                            fontSize: '13px',
+                            fontSize: {lg: '13px' , md: '12px' , xs: '11px'},
                             lineHeight: '18px',
-                             padding: '1%',
+                             padding: {md:'3%' , xs: '1%' },
                              width:'65%'
                         }} />
                         <Button 
                             bg= '#E9501D'
                             color= '#FFFFFF'
                             fontWeight= '500'
-                            fs= '16px'
+                            fs= {{lg: '16px' , md: '12px' , xs: '11px'}}
                             lineHeight= '24px'
                             title = 'Subscribe'
-                            width='33%'
+                            width='35%'
+                            mt={{xs: '0' , md: '-3px' , lg: '-5px'}}
                          />
                     </Box>
                 </Box>
@@ -502,7 +504,7 @@ function Footer() {
                         <Typography sx={{
                             fontStyle: 'normal',
                             fontWeight: '400',
-                            fontSize: '14px',
+                            fontSize: {lg: '16px' , md: '12px' , xs: '11px'},
                             lineHeight: '21px',
                             /* identical to box height */
 
@@ -522,7 +524,7 @@ function Footer() {
 
                             fontStyle: 'normal',
                             fontWeight: '400',
-                            fontSize: '14px',
+                            fontSize: {lg: '16px' , md: '12px' , xs: '11px'},
                             lineHeight: '21px',
                             /* identical to box height */
 
@@ -539,7 +541,7 @@ function Footer() {
                     <Typography sx={{
                         fontStyle: 'normal',
                         fontWeight: '400',
-                        fontSize: '14px',
+                        fontSize: {lg: '16px' , md: '12px' , xs: '11px'},
                         lineHeight: '21px',
                         /* identical to box height */
 

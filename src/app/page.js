@@ -14,14 +14,6 @@ import Heading from './Components/homeComponents/Heading'
 import Content from './Components/homeComponents/Content '
 import Point from './Components/homeComponents/Points'
 import Rating from './Components/homeComponents/Rating'
-import grp32 from '../Images/Group 32.png';
-import grp33 from '../Images/Group 33.png';
-import grp34 from '../Images/Group 34.png';
-import grp35 from '../Images/Group 35.png';
-import grp36 from '../Images/Group 36.png';
-import shazai from '../Images/shazain 1.png'
-import grp37 from '../Images/Group 28.png'
-import grp38 from '../Images/Group 29.png'
 import Link from 'next/link';
 import Navbar from './Components/navbar';
 import Question from './Components/Question'
@@ -29,8 +21,12 @@ import Appp from './Components/homeComponents/model/Model'
 import AppT from './Components/homeComponents/model/ModelT'
 import Team from './Components/homeComponents/Team'
 import BlogNnews from './Components/homeComponents/BlogNnews'
+import ScrollBar from './Components/ScrollBar'
+import Frequently from './Components/homeComponents/Frequently'
+import HealthX from './Components/homeComponents/HealthX'
 
 export default function Home() {
+
   return (
 
     <Box sx={{
@@ -40,6 +36,8 @@ export default function Home() {
       marginTop: '4%',
       overflow: 'hidden'
     }}>
+
+  <ScrollBar />
 
       {/* hero section content */}
       <Box sx={{
@@ -55,7 +53,8 @@ export default function Home() {
       }}>
         <Navbar />
 
-        <Box sx={{
+        
+        <Box id='one' sx={{
           display: 'flex',
           flexDirection: { md: 'row', xs: 'column-reverse', lg: 'row', xl: 'row' }, // Flex direction column for small screens
           justifyContent: 'space-between',
@@ -70,24 +69,9 @@ export default function Home() {
               {/* HealthX content */}
 
               <Box>
-                <Typography sx={{
-                  width: { md: '160%', lg: '170%' },
-                  fontStyle: 'normal',
-                  fontWeight: '400',
-                  fontSize: { md: '36px', xs: '20px', sm: '20px', lg: '50px', xl: '60px' },
-                  lineHeight: '120%',
-                  /* or 52px */
+              <HealthX md='160%' lg='170%' mdc='36px' lgc='50px' xlc='60px'/>
 
-                  background: `linear-gradient(90deg, #1F8B7B 0%, #E9501D 100%)`,
-                  BackgroundClip: 'text',
-                  Color: 'transparent',
-                  backgroundClip: 'text',
-                  textFillColor: 'transparent',
-                }}>
-                  Healthx Pakistan
-                </Typography>
-
-                <Content headingOne='Healthcare with a&nbsp;' mdfs='36px' xsfs='30px' mdfsc='28px' xsfsc='20px' headingTwo='Heart' content='Where Every Life Matters' md='240%' mdc='180%' lgH='240%' LgC='180%' xlH='240%' XlC='180%' />
+                <Content headingOne='Healthcare with a&nbsp;' mdfs='36px' xsfs='30px' mdfsc='25px' xsfsc='20px' headingTwo='Heart' content='Where Every Life Matters' md='240%' mdc='180%' lgH='240%' LgC='180%' xlH='240%' XlC='180%' lh='112%'/>
 
                 <Link href='/ContactUs'>
                   <Button
@@ -120,8 +104,7 @@ export default function Home() {
 
         </Box>
       </Box>
-
-
+    
       {/* Rating */}
       <Box sx={{
         marginTop: { sm: '5%', md: '4%' },
@@ -172,9 +155,10 @@ export default function Home() {
 
         </Box>
       </Box>
+      
 
       {/* About us */}
-      <Box sx={{
+      <Box id='two' sx={{
         width: '100%',
         display: 'flex',
         // flexWrap: { md: 'nowarp', xs: 'warp', sm: 'wrap' },
@@ -287,7 +271,7 @@ export default function Home() {
       </Box>
 
       {/* solution */}
-      <Box sx={{
+      <Box id='three' sx={{
         width: { md: '95%', xs: '90%', sm: '90%' },
         margin: '0 auto',
         marginTop: { xs: "-90%", sm: '-70%', md: '3%' },
@@ -385,7 +369,7 @@ export default function Home() {
 
       {/* our team */}
 
-      <Box sx={{
+      <Box id='four' sx={{
         width: '96%',
         margin: '0 auto',
         marginTop: '3%',
@@ -407,7 +391,7 @@ export default function Home() {
       </Box>
 
       {/* App Integration */}
-      <Box sx={{
+      <Box id='five' sx={{
         width: '96%',
         margin: '0 auto',
         marginTop: { md: '3%', xs: '6%' },
@@ -454,7 +438,7 @@ export default function Home() {
       </Box>
 
       {/* FQA */}
-      <Box sx={{
+      <Box id='six' sx={{
         marginTop: '5%',
         width: '98%',
         margin: '0 auto'
@@ -485,230 +469,11 @@ export default function Home() {
 
       {/* Stratigic Planning? */}
 
-      <Box sx={{
-        margin: '0 auto',
-        marginTop: '4%',
-        width: '96%',
-        background: 'linear-gradient(80.65deg, rgba(233, 80, 29, 0.12) 5.4%, rgba(31, 139, 123, 0.12) 47.64%, rgba(235, 198, 98, 0.12) 97.13%)',
-      }}>
-        <Box sx={{
-          display: 'flex',
-          justifyContent: 'space-evenly',
-          marginLeft: { md: '0', xs: '5%' },
-        }}>
-          <Box sx={{
-            width: '10%',
-            marginTop: '3%'
-          }}>
-            <Heading number='07' numberColor='#E9501D' />
-          </Box>
-
-          <Box sx={{
-            width: '70%',
-            marginTop: '3%',
-            textAlign: 'center'
-          }}>
-            <Typography sx={{
-              width: '290px',
-              height: '36px',
-              marginLeft: `calc(50% - 290px/2)`,
-
-              fontStyle: 'normal',
-              fontWeight: '500',
-              fontSize: '32px',
-              lineHeight: '111.64%',
-              /* identical to box height, or 36px */
-
-              color: '#CFCFCF',
-
-            }}>
-              Strategic Partners
-            </Typography>
-          </Box>
-        </Box>
-
-        <Box
-       sx = {{
-        width:'100% ', 
-        display : "flex" ,justifyContent : " cneter",
-        alignItems : " center" ,
-        overflow : "hidden"
-
-
-       }}
-        
-        
-        >
-
-        <Box 
-    
-    // ref = {svgRef}
-    sx={{
-      animationName : 'move' , 
-      animationDuration : '10s' ,
-      animationTimingFunction : 'linear' ,
-      animationIterationCount :  ' infinite' ,
-
-      display: 'flex',
-      gap: '10px', // Adjust the gap between grid items as needed
-      width: '100%' ,
-
-      margin: ' 0  auto',
-      marginTop: '3%',
-      
-       // Enable smooth scrolling on iOS devices
-       WebkitOverflowScrolling :  'touch' ,
-       '&::-webkit-scrollbar': {
-        display: 'none' // Hide the scrollbar
-      }
-    }}>
-      
-
-<Box
-  sx={{
-    display : 'inline-block',
-    width: { xs: '16%' }
-  }}
- // Assign the ref
->
-  <Image
-    src={grp32} // Assuming the image names are sequential (grp32, grp33, ...)
-    style={{ width: '100%' }}
-  />
-</Box>
-
-      <Box sx={{
-        display : 'inline-block' ,
-        width: {xs: '16%'}
-      }} >
-      <Image src={grp33} style={{
-        width: '100%'
-      }} />
-      </Box>
-
-      <Box sx={{
-                       display : 'inline-block' ,
-
-       width: {xs: '16%'}
-      }}>
-      <Image src={grp34} style={{
-        width: '100%'
-      }} />
-      </Box>
-
-      <Box sx={{
-                        display : 'inline-block' ,
-
-        width: {xs: '16%'}
-      }}>
-      <Image src={grp35} style={{
-        width: '100%'
-      }} />
-      </Box>
-
-      <Box sx={{
-                        display : 'inline-block' ,
-width: {xs: '19%'}
-      }}>
-      <Image src={grp36} style={{
-        width: '100%'
-      }} />
-      </Box>
-    </Box>
-    </Box>
-
-        <Box sx={{
-          display: 'flex',
-          justifyContent: 'space-around',
-          marginTop: '3%',
-          flexWrap: { md: 'nowrap', xs: 'warp' },
-          flexDirection: { md: 'row', xs: 'column' },
-        }}>
-          <Box sx={{
-            width: { md: '45%', xs: '100%' },
-            margin: '0 auto',
-          }}>
-            <Typography sx={{
-              margin: '0 auto',
-              width: { xs: '80%', md: '100%' },
-              fontStyle: 'normal',
-              fontWeight: '400',
-              fontSize: { md: '38px', xs: '20px', lg: '41', xl: '44px' },
-              lineHeight: '111%',
-              /* or 52px */
-              background: `linear-gradient(90deg, #1F8B7B 0%, #E9501D 100%)`,
-              BackgroundClip: 'text',
-              Color: 'transparent',
-              backgroundClip: 'text',
-              textFillColor: 'transparent',
-            }}>
-              Healthx Pakistan
-            </Typography>
-            <Typography sx={{
-              width: { md: '125%', xs: '80%' },
-              height: '79px',
-              fontStyle: 'normal',
-              fontWeight: '600',
-              fontSize: { md: '40px', xs: '30px', lg: '44px', xl: '47px' },
-              lineHeight: '112%',
-              /* identical to box height, or 79px */
-              margin: '0 auto',
-              color: '#E9501D',
-            }}>
-              Healthcare Solution
-            </Typography>
-            <Typography sx={{
-              width: { md: '100%', xs: '80%' },
-              fontStyle: 'normal',
-              fontWeight: '265',
-              fontSize: { md: '40px', xs: '20px', lg: '42px', xl: '44px' },
-              lineHeight: '112%',
-              /* or 69px */
-              marginTop: { xs: '-8%', lg: '-5%', xl: '-2%' },
-              color: '#1E1E1E',
-              margin: '0 auto',
-            }}>
-              For All
-            </Typography>
-
-            <Typography sx={{
-              width: { md: '100%', xs: '90%' },
-              padding: { md: '0', xs: '2%' },
-              fontStyle: 'normal',
-              fontWeight: '300',
-              fontSize: { md: '19px', xs: '14px', lg: '21px', xl: '23px' },
-              lineHeight: '27px',
-              margin: '0 auto',
-              color: '#2D4755',
-            }}>
-              {homePageData[4].solution}
-            </Typography>
-
-            <Box sx={{
-              width: { md: '90%', xs: '70%' },
-              marginTop: { md: '5%', xs: '5%' },
-              display: { md: 'flex', xs: 'flex' },
-              justifyContent: { md: 'start', xs: 'space-evenly' },
-              marginBottom: { xs: '4%' },
-              gap: '10px'
-            }}>
-              <Image src={grp37} style={{ width: '35%' }} />
-              <Image src={grp38} style={{ width: '35%' }} />
-            </Box>
-          </Box>
-          <Box sx={{
-            width: { md: '45%', xs: '80%' },
-            // marginTop: {md: '0' , xs : '29%'},
-            margin: { xs: '0 auto' },
-          }}>
-            <Image src={shazai} height={400} />
-          </Box>
-        </Box>
-      </Box>
+      <Frequently />
 
       {/* Blog and News */}
 
-      <Box sx={{
+      <Box id='eight' sx={{
         width: '96%',
         margin: '0 auto',
         marginTop: '3%',
@@ -733,7 +498,7 @@ width: {xs: '19%'}
         <Box sx={{
           marginTop: { md: '3%', xs: '-10%' }
         }}>
-          <BlogNnews />
+          {/* <BlogNnews />   */}
         </Box>
       </Box>
     </Box >

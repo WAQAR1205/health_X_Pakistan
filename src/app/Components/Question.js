@@ -6,7 +6,7 @@ import Faq from './homeComponents/FAQ'
 
 function Question() {
   return (
-    <div>
+    <Box>
         <Box sx={{
           display: 'flex',
           justifyContent: 'space-evenly',
@@ -32,7 +32,7 @@ function Question() {
           </Box>
         </Box>
       
-    </div>
+    </Box>
   )
 }
 
