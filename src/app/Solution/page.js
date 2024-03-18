@@ -1,11 +1,14 @@
 'use client'
+
+import { Box } from "@mui/material"
+
 // import {Container} from '@mui/material';
 
 function page() {
   return (
-    <div>
-      <h1>Hw</h1>
-    </div>
+    <Box>
+      
+    </Box>
   )
 }
 
