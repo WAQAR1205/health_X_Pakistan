@@ -36,22 +36,22 @@ export default function IndividualsAndFamilies() {
                     <Box sx={{
                         width: { md: '50%', xs: '100%' }
                     }}>
-                        <Content headingTwo='Solution' content='For Individuals & Families' />
+                        <Content headingTwo='Solution' content='For Corporates' />
                         <Typography sx={{
                             fontWeight: '300',
-                            fontSize: '20px',
+                            fontSize: {md: '20px' , xs: '17px'},
                             lineHeight: '30px',
                             marginTop: '3%',
                             color: '#1E1E1E',
                             width: '100%',
                         }}>
-                            In our fast-paced lives, visiting the doctor can be burdensome. Healthx offers convenient and safe healthcare solutions, avoiding the risks of self-diagnosis and treatment.
+                            At Healthx, we offer cost-effective corporate healthcare solutions for enhanced employee well-being and productivity.
                         </Typography>
                     </Box>
                     <Box sx={{
                         width: { md: '30%', xs: '100%' }
                     }}>
-                        <Heading number='01' numberColor='#E9501D' heading='Individual & Families' headingColor='#2D4755' content=' Solutions that Can Grow as You Do' contentColor='#2D4755' md='100%' mdc='120%' />
+                        <Heading number='01' numberColor='#E9501D' heading='Corporates' headingColor='#2D4755' content='Solutions that Can Grow as You Do' contentColor='#2D4755' md='100%' mdc='120%' />
                     </Box>
                 </Box>
 

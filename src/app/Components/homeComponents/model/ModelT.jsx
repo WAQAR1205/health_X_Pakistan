@@ -185,7 +185,7 @@ gsap.fromTo(el,{rotation: 90},{
          <OrbitControls
           // autoRotate // Auto-rotate on
           autoRotateSpeed={-4} // Auto-rotate speed
-          // enableZoom={true} // Disable zoom
+          enableZoom={false} // Disable zoom
           enablePan={false} // Disable pan
           // enableRotate={true} // Disable manual rotation
           target={[ 0 , 0 , 0]} // Target position

@@ -241,7 +241,7 @@ function Footer() {
                         // height: '24px',
                         marginTop: '5%',
                     }}>
-                        <Link href='CorporateHealthSolutions'>
+                        <Link href='/CorporateHealthSolutions'>
                         <Typography sx={{
                             fontStyle: 'normal',
                             fontWeight: '300',
@@ -261,7 +261,7 @@ function Footer() {
                         // height: '24px',
                         marginTop: '5%',
                     }}>
-                        <Link href='/Health Incurrence'>
+                        <Link href='/HealthIncurrence'>
                         <Typography sx={{
                             fontStyle: 'normal',
                             fontWeight: '300',
