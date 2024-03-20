@@ -1,6 +1,7 @@
 'use Client'
 import { Box, Typography } from "@mui/material";
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 
 export default function Blog({ img, head, Content, type }) {
@@ -28,7 +29,7 @@ export default function Blog({ img, head, Content, type }) {
             <Typography sx={{ marginLeft: '1vw' }}>Jan 11 24</Typography>
             {/* Headline */}
             <Typography sx={{
-                width: { xs: '80%', sm: '100%' },
+                width: { xs: '80%', md: '90%' },
                 fontStyle: 'normal',
                 fontWeight: '500',
                 fontSize: { md: '14px', xs: '12px' , lg: '17px'},
@@ -39,10 +40,15 @@ export default function Blog({ img, head, Content, type }) {
                 {head}
             </Typography>
             {/* Image */}
-            <Box sx={{ marginTop: '1vw', width: {lg: '100%' , md: '10%' , xs: '100%'} }}>
-                <Image src={img} height={200}/>
+            <Box sx={{ marginTop: '1vw', width: {lg: '80%' , md: '90%' , xs: '100%'} }}>
+                <Image src={img} height={200} style={{
+                    width: '100%',
+                }}/>
             </Box>
             {/* Type */}
+            <Link href='/BlogDetailPage' style={{
+                textDecoration: 'none',
+            }}>
             <Typography sx={{
                 padding: '1%',
                 gap: '10px',
@@ -54,10 +60,11 @@ export default function Blog({ img, head, Content, type }) {
                 marginLeft: '1vw',
             }}>{type}
             </Typography>
+            </Link>
             {/* Content */}
             <Typography sx={{
                 margin: '0 auto',
-                width: '90%',
+                width: '100%',
                 marginTop: '1vw',
                 visibility: isHover ? 'visible' : 'hidden'
             }}>

@@ -1,3 +1,4 @@
+'use client'
 import {Box , Typography} from '@mui/material'
 
 export default function Content({headingOne , headingTwo , content , mdfs = '33px' , xsfs = '30px' , mdfsc = '28px' , xsfsc = '20px' , md='100%' , mdc='120%' , lg='50px' , xl= '55px' , lgC='40px' , xlC='45px' , xlH='100%' , lgH='120%' , LgC='100%' , XlC='100%' , lh='40%' , Lhl='112%' , colorone='#1F8B7B' , colortwo='#E9501D'}) {
