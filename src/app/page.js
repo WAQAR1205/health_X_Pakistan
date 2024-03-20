@@ -498,7 +498,7 @@ export default function Home() {
         <Box sx={{
           marginTop: { md: '3%', xs: '-10%' }
         }}>
-          {/* <BlogNnews />   */}
+          <BlogNnews />  
         </Box>
       </Box>
     </Box >
