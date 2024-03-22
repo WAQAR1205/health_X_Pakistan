@@ -52,7 +52,7 @@ function About() {
           flexBasis : { xs  : '100%' ,  md: '50%' }
 
           }} >
-            <Image  src = {Rectangle}/>
+            <Image  src = {Rectangle} alt='rectangle'/>
           </Box>
      <Box  sx = {{  flexBasis : { xs  : '100%' ,  md: '50%' }
 
@@ -63,7 +63,7 @@ function About() {
       lgC= ' 20px'
       lh='30px'
       />
-      <Image  src={mobile}/>
+      <Image  src={mobile} alt='mobile'/>
      </Box>
 
      </Box>
