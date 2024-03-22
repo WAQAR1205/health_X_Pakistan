@@ -32,89 +32,90 @@ function page() {
                     display: 'flex',
                     justifyContent: 'space-between',
                     marginTop: '3%',
-                    flexDirection: {xs: 'column' , md: 'row'},
+                    flexDirection: { xs: 'column', md: 'row' },
                 }}>
-                <Box sx={{
-                    width: {md: '70%' , xs: '90%'}
-                }}>
-                <Typography sx={{
-                    fontWeight: '300',
-                    fontSize: {md: '25px' , xs: '20px'},
-                    lineHeight: '38px',
-                    leadingTrim: 'both',
-                    textEdge: 'cap',
-                    
-                    color: '#2D4755',
-                }}>
-                Jan 11.24
-                </Typography>
-                <Typography sx={{
-                    fontWeight: '500',
-                    fontSize: {md: '48px' , xs: '38px'},
-                    lineHeight: '112%',
-                    color: '#2D4755',
-                    width: '100%'
-                }}>
-                The Rising Cost of Healthcare: Is It Too Late to Bring Costs Down?
-                </Typography>
-                <Box sx={{
-                    width: '100%',
-                    marginTop: '4%'
-                }}>
-                    <Image src={rectAdd} style={{
-                        width: '100%'
-                    }}/>
-                </Box>
-                <Typography sx={{
-                    fontWeight: '300',
-                    fontSize: {md: '24px' , xs :'20px'},
-                    lineHeight: '35px',
-                    color: '#2D4755',
-                    width: '100%',
-                    marginTop: '2%'
-                }}>
-                    {BlogDetailPage[0].First}
-                </Typography>
-                </Box>
-                {/* ...... */}
-                <Box sx={{
-                    width: {md: '28%' , xs: '100%'},
-                    display: 'flex',
-                    flexDirection: {xs: 'row' , md: 'column'},
-                    justifyContent: 'sapce-between',
-                }}>
-                <Box sx={{
-                    boxShadow: `0px 4.39890718460083px 17.59562873840332px 0px #0000000D`,
-                    background: '#FFFFFF',
-                    width: {md: '100%' , xs: '47%'},
-                }}>
-                    <Typography sx={{
-                        fontFamily: 'Poppins',
-                        fontStyle: 'normal',
-                        fontWeight: '500',
-                        fontSize: {md: '25px' , xs: '22px'},
-                        lineHeight: '37px',
-                        marginLeft: '5%',
-                        color: '#1F8B7B',
+                    <Box sx={{
+                        width: { md: '70%', xs: '90%' }
                     }}>
-                    On This Page
-                    </Typography>
-                    <BlogPoint content='Factors Behind Rising Healthcare Cost'/>
-                    <BlogPoint content='Medical Advancements'/>
-                    <BlogPoint content='Aging Population'/>
-                    <BlogPoint content='Increased Demand'/>
-                    <BlogPoint content='Embrace Preventive Healthcare'/>
-                    <BlogPoint content='Promote Generic Medications'/>
+                        <Typography sx={{
+                            fontWeight: '300',
+                            fontSize: { md: '25px', xs: '20px' },
+                            lineHeight: '38px',
+                            leadingTrim: 'both',
+                            textEdge: 'cap',
 
-                </Box>
+                            color: '#2D4755',
+                        }}>
+                            Jan 11.24
+                        </Typography>
+                        <Typography sx={{
+                            fontWeight: '500',
+                            fontSize: { md: '48px', xs: '38px' },
+                            lineHeight: '112%',
+                            color: '#2D4755',
+                            width: '100%'
+                        }}>
+                            The Rising Cost of Healthcare: Is It Too Late to Bring Costs Down?
+                        </Typography>
+                        <Box sx={{
+                            width: '100%',
+                            marginTop: '4%'
+                        }}>
+                            <Image src={rectAdd} style={{
+                                width: '100%'
 
-                <Box sx={{
-                    marginTop: '20%',
-                    width: {md: '100%' , xs: '47%'}
-                }}>
-                    <BlogInsta />
-                </Box>
-                </Box>
+                            }} alt='redAdd' />
+                        </Box>
+                        <Typography sx={{
+                            fontWeight: '300',
+                            fontSize: { md: '24px', xs: '20px' },
+                            lineHeight: '35px',
+                            color: '#2D4755',
+                            width: '100%',
+                            marginTop: '2%'
+                        }}>
+                            {BlogDetailPage[0].First}
+                        </Typography>
+                    </Box>
+                    {/* ...... */}
+                    <Box sx={{
+                        width: { md: '28%', xs: '100%' },
+                        display: 'flex',
+                        flexDirection: { xs: 'row', md: 'column' },
+                        justifyContent: 'sapce-between',
+                    }}>
+                        <Box sx={{
+                            boxShadow: `0px 4.39890718460083px 17.59562873840332px 0px #0000000D`,
+                            background: '#FFFFFF',
+                            width: { md: '100%', xs: '47%' },
+                        }}>
+                            <Typography sx={{
+                                fontFamily: 'Poppins',
+                                fontStyle: 'normal',
+                                fontWeight: '500',
+                                fontSize: { md: '25px', xs: '22px' },
+                                lineHeight: '37px',
+                                marginLeft: '5%',
+                                color: '#1F8B7B',
+                            }}>
+                                On This Page
+                            </Typography>
+                            <BlogPoint content='Factors Behind Rising Healthcare Cost' />
+                            <BlogPoint content='Medical Advancements' />
+                            <BlogPoint content='Aging Population' />
+                            <BlogPoint content='Increased Demand' />
+                            <BlogPoint content='Embrace Preventive Healthcare' />
+                            <BlogPoint content='Promote Generic Medications' />
+
+                        </Box>
+
+                        <Box sx={{
+                            marginTop: '20%',
+                            width: { md: '100%', xs: '47%' }
+                        }}>
+                            <BlogInsta />
+                        </Box>
+                    </Box>
                 </Box>
                 <Box sx={{
                     width: '96%',
@@ -129,22 +130,22 @@ function page() {
                         // margin: {xs: '0 auto' , md: '0'},
                         display: 'flex',
                         justifyContent: 'space-evenly',
-                        flexDirection: {md: 'row' , xs: 'column'},
+                        flexDirection: { md: 'row', xs: 'column' },
                         marginTop: '4%',
                     }}>
                         <Box sx={{
-                            width: {md: '40%' , xs: '70%'},
+                            width: { md: '40%', xs: '70%' },
                         }}>
                             <Image src={heart} style={{
                                 width: '100%',
-                            }}/>
+                            }} alt='heart' />
                         </Box>
                         <Box sx={{
-                            width: {md: '40%' , xs: '70%'},
+                            width: { md: '40%', xs: '70%' },
                         }}>
                             <Image src={femaleDoctor} style={{
                                 width: '100%',
-                            }}/>
+                            }} alt='femaledoctor' />
                         </Box>
                     </Box>
                     <BlogDetailContent head='Is It Too Late to Bring Costs Down?' content={BlogDetailPage[0].CostsDown} color='#2D4755' fontWeight='500' />
