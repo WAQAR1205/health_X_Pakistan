@@ -6,7 +6,7 @@ import Heading from '../Components/homeComponents/Heading'
 import Rating  from '../Components/homeComponents/Rating'
 import { Box  , Typography ,   } from '@mui/material'
 import mobile from '../../Images/mobile.png'
-// import Rectangle  from '../../Images/Rectangle 10.png'
+import Rectangle  from '../../Images/Rectangle 10.png'
 import Image from "next/image";
 import Button from '@mui/material/Button';
 import Card from '@mui/material/Card';
@@ -51,7 +51,7 @@ function About() {
             alignItems: 'center',
             flexBasis: { xs: '100%', md: '50%' }
           }}>
-            {/* <Image src={Rectangle} /> */}
+            <Image src={Rectangle} />
           </Box>
           <Box sx={{
             flexBasis: { xs: '100%', md: '50%' }
@@ -77,8 +77,8 @@ function About() {
             numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
             optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
             obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
-            nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
-            tenetur error,</p>
+            nihilc , eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
+            error,</p>
           <Button
             variant="contained"
             sx={{
