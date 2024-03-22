@@ -15,10 +15,10 @@ import grp36 from "../../Images/Group 36.png";
 import grp37 from "../../Images/Group 28.png";
 import grp38 from "../../Images/Group 29.png";
 import shazai from "../../Images/shazain 1.png";
-
+import BlogInsta from "../Components/BlogDetailPage/BlogInsta";
 import { TextField, InputAdornment, IconButton } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
-import SendIcon from "@mui/icons-material/Send";
+import BlogNnews2 from "../Components/homeComponents/BlogNnews2";
 
 function page() {
   return (
@@ -38,32 +38,34 @@ function page() {
       >
         <Box
           sx={{
-            flexBasis: { xs: "100%", md: "50%" },
+            display: "flex",
+            justifyContent: "space-between",
+            flexDirection: { md: "row", xs: "column" },
+            width: "98%",
+            margin: "0 auto",
           }}
         >
-          <Content
-            headingTwo="Blogs News & "
-            content="Events"
-            lgC="15px"
-            htl="12px"
-            lh="28px"
-            xsfsc="10px"
-          />
-        </Box>
-
-        <Box
-          sx={{
-            flexBasis: { xs: "100%", md: "50%" },
-          }}
-        >
-          <Heading
-            number="01 "
-            content="We are comiited to your Health "
-            contentColor=""
-            numberColor=""
-            headingColor=""
-            heading="Blogs"
-          />
+          <Box>
+            <Content
+              headingOne="Blog"
+              headingTwo="&nbsp;News &"
+              content="Events"
+            />
+          </Box>
+          <Box
+            sx={{
+              marginTop: "3%",
+            }}
+          >
+            <Heading
+              number="01"
+              numberColor="#E9501D"
+              heading="Blog"
+              headingColor="#2D4755"
+              content="We are committed to your Health"
+              contentColor="#2D4755"
+            />
+          </Box>
         </Box>
       </Box>
 
@@ -76,7 +78,7 @@ function page() {
           justifyContent: "space-around",
           flexDirection: { xs: "column", md: "row " },
           margin: "0 auto",
-          marginTop: "10%",
+          marginTop: "3%",
         }}
       >
         {/* secion1 */}
@@ -88,9 +90,13 @@ function page() {
         >
           <Box>
             <TextField
-              sx={{ width: "50%", padding: "10px 40px" }}
               fullWidth
               variant="outlined"
+              sx={{
+                width: { xs: "100%", sm: "50%", md:"50%"}, // Adjust width based on screen breakpoints
+                padding: { xs: "10px", sm: "10px 40px" }, // Adjust padding based on screen breakpoints
+                margin: { xs: "auto", sm: "unset" },
+              }}
               InputProps={{
                 startAdornment: (
                   <InputAdornment position="start">
@@ -122,7 +128,7 @@ function page() {
             <Typography
               sx={{
                 fontWeight: "300",
-                fontSize: { md: "25px", xs: "20px", xl: "20px" },
+                fontSize: { md: "25px", xs: "16px", xl: "20px" },
                 lineHeight: "90px",
                 color: "#2D4755",
                 marginLeft: "38px",
@@ -147,22 +153,30 @@ function page() {
                 fontSize: { md: "25px", xs: "20px", xl: "24px" },
 
                 color: "#E9501D",
-                margin: "40px 50px",
+                margin: { xs: "20px 25px", md: "25px", lg: "24px",xl: "40px 50px" },
               }}
             >
               Top Posts
             </Typography>
-            <Box sx={{
-               display: 'flex',
-               flexDirection: 'column',
-               gap: '30px'
-              }}>
+            <Box
+              sx={{
+                display: "flex",
+                flexDirection: "column",
+                gap: { xs: "20px", sm: "30px" },
+              }}
+            >
               <Heading
                 number="01 "
                 content="Empowering Pakistanis with Health Knowledge "
                 contentColor=""
                 numberColor="#E9501D"
                 headingColor=""
+                sx={{
+                 
+                  fontSize: { xs: "16px", md: "20px" }, // Responsive font size
+                  fontWeight: "bold",
+                  color: "blue",
+                }}
               />
               <Heading
                 number="02 "
@@ -193,6 +207,14 @@ function page() {
                 headingColor=""
               />
             </Box>
+            <Box
+              sx={{
+                marginTop: "20%",
+                width: { md: "100%", xs: "47%", xl: "100%" },
+              }}
+            >
+              <BlogInsta />
+            </Box>
           </Box>
         </Box>
 
@@ -203,7 +225,14 @@ function page() {
             width: "55%",
           }}
         >
-          section 1
+          <Box
+            sx={{
+              marginTop: { md: "3%", xs: "-10%" },
+              display: "flex",
+            }}
+          >
+            <BlogNnews2 />
+          </Box>
         </Box>
       </Box>
 
