@@ -51,21 +51,20 @@ function About() {
           alignItems: 'center',
           flexBasis: { xs: '100%', md: '50%' }
 
-        }} >
-          {/* <Image  src = {Rectangle} alt='rectangle'/> */}
-        </Box>
-        <Box sx={{
-          flexBasis: { xs: '100%', md: '50%' }
+          }} >
+            <Image  src = {Rectangle} alt='rectangle'/>
+          </Box>
+     <Box  sx = {{  flexBasis : { xs  : '100%' ,  md: '50%' }
 
 
-        }}>
-          <Content headingOne='Transforming Primiary' headingTwo='HealthCare' content='Seamless Access to Expert Care' lgC=' 35px' contentColor=' #1E1E1E' />
-          <Content content="Healthx, powered by TruDoc, is a global healthcare management company in Pakistan. We provide high-quality primary healthcare services using innovative technology. Our offerings include convenient online consultations with expert doctors and wellness advisors."
-            lgC=' 20px'
-            lh='30px'
-          />
-          <Image src={mobile} alt='mobile' />
-        </Box>
+     }}>
+      <Content headingOne= 'Transforming Primiary' headingTwo= 'HealthCare' content= 'Seamless Access to Expert Care' lgC=' 35px' contentColor = ' #1E1E1E' />
+      <Content content = "Healthx, powered by TruDoc, is a global healthcare management company in Pakistan. We provide high-quality primary healthcare services using innovative technology. Our offerings include convenient online consultations with expert doctors and wellness advisors."
+      lgC= ' 20px'
+      lh='30px'
+      />
+      <Image  src={mobile} alt='mobile'/>
+     </Box>
 
       </Box>
     </Box>
