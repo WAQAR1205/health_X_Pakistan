@@ -6,7 +6,7 @@ import Heading from '../Components/homeComponents/Heading'
 import Rating from '../Components/homeComponents/Rating'
 import { Box, Typography, } from '@mui/material'
 import mobile from '../../Images/mobile.png'
-import Rectangle  from '../../Images/Rectangle 10.png'
+// import Rectangle  from '../../Images/Rectangle 10.png'
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
@@ -53,7 +53,7 @@ function About() {
           alignItems: 'center',
           flexBasis: { xs: '100%', md: '50%' }
         }}>
-          <Image src={Rectangle} />
+          {/* <Image src={Rectangle} /> */}
         </Box>
         <Box sx={{
           flexBasis: { xs: '100%', md: '50%' }
