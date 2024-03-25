@@ -113,9 +113,6 @@ function page() {
           </Box>
 
           <Box sx={{
-            // display : 'flex',
-            // gap: '5px',
-
             marginTop: '2%'
           }}>
             <DawnNewsCrasol />
@@ -123,7 +120,7 @@ function page() {
         </Box >
 
         <Box sx={{
-          //border: '1px solid black',
+
           marginTop: '5%',
           width: { md: '40%', xs: '80%' },
           float: { md: 'right', xs: 'right' },
