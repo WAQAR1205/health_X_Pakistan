@@ -15,7 +15,7 @@ import grp36 from "../../Images/Group 36.png";
 import grp37 from "../../Images/Group 28.png";
 import grp38 from "../../Images/Group 29.png";
 import shazai from "../../Images/shazain 1.png";
-import BlogInsta from "../Components/BlogDetailPage/BlogInsta";
+import Instagram from "../Components/Instagram";
 import { TextField, InputAdornment, IconButton } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
 import BlogNnews2 from "../Components/homeComponents/BlogNnews2";
@@ -28,12 +28,11 @@ function page() {
       <Box
         sx={{
           width: "95%",
-
           display: "flex",
           justifyContent: "space-around",
           flexDirection: { xs: "column", md: "row " },
           margin: "0 auto",
-          marginTop: "10%",
+          marginTop: "4%",
         }}
       >
         <Box
@@ -213,7 +212,7 @@ function page() {
                 width: { md: "100%", xs: "47%", xl: "100%" },
               }}
             >
-              <BlogInsta />
+              <Instagram/>
             </Box>
           </Box>
         </Box>
