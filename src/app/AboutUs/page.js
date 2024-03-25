@@ -51,7 +51,7 @@ function About() {
           flexBasis: { xs: '100%', md: '50%' }
 
           }} >
-            <Image  src = {Rectangle} alt='rectangle'/>
+          {/* /  <Image  src = {Rectangle} alt='rectangle'/> */}
           </Box>
      <Box  sx = {{  flexBasis : { xs  : '100%' ,  md: '50%' }
 
