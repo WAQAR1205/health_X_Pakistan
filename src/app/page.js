@@ -187,6 +187,7 @@ export default function Home() {
             marginLeft: { xs: '5%', sm: '5%' }
           }}>
             <Image src={reactangle}
+            alt="shazai"
               style={{
                 width: '100%',
                 // height: { md: '348px', xs: '10px' , sm: '10px'},
@@ -415,7 +416,7 @@ export default function Home() {
             margin: '0 auto'
             // background: 'red'
           }}>
-            <Image src={mobile} style={{
+            <Image src={mobile} alt="shazai" style={{
               width: '100%',
               height: '100%'
             }} />

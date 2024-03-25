@@ -20,7 +20,7 @@ export default function Address({ img, Address = 'Address', mail }) {
             onMouseEnter={() => setIsHover(true)}
             onMouseLeave={() => setIsHover(false)}
         >
-            <Image src={img} style={{ marginTop: '15%' }} />
+            <Image src={img} alt="shazai" style={{ marginTop: '15%' }} />
             <Typography sx={{ fontWeight: '500', fontSize: {lg:'24px' , md: '21px' , xs: '18px'}, lineHeight: '112%', color: '#1F8B7B', marginTop: '2%' }}>
                 {Address}
             </Typography>

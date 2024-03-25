@@ -68,7 +68,7 @@ export default function FAQ({ Question, mt, Answer }) {
                 width: '5%',
                 marginRight: { xs: '1%', md: '2%' },
             }}>
-                <Image src={arrowDown} onClick={handleClick} />
+                <Image alt="shazai" src={arrowDown} onClick={handleClick} />
             </Typography>
 
         </Box>

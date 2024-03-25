@@ -31,21 +31,21 @@ export default function BlogInsta() {
                 <Box sx={{
                     width: '30%',
                 }}>
-                    <Image src={Blog1} style={{
+                    <Image src={Blog1} alt="shazai" style={{
                         width: '100%',
                     }} />
                 </Box>
                 <Box sx={{
                     width: '30%'
                 }}>
-                    <Image src={Blog2} style={{
+                    <Image src={Blog2} alt="shazai" style={{
                         width: '100%',
                     }} />
                 </Box>
                 <Box sx={{
                     width: '30%'
                 }}>
-                    <Image src={Blog3} style={{
+                    <Image src={Blog3} alt="shazai" style={{
                         width: '100%',
                     }} />
                 </Box>
@@ -60,21 +60,21 @@ export default function BlogInsta() {
                 <Box sx={{
                     width: '30%',
                 }}>
-                    <Image src={blog4} style={{
+                    <Image src={blog4} alt="shazai" style={{
                         width: '100%',
                     }} />
                 </Box>
                 <Box sx={{
                     width: '30%'
                 }}>
-                    <Image src={blog5} style={{
+                    <Image src={blog5} alt="shazai" style={{
                         width: '100%',
                     }} />
                 </Box>
                 <Box sx={{
                     width: '30%'
                 }}>
-                    <Image src={blog6} style={{
+                    <Image src={blog6} alt="shazai" style={{
                         width: '100%',
                     }} />
                 </Box>

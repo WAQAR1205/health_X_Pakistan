@@ -13,7 +13,7 @@ export default function Points() {
                     width: { sm: '100%', xs: '90%' },
                     marginTop: '3%',
                 }}>
-                    <Image src={tick} width={20} height={20} /> {/* Adjust the width and height of the tick image */}
+                    <Image src={tick} alt="shazai" width={20} height={20} /> {/* Adjust the width and height of the tick image */}
                     <Typography sx={{ marginLeft: '10px' }}>{content}</Typography> {/* Adjust the margin as needed */}
                 </Box>
             ))}

@@ -97,6 +97,7 @@ function Frequently() {
                     >
                         <Image
                             src={grp32} // Assuming the image names are sequential (grp32, grp33, ...)
+                            alt="shazai"
                             style={{ width: '100%' }}
                         />
                     </Box>
@@ -105,7 +106,7 @@ function Frequently() {
                         display: 'inline-block',
                         width: { xs: '16%' }
                     }} >
-                        <Image src={grp33} style={{
+                        <Image src={grp33} alt="shazai" style={{
                             width: '100%'
                         }} />
                     </Box>
@@ -115,7 +116,7 @@ function Frequently() {
 
                         width: { xs: '16%' }
                     }}>
-                        <Image src={grp34} style={{
+                        <Image src={grp34} alt="shazai" style={{
                             width: '100%'
                         }} />
                     </Box>
@@ -125,7 +126,7 @@ function Frequently() {
 
                         width: { xs: '16%' }
                     }}>
-                        <Image src={grp35} style={{
+                        <Image src={grp35} alt="shazai" style={{
                             width: '100%'
                         }} />
                     </Box>
@@ -134,7 +135,7 @@ function Frequently() {
                         display: 'inline-block',
                         width: { xs: '19%' }
                     }}>
-                        <Image src={grp36} style={{
+                        <Image src={grp36} alt="shazai" style={{
                             width: '100%'
                         }} />
                     </Box>
@@ -201,8 +202,8 @@ function Frequently() {
                         marginBottom: { xs: '4%' },
                         gap: '10px'
                     }}>
-                        <Image src={grp37} style={{ width: '35%' }} />
-                        <Image src={grp38} style={{ width: '35%' }} />
+                        <Image src={grp37} alt="shazai" style={{ width: '35%' }} />
+                        <Image src={grp38} alt="shazai" style={{ width: '35%' }} />
                     </Box>
                 </Box>
                 <Box sx={{
@@ -210,7 +211,7 @@ function Frequently() {
                     // marginTop: {md: '0' , xs : '29%'},
                     margin: { xs: '0 auto' },
                 }}>
-                    <Image src={shazai} height={400} />
+                    <Image src={shazai} alt="shazai" height={400} />
                 </Box>
             </Box>
         </Box>

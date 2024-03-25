@@ -329,6 +329,7 @@ function page() {
             >
               <Image
                 src={grp32} // Assuming the image names are sequential (grp32, grp33, ...)
+                alt="shazai"
                 style={{ width: "100%" }}
               />
             </Box>
@@ -341,6 +342,7 @@ function page() {
             >
               <Image
                 src={grp33}
+                alt="shazai"
                 style={{
                   width: "100%",
                 }}
@@ -356,6 +358,7 @@ function page() {
             >
               <Image
                 src={grp34}
+                alt="shazai"
                 style={{
                   width: "100%",
                 }}
@@ -371,6 +374,7 @@ function page() {
             >
               <Image
                 src={grp35}
+                alt="shazai"
                 style={{
                   width: "100%",
                 }}
@@ -385,6 +389,7 @@ function page() {
             >
               <Image
                 src={grp36}
+                alt="shazai"
                 style={{
                   width: "100%",
                 }}
@@ -465,8 +470,8 @@ function page() {
                 gap: "10px",
               }}
             >
-              <Image src={grp37} style={{ width: "35%" }} />
-              <Image src={grp38} style={{ width: "35%" }} />
+              <Image src={grp37} alt="shazai" style={{ width: "35%" }} />
+              <Image src={grp38} alt="shazai" style={{ width: "35%" }} />
             </Box>
           </Box>
           <Box
@@ -476,7 +481,7 @@ function page() {
               margin: { xs: "0 auto" },
             }}
           >
-            <Image src={shazai} height={400} />
+            <Image src={shazai} alt="shazai" height={400} />
           </Box>
         </Box>
       </Box>

@@ -6,7 +6,6 @@ import Heading from '../Components/homeComponents/Heading'
 import Rating from '../Components/homeComponents/Rating'
 import { Box, Typography, } from '@mui/material'
 import mobile from '../../Images/mobile.png'
-// import Rectangle  from '../../Images/Rectangle 10.png'
 
 import homePageData from '../mockData/homePageData/homePage'
 import Image from 'next/image'

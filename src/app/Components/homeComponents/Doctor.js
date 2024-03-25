@@ -5,7 +5,7 @@ function Doctor({ name, country, img, speciality, bg}) {
     return (
         <Box sx={{ margin: '0 auto', width: {md: '100%' , xs: '100%'} }}>
             <Box sx={{ display: 'flex', justifyContent: 'space-evenly', width: '100%' }}>
-                <Image src={img} style={{ width: '100%' }} />
+                <Image src={img} alt="shazai" style={{ width: '100%' }} />
                 <Box sx={{
                     width: '15%',
                     background: bg,

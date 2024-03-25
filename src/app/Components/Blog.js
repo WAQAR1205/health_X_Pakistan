@@ -41,7 +41,7 @@ export default function Blog({ img, head, Content, type }) {
             </Typography>
             {/* Image */}
             <Box sx={{ marginTop: '1vw', width: {lg: '80%' , md: '90%' , xs: '100%'} }}>
-                <Image src={img} height={200} style={{
+                <Image src={img} alt="shazai" height={200} style={{
                     width: '100%',
                 }}/>
             </Box>

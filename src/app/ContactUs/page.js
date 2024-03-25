@@ -43,7 +43,7 @@ export default function ContactUs() {
           position: 'absolute',
           top: '-20%',
         }}>
-        <Image src={model} style={{
+        <Image src={model} alt="shazai" style={{
           width: '100%',
         }} />
         </Box>
