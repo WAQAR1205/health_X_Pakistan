@@ -1,5 +1,5 @@
 import {Box , Typography} from '@mui/material'
-export default function Heading({number , heading , content , numberColor , headingColor , contentColor , flexFlow , md='150px' , mdc='303px'}){
+export default function Heading({number , heading , content , numberColor , headingColor , contentColor , flexFlow , md='150px' , mdc='303px',xs='70%'}){
     return(
         <Box sx={{
             display: 'flex',
@@ -27,7 +27,7 @@ export default function Heading({number , heading , content , numberColor , head
             </Typography>
 
             <Box sx={{
-              width: {xs: '70%'}
+              width: {xs: xs}
             }}>
               <Typography sx={{
                 width: {md: md , xs: '50%' },
