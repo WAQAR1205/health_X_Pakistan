@@ -6,14 +6,7 @@ export default function HalfCard({heading,content}){
             fontFamily: 'Poppins',
             fontStyle: 'normal',
             marginTop : '0px',
-            //border: '1px solid #E9501D',
-            //height:'200px',
             width: '375px',
-            //top :'685px',
-            //left : '100',
-            //padding: '10px', 
-             
-             
             boxShadow: 1,
             borderRadius : 1
             

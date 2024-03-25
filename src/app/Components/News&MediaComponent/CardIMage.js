@@ -1,5 +1,4 @@
 import { Box } from "@mui/material";
-import HalfCard from "./HalfCard";
 import Image from "next/image";
 
 export default function CardImage({img , marginTop}){

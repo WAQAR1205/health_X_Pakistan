@@ -44,8 +44,7 @@ function page() {
 
         {/* News Cards */}
         <Box sx={{
-          //border:'1px solid black',
-          display:'flex',
+         display:'flex',
           flexWrap:'wrap',
           gap:'20px',
           marginTop:'3%'
