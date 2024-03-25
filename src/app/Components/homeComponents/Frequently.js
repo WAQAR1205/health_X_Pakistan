@@ -167,9 +167,9 @@ function Frequently() {
                         Healthcare Solution
                     </Typography>
                     <Typography sx={{
-                        width: { md: '100%', xs: '80%' },
+                        width: { md: '100%', xs: '100%' },
                         fontStyle: 'normal',
-                        fontWeight: '265',
+                        fontWeight: '300',
                         fontSize: { md: '40px', xs: '20px', lg: '42px', xl: '44px' },
                         lineHeight: '120%',
                         /* or 69px */
