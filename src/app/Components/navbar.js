@@ -1,3 +1,4 @@
+'use client'
 import { AppBar, Toolbar, Box, Select, MenuItem, Typography, List, ListItem, IconButton, Drawer } from '@mui/material';
 import { useState } from 'react';
 import Image from 'next/image';
