@@ -19,7 +19,7 @@ export default function Cart({ src, heading, content }) {
         marginTop: '15%',
         marginLeft: {md: '0' , sm: '5%' , xs: '5%'},
       }}>
-      <Image src={src}  style={{width: '90%'}} />
+      <Image src={src} alt="shazai"  style={{width: '90%'}} />
       </Box>
 
       <Typography

@@ -9,9 +9,9 @@ import deal from '../../Images/deal 1.png'
 import ImageList from "../Components/solutions/ImageList"
 import MobileBox from '../Components/solutions/MobileBox'
 import Cart from '../Components/solutions/Cart'
-import wait from '../../Images/waiting 1.png'
-import rushed from '../../Images/rushed 1.png'
-import dollar from '../../Images/dollar.png'
+import down from '../../Images/downfall.png'
+import long from '../../Images/longwait.png'
+import quality from '../../Images/quality.png'
 import Navbar from "../Components/navbar"
 
 export default function IndividualsAndFamilies() {
@@ -36,22 +36,22 @@ export default function IndividualsAndFamilies() {
                     <Box sx={{
                         width: { md: '50%', xs: '100%' }
                     }}>
-                        <Content headingTwo='Solution' content='For Individuals & Families' />
+                        <Content headingTwo='Solution' content='For Government' />
                         <Typography sx={{
                             fontWeight: '300',
-                            fontSize: '20px',
+                            fontSize: {md: '20px' , xs: '17px'},
                             lineHeight: '30px',
                             marginTop: '3%',
                             color: '#1E1E1E',
                             width: '100%',
                         }}>
-                            In our fast-paced lives, visiting the doctor can be burdensome. Healthx offers convenient and safe healthcare solutions, avoiding the risks of self-diagnosis and treatment.
+                            Healthx addresses government challenges by offering an innovative, cost-effective, and efficient healthcare delivery model through our online doctor service, enhancing accessibility for citizens.
                         </Typography>
                     </Box>
                     <Box sx={{
                         width: { md: '30%', xs: '100%' }
                     }}>
-                        <Heading number='01' numberColor='#E9501D' heading='Individual & Families' headingColor='#2D4755' content=' Solutions that Can Grow as You Do' contentColor='#2D4755' md='100%' mdc='120%' />
+                        <Heading number='01' numberColor='#E9501D' heading='Government' headingColor='#2D4755' content='Solutions that Can Grow as You Do' contentColor='#2D4755' md='100%' mdc='120%' />
                     </Box>
                 </Box>
 
@@ -62,9 +62,9 @@ export default function IndividualsAndFamilies() {
                     flexDirection: { xs: 'column', md: 'row' },
                     marginTop: '4%',
                 }}>
-                    <Cart img={wait} one='No more' two='&nbsp;waiting in line' content='At Healthx, no more waiting. Access online doctors hassle-free. Book consultations, get prescriptions, and manage health records conveniently online.' />
-                    <Cart img={rushed} one='Rushed' two='&nbsp;visits' content='Traditional visits feel rushed, leading to unnecessary costs. Healthx&#39;s 24/7 online doctors offer thorough attention and treatment, saving expenses.' />
-                    <Cart img={dollar} one='Easily' two='&nbsp;Accessible' content='Our team offers personalized, cost-effective healthcare, minimizing unnecessary expenses through remote consultations and evidence-based practice.' />
+                    <Cart img={down} one='Reduce' two='&nbsp; Healthcare Usage' content='Healthx&#39;s online doctor service minimizes healthcare service overutilization, ensuring cost control and effective resource allocation for governments.' />
+                    <Cart img={long} one='Long' two='&nbsp; Waiting hours' content='Healthx provides an online doctor service, eliminating long wait times and offering personalized treatments from licensed physicians and wellness advisors 24/7.' />
+                    <Cart img={quality} one='Quality' two='&nbsp;Healthcare' content='Our government healthcare solution delivers quality primary healthcare, promoting wellness and efficiency while reducing resource burdens.' />
                 </Box>
 
                 <Box>

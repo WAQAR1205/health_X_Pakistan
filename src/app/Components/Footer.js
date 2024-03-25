@@ -241,7 +241,7 @@ function Footer() {
                         // height: '24px',
                         marginTop: '5%',
                     }}>
-                        <Link href='CorporateHealthSolutions'>
+                        <Link href='/CorporateHealthSolutions'>
                         <Typography sx={{
                             fontStyle: 'normal',
                             fontWeight: '300',
@@ -261,7 +261,7 @@ function Footer() {
                         // height: '24px',
                         marginTop: '5%',
                     }}>
-                        <Link href='/Health Incurrence'>
+                        <Link href='/HealthIncurrence'>
                         <Typography sx={{
                             fontStyle: 'normal',
                             fontWeight: '300',
@@ -417,10 +417,10 @@ function Footer() {
                         marginTop: {xs: '5%' , md: '3%' , lg: '0'},
                         marginLeft: {xs: '0' , lg: '5%' , md: '7%'}
                     }}>
-                        <Image src={facebook} />
-                        <Image src={linkedin} />
-                        <Image src={twitter} />
-                        <Image src={insta} />
+                        <Image src={facebook} alt="shazai" />
+                        <Image src={linkedin}  alt="shazai" />
+                        <Image src={twitter} alt="shazai" />
+                        <Image alt="shazai" src={insta} />
                     </Box>
             <Box sx={{
                 margin: '5% auto',
