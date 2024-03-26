@@ -117,12 +117,12 @@ function page() {
               >
                 <Input
                   disableUnderline
-                  placeholder="Email"
+                  placeholder="search"
                   sx={{
                     fontWeight: "300",
                     fontSize: { lg: "13px", md: "12px", xs: "11px" },
-                    padding: { md: "3%", xs: "1%" },
-                    width: { lg: "65%", md: "65%", xs: "60%" }, // Adjusted width for different screen sizes
+                    // padding: { md: "3%", xs: "1%" },
+                    width: { lg: "50%", md: "65%", xs: "60%" },
                   }}
                 />
                 <Button
@@ -132,9 +132,10 @@ function page() {
                   fontWeight="500"
                   fontSize={{ lg: "16px", md: "12px", xs: "11px" }}
                   lineHeight="24px"
-                  title="Subscribe"
-                  width={{ lg: "35%", md: "35%", xs: "40%" }} // Adjusted width for different screen sizes
-                  mt={{ xs: "8", md: "-3px", lg: "-5px" }}
+                  title="Search"
+                  width={{ lg: "35%", md: "35%", xs: "40%" }}
+                  mt={{ xs: "5", md: "-3px", lg: "1px" }}
+                  ml={{ xs: "5", md: "-3px", lg: "1px" }}
                 >
                   Search
                 </Button>
