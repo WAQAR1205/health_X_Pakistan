@@ -268,6 +268,7 @@ function page() {
           margin: "0 auto",
           marginTop: "4%",
           width: "96%",
+          height: { xs: "900px", md: "auto" },
           background:
             "linear-gradient(80.65deg, rgba(233, 80, 29, 0.12) 5.4%, rgba(31, 139, 123, 0.12) 47.64%, rgba(235, 198, 98, 0.12) 97.13%)",
         }}
@@ -306,6 +307,7 @@ function page() {
                 fontWeight: "500",
                 fontSize: "32px",
                 lineHeight: "111.64%",
+                /* identical to box height, or 36px */
 
                 color: "#CFCFCF",
               }}
@@ -325,6 +327,7 @@ function page() {
           }}
         >
           <Box
+            // ref = {svgRef}
             sx={{
               animationName: "move",
               animationDuration: "10s",
@@ -332,15 +335,16 @@ function page() {
               animationIterationCount: " infinite",
 
               display: "flex",
-              gap: "10px",
+              gap: "10px", // Adjust the gap between grid items as needed
               width: "100%",
 
               margin: " 0  auto",
               marginTop: "3%",
 
+              // Enable smooth scrolling on iOS devices
               WebkitOverflowScrolling: "touch",
               "&::-webkit-scrollbar": {
-                display: "none",
+                display: "none", // Hide the scrollbar
               },
             }}
           >
@@ -349,16 +353,13 @@ function page() {
                 display: "inline-block",
                 width: { xs: "16%" },
               }}
+              // Assign the ref
             >
-<<<<<<< Updated upstream
               <Image
                 src={grp32} // Assuming the image names are sequential (grp32, grp33, ...)
                 alt="shazai"
                 style={{ width: "100%" }}
               />
-=======
-              <Image src={grp32} alt="shazai" style={{ width: "100%" }} />
->>>>>>> Stashed changes
             </Box>
 
             <Box
@@ -449,7 +450,7 @@ function page() {
                 fontWeight: "600",
                 fontSize: { md: "40px", xs: "20px", lg: "44px", xl: "47px" },
                 lineHeight: "120%",
-
+                /* identical to box height, or 79px */
                 margin: "0 auto",
                 color: "#E9501D",
               }}
@@ -463,7 +464,7 @@ function page() {
                 fontWeight: "300",
                 fontSize: { md: "40px", xs: "18px", lg: "42px", xl: "44px" },
                 lineHeight: "120%",
-
+                /* or 69px */
                 marginTop: { xs: "-16%", lg: "-5%", xl: "-2%" },
                 color: "#1E1E1E",
                 margin: "0 auto",
@@ -498,18 +499,8 @@ function page() {
                 margin: "0 auto",
               }}
             >
-<<<<<<< HEAD
-              <Image src={grp37} alt="shazai" style={{ width: "35%" }} />
-              <Image src={grp38} alt="shazai" style={{ width: "35%" }} />
-=======
-<<<<<<< Updated upstream
-              <Image src={grp37} style={{ width: "35%" }} />
-              <Image src={grp38} style={{ width: "35%" }} />
-=======
               <Image src={grp37} alt="shazai" style={{ width: "45%" }} />
               <Image src={grp38} alt="shazai" style={{ width: "45%" }} />
->>>>>>> Stashed changes
->>>>>>> 983fe7dc88294ea69498f0361fd2217e758452b2
             </Box>
           </Box>
           <Box
@@ -518,12 +509,6 @@ function page() {
               margin: { xs: "0 auto" },
             }}
           >
-<<<<<<< HEAD
-            <Image src={shazai} alt="shazai" height={400} />
-=======
-<<<<<<< Updated upstream
-            <Image src={shazai} height={400} />
-=======
             <Image
               src={shazai}
               alt="shazai"
@@ -532,8 +517,6 @@ function page() {
                 objectFit: "contain",
               }}
             />
->>>>>>> Stashed changes
->>>>>>> 983fe7dc88294ea69498f0361fd2217e758452b2
           </Box>
         </Box>
       </Box>
