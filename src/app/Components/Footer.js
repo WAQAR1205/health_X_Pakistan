@@ -102,27 +102,27 @@ function Footer() {
 
                     <Box sx={{
                         width: '90%',
-                        // height: '24px',
                         marginTop: {md: '20%' , xs: '7%'},
                     }}>
+                        <Link href='/AboutUs' style={{ textDecoration: 'none'}}>
                         <Typography sx={{
                             fontStyle: 'normal',
                             fontWeight: '300',
                             fontsize: {lg: '16px' , md: '12px' , xs: '11px'},
                             lineHeight: '24px',
                             /* identical to box height */
-
+                            
                             color: '#9E9E9E',
                         }}>
                             About us
                         </Typography>
+                            </Link>
                     </Box>
                     <Box sx={{
                         width: '90%',
-                        // height: '24px',
                         marginTop: '5%',
                     }}>
-                        <Link href='/FAQ'>
+                        <Link href='/FAQ' style={{ textDecoration: 'none'}}>
                         <Typography sx={{
                             fontStyle: 'normal',
                             fontWeight: '300',
@@ -139,10 +139,9 @@ function Footer() {
 
                     <Box sx={{
                         width: '90%',
-                        // height: '24px',
                         marginTop: '5%',
                     }}>
-                        <Link href='/NewsnMedia'>
+                        <Link href='/NewsnMedia' style={{ textDecoration: 'none'}}>
                         <Typography sx={{
                             fontStyle: 'normal',
                             fontWeight: '300',
@@ -159,10 +158,9 @@ function Footer() {
 
                     <Box sx={{
                         width: '90%',
-                        // height: '24px',
                         marginTop: '5%',
                     }}>
-                        <Link href='/ContactUs'>
+                        <Link href='/ContactUs' style={{ textDecoration: 'none'}}>
                         <Typography sx={{
                             fontStyle: 'normal',
                             fontWeight: '300',
@@ -179,10 +177,9 @@ function Footer() {
 
                     <Box sx={{
                         width: '90%',
-                        // height: '24px',
                         marginTop: '5%',
                     }}>
-                        <Link href='#'>
+                        <Link href='#' style={{ textDecoration: 'none'}}>
                         <Typography sx={{
                             fontStyle: 'normal',
                             fontWeight: '300',
@@ -221,7 +218,7 @@ function Footer() {
                         width: {md: '100%' , xs : '90%'},
                         marginTop: {md: '20%' ,  xs : '5%'},
                     }}>
-                        <Link href='/Individuals&Families'>
+                        <Link href='/Individuals&Families' style={{ textDecoration: 'none'}}>
                         <Typography sx={{
                             fontStyle: 'normal',
                             fontWeight: '300',
@@ -241,7 +238,7 @@ function Footer() {
                         // height: '24px',
                         marginTop: '5%',
                     }}>
-                        <Link href='/CorporateHealthSolutions'>
+                        <Link href='/CorporateHealthSolutions' style={{ textDecoration: 'none'}}>
                         <Typography sx={{
                             fontStyle: 'normal',
                             fontWeight: '300',
@@ -258,10 +255,9 @@ function Footer() {
 
                     <Box sx={{
                         width: {md: '100%' , xs : '90%'},
-                        // height: '24px',
                         marginTop: '5%',
                     }}>
-                        <Link href='/HealthIncurrence'>
+                        <Link href='/HealthIncurrence' style={{ textDecoration: 'none'}}>
                         <Typography sx={{
                             fontStyle: 'normal',
                             fontWeight: '300',
@@ -278,10 +274,9 @@ function Footer() {
 
                     <Box sx={{
                         width: {md: '100%' , xs : '90%'},
-                        // height: '24px',
                         marginTop: '5%',
                     }}>
-                        <Link href='/GovernmentHealthInitiate'>
+                        <Link href='/GovernmentHealthInitiate' style={{ textDecoration: 'none'}}>
                         <Typography sx={{
                             fontStyle: 'normal',
                             fontWeight: '300',
@@ -304,7 +299,6 @@ function Footer() {
                 }}>
                     <Box sx={{
                         width: {md: '100%' , xs : '90%'},
-                        // height: '27px',
                     }}>
                         <Typography sx={{
                             fontStyle: 'normal',
@@ -319,25 +313,22 @@ function Footer() {
                     </Box>
 
                     <Box sx={{
-                        // background: 'red',
                         width: {md: '100%' , xs : '10%'},
-                        // height: '24px',
                         marginTop: {md: '20%' , xs: '5%'},
                         display: 'flex',
                         justifyContent: 'space-evenly',
                         alignItems: 'center',
-                        // gap: '1%',
                     }}>
                         <Typography sx={{
                             marginLeft: {md: '0' , xs :'38%'},
-                            width: {lg:'12%' , xs: '50%' , md: '12%'},
+                            width: {lg:'12%' , xs: '90%' , md: '12%'},
                         }}>
                             <Image src={sms} alt='Mail' />
                         </Typography>
                         <Typography sx={{
                             fontStyle: 'normal',
                             fontWeight: '300',
-                            fontSize: {lg: '16px' , md: '12px' , xs: '11px'},
+                            fontSize: {lg: '16px' , md: '12px' , xs: '10px'},
                             lineHeight: '24px',
                             /* identical to box height */
                             marginBottom: '2%',
@@ -353,7 +344,7 @@ function Footer() {
                         height: '24px',
                         marginTop: '5%',
                     }}>
-                        <Link href='/CorporateHealthSolutions'>
+                        <Link href='/CorporateHealthSolutions' style={{ textDecoration: 'none'}}>
                         <Typography sx={{
                             fontStyle: 'normal',
                             fontWeight: '300',
@@ -370,10 +361,9 @@ function Footer() {
 
                     <Box sx={{
                         width: {md: '100%' , xs : '90%'},
-                        // height: '24px',
                         marginTop: '5%',
                     }}>
-                        <Link href='/HealthIncurrence'>
+                        <Link href='/HealthIncurrence' style={{ textDecoration: 'none'}}>
                         <Typography sx={{
                             fontStyle: 'normal',
                             fontWeight: '300',
@@ -390,10 +380,9 @@ function Footer() {
 
                     <Box sx={{
                         width: {md: '100%' , xs : '90%'},
-                        // height: '24px',
                         marginTop: '5%',
                     }}>
-                        <Link href='GovernmentHealthInitiate'>
+                        <Link href='GovernmentHealthInitiate' style={{ textDecoration: 'none'}}>
                         <Typography sx={{
                             fontStyle: 'normal',
                             fontWeight: '300',
@@ -425,7 +414,6 @@ function Footer() {
             <Box sx={{
                 margin: '5% auto',
                 width: {md: '80%' , xs : '90%'},
-                // height: '2px',
                 border: '1px solid #2D4755',
             }}></Box>
 
@@ -434,7 +422,6 @@ function Footer() {
                 justifyContent: 'space-around',
                 flexWrap: {md: 'nowrap' , xs: 'wrap'},
                 flexDirection: {md: 'row' , xs: 'column'},
-                // textAlign: {xs: 'center'},
             }}>
                 <Box>
                     <Typography sx={{
@@ -448,7 +435,6 @@ function Footer() {
                     }}>Join or newsletter</Typography>
                     <Typography sx={{
                         width: {md: '252px' , xs:'90%'},
-                        // height: '20px',
                         fontStyle: 'normal',
                         fontWeight: '300',
                         fontSize: {lg: '13px' , md: '12px' , xs: '11px'},
