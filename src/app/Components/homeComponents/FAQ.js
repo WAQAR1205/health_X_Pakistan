@@ -13,7 +13,7 @@ export default function FAQ({ Question, mt, Answer }) {
 
     const handleClick = () => {
         setIsClick(!isClick);
-        toggleAnswer(); // Call toggleAnswer to toggle the answer visibility
+        toggleAnswer(); 
     };
 
     return (
@@ -66,7 +66,7 @@ export default function FAQ({ Question, mt, Answer }) {
             <Typography sx={{
                 marginTop: '2%',
                 width: '5%',
-                marginRight: { xs: '1%', md: '2%' },
+                marginRight: { xs: '8%', md: '2%' },
             }}>
                 <Image alt="shazai" src={arrowDown} onClick={handleClick} />
             </Typography>
