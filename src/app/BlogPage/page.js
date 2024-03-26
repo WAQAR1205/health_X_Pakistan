@@ -498,8 +498,18 @@ function page() {
                 margin: "0 auto",
               }}
             >
+<<<<<<< HEAD
               <Image src={grp37} alt="shazai" style={{ width: "35%" }} />
               <Image src={grp38} alt="shazai" style={{ width: "35%" }} />
+=======
+<<<<<<< Updated upstream
+              <Image src={grp37} style={{ width: "35%" }} />
+              <Image src={grp38} style={{ width: "35%" }} />
+=======
+              <Image src={grp37} alt="shazai" style={{ width: "45%" }} />
+              <Image src={grp38} alt="shazai" style={{ width: "45%" }} />
+>>>>>>> Stashed changes
+>>>>>>> 983fe7dc88294ea69498f0361fd2217e758452b2
             </Box>
           </Box>
           <Box
@@ -508,7 +518,22 @@ function page() {
               margin: { xs: "0 auto" },
             }}
           >
+<<<<<<< HEAD
             <Image src={shazai} alt="shazai" height={400} />
+=======
+<<<<<<< Updated upstream
+            <Image src={shazai} height={400} />
+=======
+            <Image
+              src={shazai}
+              alt="shazai"
+              style={{
+                width: "100%",
+                objectFit: "contain",
+              }}
+            />
+>>>>>>> Stashed changes
+>>>>>>> 983fe7dc88294ea69498f0361fd2217e758452b2
           </Box>
         </Box>
       </Box>

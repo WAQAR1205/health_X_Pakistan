@@ -113,6 +113,7 @@ function Footer() {
                         </Typography>
                     </Box>
 
+<<<<<<< HEAD
                     <Box sx={{
                         width: '90%',
                         marginTop: {md: '20%' , xs: '7%'},
@@ -127,10 +128,31 @@ function Footer() {
                             
                             color: '#9E9E9E',
                         }}>
+=======
+                    <Box
+                        sx={{
+                            width: "90%",
+                            // height: '24px',
+                            marginTop: { md: "20%", xs: "7%" },
+                        }}
+                    >
+                        <Typography
+                            sx={{
+                                fontStyle: "normal",
+                                fontWeight: "300",
+                                fontsize: { lg: "16px", md: "12px", xs: "11px" },
+                                lineHeight: "24px",
+                                /* identical to box height */
+
+                                color: "#9E9E9E",
+                            }}
+                        >
+>>>>>>> 983fe7dc88294ea69498f0361fd2217e758452b2
                             About us
                         </Typography>
                             </Link>
                     </Box>
+<<<<<<< HEAD
                     <Box sx={{
                         width: '90%',
                         marginTop: '5%',
@@ -142,6 +164,23 @@ function Footer() {
                             fontsize: {lg: '16px' , md: '12px' , xs: '11px'},
                             lineHeight: '24px',
                             /* identical to box height */
+=======
+                    <Box
+                        sx={{
+                            width: "90%",
+                            // height: '24px',
+                            marginTop: "5%",
+                        }}
+                    >
+                        <Link href="/FAQ">
+                            <Typography
+                                sx={{
+                                    fontStyle: "normal",
+                                    fontWeight: "300",
+                                    fontsize: { lg: "16px", md: "12px", xs: "11px" },
+                                    lineHeight: "24px",
+                                    /* identical to box height */
+>>>>>>> 983fe7dc88294ea69498f0361fd2217e758452b2
 
                                     color: "#9E9E9E",
                                 }}
@@ -151,6 +190,7 @@ function Footer() {
                         </Link>
                     </Box>
 
+<<<<<<< HEAD
                     <Box sx={{
                         width: '90%',
                         marginTop: '5%',
@@ -186,10 +226,33 @@ function Footer() {
                                 }}
                             >
                                 Contact us
+=======
+                    <Box
+                        sx={{
+                            width: "90%",
+                            // height: '24px',
+                            marginTop: "5%",
+                        }}
+                    >
+                        <Link href="/NewsnMedia">
+                            <Typography
+                                sx={{
+                                    fontStyle: "normal",
+                                    fontWeight: "300",
+                                    fontSize: { lg: "16px", md: "12px", xs: "11px" },
+                                    lineHeight: "24px",
+                                    /* identical to box height */
+
+                                    color: "#9E9E9E",
+                                }}
+                            >
+                                New’s and Media
+>>>>>>> 983fe7dc88294ea69498f0361fd2217e758452b2
                             </Typography>
                         </Link>
                     </Box>
 
+<<<<<<< HEAD
                     <Box sx={{
                         width: '90%',
                         marginTop: '5%',
@@ -207,6 +270,54 @@ function Footer() {
                             Digital Videos
                         </Typography>
                             </Link>
+=======
+                    <Box
+                        sx={{
+                            width: "90%",
+                            // height: '24px',
+                            marginTop: "5%",
+                        }}
+                    >
+                        <Link href="/ContactUs">
+                            <Typography
+                                sx={{
+                                    fontStyle: "normal",
+                                    fontWeight: "300",
+                                    fontSize: { lg: "16px", md: "12px", xs: "11px" },
+                                    lineHeight: "24px",
+                                    /* identical to box height */
+
+                                    color: "#9E9E9E",
+                                }}
+                            >
+                                Contact us
+                            </Typography>
+                        </Link>
+                    </Box>
+
+                    <Box
+                        sx={{
+                            width: "90%",
+                            // height: '24px',
+                            marginTop: "5%",
+                        }}
+                    >
+                        <Link href="#">
+                            <Typography
+                                sx={{
+                                    fontStyle: "normal",
+                                    fontWeight: "300",
+                                    fontSize: { lg: "16px", md: "12px", xs: "11px" },
+                                    lineHeight: "24px",
+                                    /* identical to box height */
+
+                                    color: "#9E9E9E",
+                                }}
+                            >
+                                Digital Videos
+                            </Typography>
+                        </Link>
+>>>>>>> 983fe7dc88294ea69498f0361fd2217e758452b2
                     </Box>
                 </Box>
 
@@ -234,6 +345,7 @@ function Footer() {
                         </Typography>
                     </Box>
 
+<<<<<<< HEAD
                     <Box sx={{
                         width: {md: '100%' , xs : '90%'},
                         marginTop: {md: '20%' ,  xs : '5%'},
@@ -327,10 +439,130 @@ function Footer() {
                             /* identical to box height */
 
                         }}>
+=======
+                    <Box
+                        sx={{
+                            width: { md: "100%", xs: "90%" },
+                            marginTop: { md: "20%", xs: "5%" },
+                        }}
+                    >
+                        <Link href="/Individuals&Families">
+                            <Typography
+                                sx={{
+                                    fontStyle: "normal",
+                                    fontWeight: "300",
+                                    fontSize: { lg: "16px", md: "12px", xs: "11px" },
+                                    lineHeight: "24px",
+                                    /* identical to box height */
+
+                                    color: "#9E9E9E",
+                                }}
+                            >
+                                Individuals & Families
+                            </Typography>
+                        </Link>
+                    </Box>
+
+                    <Box
+                        sx={{
+                            width: { md: "100%", xs: "90%" },
+                            // height: '24px',
+                            marginTop: "5%",
+                        }}
+                    >
+                        <Link href="/CorporateHealthSolutions">
+                            <Typography
+                                sx={{
+                                    fontStyle: "normal",
+                                    fontWeight: "300",
+                                    fontSize: { lg: "16px", md: "12px", xs: "11px" },
+                                    lineHeight: "24px",
+                                    /* identical to box height */
+
+                                    color: "#9E9E9E",
+                                }}
+                            >
+                                Corporate Health Solutions
+                            </Typography>
+                        </Link>
+                    </Box>
+
+                    <Box
+                        sx={{
+                            width: { md: "100%", xs: "90%" },
+                            // height: '24px',
+                            marginTop: "5%",
+                        }}
+                    >
+                        <Link href="/HealthIncurrence">
+                            <Typography
+                                sx={{
+                                    fontStyle: "normal",
+                                    fontWeight: "300",
+                                    fontSize: { lg: "16px", md: "12px", xs: "11px" },
+                                    lineHeight: "24px",
+                                    /* identical to box height */
+
+                                    color: "#9E9E9E",
+                                }}
+                            >
+                                Health Incurrence
+                            </Typography>
+                        </Link>
+                    </Box>
+
+                    <Box
+                        sx={{
+                            width: { md: "100%", xs: "90%" },
+                            // height: '24px',
+                            marginTop: "5%",
+                        }}
+                    >
+                        <Link href="/GovernmentHealthInitiate">
+                            <Typography
+                                sx={{
+                                    fontStyle: "normal",
+                                    fontWeight: "300",
+                                    fontSize: { lg: "16px", md: "12px", xs: "11px" },
+                                    lineHeight: "24px",
+                                    /* identical to box height */
+
+                                    color: "#9E9E9E",
+                                }}
+                            >
+                                Government Health Initiate
+                            </Typography>
+                        </Link>
+                    </Box>
+                </Box>
+
+                <Box
+                    sx={{
+                        marginTop: "10%",
+                        width: { md: "20%", xs: "100%" },
+                    }}
+                >
+                    <Box
+                        sx={{
+                            width: { md: "100%", xs: "90%" },
+                            // height: '27px',
+                        }}
+                    >
+                        <Typography
+                            sx={{
+                                fontStyle: "normal",
+                                fontWeight: "500",
+                                fontsize: { lg: "18px", md: "14px", xs: "13px" },
+                                lineHeight: "27px",
+                                /* identical to box height */
+                            }}
+                        >
+>>>>>>> 983fe7dc88294ea69498f0361fd2217e758452b2
                             Our Information
                         </Typography>
                     </Box>
 
+<<<<<<< HEAD
                     <Box sx={{
                         width: {md: '100%' , xs : '10%'},
                         marginTop: {md: '20%' , xs: '5%'},
@@ -354,10 +586,45 @@ function Footer() {
                             color: '#9E9E9E',
                             width: '100%'
                         }}>
+=======
+                    <Box
+                        sx={{
+                            // background: 'red',
+                            width: { md: "100%", xs: "10%" },
+                            // height: '24px',
+                            marginTop: { md: "20%", xs: "5%" },
+                            display: "flex",
+                            justifyContent: "space-evenly",
+                            alignItems: "center",
+                            // gap: '1%',
+                        }}
+                    >
+                        <Typography
+                            sx={{
+                                marginLeft: { md: "0", xs: "38%" },
+                                width: { lg: "12%", xs: "50%", md: "12%" },
+                            }}
+                        >
+                            <Image src={sms} alt="Mail" />
+                        </Typography>
+                        <Typography
+                            sx={{
+                                fontStyle: "normal",
+                                fontWeight: "300",
+                                fontSize: { lg: "16px", md: "12px", xs: "11px" },
+                                lineHeight: "24px",
+                                /* identical to box height */
+                                marginBottom: "2%",
+                                color: "#9E9E9E",
+                                width: "100%",
+                            }}
+                        >
+>>>>>>> 983fe7dc88294ea69498f0361fd2217e758452b2
                             info@healthxpakistan.com
                         </Typography>
                     </Box>
 
+<<<<<<< HEAD
                     <Box sx={{
                         width: {md: '100%' , xs : '90%'},
                         height: '24px',
@@ -414,6 +681,78 @@ function Footer() {
                             Government Health Initiate
                         </Typography>
                             </Link>
+=======
+                    <Box
+                        sx={{
+                            width: { md: "100%", xs: "90%" },
+                            height: "24px",
+                            marginTop: "5%",
+                        }}
+                    >
+                        <Link href="/CorporateHealthSolutions">
+                            <Typography
+                                sx={{
+                                    fontStyle: "normal",
+                                    fontWeight: "300",
+                                    fontSize: { lg: "16px", md: "12px", xs: "11px" },
+                                    lineHeight: "24px",
+                                    /* identical to box height */
+
+                                    color: "#9E9E9E",
+                                }}
+                            >
+                                Corporate Health Solutions
+                            </Typography>
+                        </Link>
+                    </Box>
+
+                    <Box
+                        sx={{
+                            width: { md: "100%", xs: "90%" },
+                            // height: '24px',
+                            marginTop: "5%",
+                        }}
+                    >
+                        <Link href="/HealthIncurrence">
+                            <Typography
+                                sx={{
+                                    fontStyle: "normal",
+                                    fontWeight: "300",
+                                    fontSize: { lg: "16px", md: "12px", xs: "11px" },
+                                    lineHeight: "24px",
+                                    /* identical to box height */
+
+                                    color: "#9E9E9E",
+                                }}
+                            >
+                                Health Incurrence
+                            </Typography>
+                        </Link>
+                    </Box>
+
+                    <Box
+                        sx={{
+                            width: { md: "100%", xs: "90%" },
+                            // height: '24px',
+                            marginTop: "5%",
+                        }}
+                    >
+                        <Link href="GovernmentHealthInitiate">
+                            <Typography
+                                sx={{
+                                    fontStyle: "normal",
+                                    fontWeight: "300",
+                                    fontSize: { lg: "16px", md: "12px", xs: "11px" },
+                                    lineHeight: "24px",
+                                    /* identical to box height */
+
+                                    color: "#9E9E9E",
+                                }}
+                            >
+                                Government Health Initiate
+                            </Typography>
+                        </Link>
+>>>>>>> 983fe7dc88294ea69498f0361fd2217e758452b2
                     </Box>
                 </Box>
             </Box>
@@ -435,7 +774,32 @@ function Footer() {
                 width: {md: '80%' , xs : '90%'},
                 border: '1px solid #2D4755',
             }}></Box>
+=======
+            <Box
+                sx={{
+                    display: "flex",
+                    justifyContent: "space-evenly",
+                    width: { lg: "20%", xs: "90%", md: "30%" },
+                    marginTop: { xs: "5%", md: "3%", lg: "0" },
+                    marginLeft: { xs: "0", lg: "5%", md: "7%" },
+                }}
+            >
+                <Image src={facebook} alt="shazai" />
+                <Image src={linkedin} alt="shazai" />
+                <Image src={twitter} alt="shazai" />
+                <Image alt="shazai" src={insta} />
+            </Box>
+            <Box
+                sx={{
+                    margin: "5% auto",
+                    width: { md: "80%", xs: "90%" },
+                    // height: '2px',
+                    border: "1px solid #2D4755",
+                }}
+            ></Box>
+>>>>>>> Stashed changes
 
+<<<<<<< HEAD
             <Box sx={{
                 display: 'flex',
                 justifyContent: 'space-around',
@@ -461,6 +825,43 @@ function Footer() {
                         /* identical to box height */
                         marginTop: {md: '0' , xs:"3%"},
                     }}>
+=======
+            <Box
+                sx={{
+                    display: "flex",
+                    justifyContent: "space-around",
+                    flexWrap: { md: "nowrap", xs: "wrap" },
+                    flexDirection: { md: "row", xs: "column" },
+                    // textAlign: {xs: 'center'},
+                }}
+            >
+                <Box>
+                    <Typography
+                        sx={{
+                            width: { md: "100%", xs: "90%" },
+                            // height: '27px',
+                            fontStyle: "normal",
+                            fontWeight: "500",
+                            fontSize: { lg: "24px", md: "20px", xs: "16px" },
+                            lineHeight: "111.64%",
+                            /* identical to box height, or 27px */
+                        }}
+                    >
+                        Join or newsletter
+                    </Typography>
+                    <Typography
+                        sx={{
+                            width: { md: "252px", xs: "90%" },
+                            // height: '20px',
+                            fontStyle: "normal",
+                            fontWeight: "300",
+                            fontSize: { lg: "13px", md: "12px", xs: "11px" },
+                            lineHeight: "20px",
+                            /* identical to box height */
+                            marginTop: { md: "0", xs: "3%" },
+                        }}
+                    >
+>>>>>>> 983fe7dc88294ea69498f0361fd2217e758452b2
                         Keep up to date with everything Reflect
                     </Typography>
                 </Box>
