@@ -8,9 +8,11 @@ export default function Heading({number , heading , content , numberColor , head
             flexDirection: 'row',
             gap: '10px', 
             width: {md:'394px' , xs:'100%' , sm: '90%' , lg: '100%' , xl: '100%'},
+            width: {md:'394px' , xs:'100%' , sm: '90%' , lg: '100%' , xl: '100%'},
             marginTop: {md: '0' , xs: '4%'},
           }}>
             <Typography sx={{
+              width: {md: '58px' , xs: '9%'},
               width: {md: '58px' , xs: '9%'},
               fontStyle: 'normal',
               fontWeight: '700',
@@ -30,6 +32,7 @@ export default function Heading({number , heading , content , numberColor , head
               width: {xs: xs}
             }}>
               <Typography sx={{
+                width: {md: md , xs: xs },
                 width: {md: md , xs: xs },
                 fontStyle: 'normal',
                 fontWeight: '500',
