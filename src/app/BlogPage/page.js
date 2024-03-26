@@ -1,8 +1,9 @@
 "use client";
 import React from "react";
 import Navbar from "../Components/navbar";
-import { Box, Typography } from "@mui/material";
+import { Box, Typography, Input } from "@mui/material";
 import Image from "next/image";
+import Button from "../Components/Button";
 import Heading from "../Components/homeComponents/Heading";
 import Content, { headingOne } from "../Components/homeComponents/Content ";
 import HealthX from "../Components/homeComponents/HealthX";
@@ -16,10 +17,9 @@ import grp37 from "../../Images/Group 28.png";
 import grp38 from "../../Images/Group 29.png";
 import shazai from "../../Images/shazain 1.png";
 import Instagram from "../Components/Instagram";
-import { TextField, InputAdornment, IconButton } from "@mui/material";
-import SearchIcon from "@mui/icons-material/Search";
 import BlogNnews2 from "../Components/homeComponents/BlogNnews2";
-
+import Pagination from "@mui/material/Pagination";
+import Stack from "@mui/material/Stack";
 function page() {
   return (
     <>
@@ -42,6 +42,7 @@ function page() {
             flexDirection: { md: "row", xs: "column" },
             width: "98%",
             margin: "0 auto",
+            paddingLeft: "",
           }}
         >
           <Box>
@@ -87,50 +88,66 @@ function page() {
             width: "45%",
           }}
         >
-          <Box>
-            <TextField
-              fullWidth
-              variant="outlined"
+          <Box
+            x={{
+              display: "flex",
+              justifyContent: "space-around",
+              flexWrap: { md: "nowrap", xs: "wrap" },
+              flexDirection: { md: "row", xs: "column" },
+            }}
+          >
+            <Box
               sx={{
-                width: { xs: "100%", sm: "50%", md:"50%"}, // Adjust width based on screen breakpoints
-                padding: { xs: "10px", sm: "10px 40px" }, // Adjust padding based on screen breakpoints
-                margin: { xs: "auto", sm: "unset" },
+                flexBasis: { md: "25%", xs: "90%" }, // Adjusted flex basis for different screen sizes
               }}
-              InputProps={{
-                startAdornment: (
-                  <InputAdornment position="start">
-                    <IconButton>
-                      <SearchIcon />
-                    </IconButton>
-                  </InputAdornment>
-                ),
-                endAdornment: (
-                  <InputAdornment position="end">
-                    <IconButton
-                      sx={{
-                        fontSize: "15px",
-                        backgroundColor: "#E9501D",
-                        borderRadius: "6px",
-                        color: "white",
-                        padding: "18px 30px",
-                        "&:hover": {
-                          backgroundColor: "#E9501D",
-                        },
-                      }}
-                    >
-                      Search
-                    </IconButton>
-                  </InputAdornment>
-                ),
-              }}
-            />
+            >
+              <Box
+                sx={{
+                  width: { lg: "87.5%", xs: "100%", md: "100%" }, // Adjusted width for different screen sizes
+                  height: "80%",
+                  border: "1px solid",
+                  background: "white",
+                  borderRadius: "7px",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "space-between",
+                  padding: "0 10px", // Adjusted padding for better spacing on small screens
+                  boxSizing: "border-box", // Ensuring padding is included in width calculation
+                }}
+              >
+                <Input
+                  disableUnderline
+                  placeholder="Email"
+                  sx={{
+                    fontWeight: "300",
+                    fontSize: { lg: "13px", md: "12px", xs: "11px" },
+                    padding: { md: "3%", xs: "1%" },
+                    width: { lg: "65%", md: "65%", xs: "60%" }, // Adjusted width for different screen sizes
+                  }}
+                />
+                <Button
+                  height="55px"
+                  bg="#E9501D"
+                  color="#FFFFFF"
+                  fontWeight="500"
+                  fontSize={{ lg: "16px", md: "12px", xs: "11px" }}
+                  lineHeight="24px"
+                  title="Subscribe"
+                  width={{ lg: "35%", md: "35%", xs: "40%" }} // Adjusted width for different screen sizes
+                  mt={{ xs: "8", md: "-3px", lg: "-5px" }}
+                >
+                  Search
+                </Button>
+              </Box>
+            </Box>
+
             <Typography
               sx={{
                 fontWeight: "300",
-                fontSize: { md: "25px", xs: "16px", xl: "20px" },
-                lineHeight: "90px",
+                fontSize: { md: "22px", xs: "14px", xl: "20px" },
+                lineHeight: { lg: "90px", sm: "50px", xs: "50px" },
                 color: "#2D4755",
-                marginLeft: "38px",
+                marginLeft: { xs: "8px", md: "8px", lg: "38px" },
               }}
             >
               ALL <br />
@@ -152,7 +169,7 @@ function page() {
                 fontSize: { md: "25px", xs: "20px", xl: "24px" },
 
                 color: "#E9501D",
-                margin: { xs: "20px 25px", md: "25px", lg: "24px",xl: "40px 50px" },
+                margin: { xs: "30px 8px", md: "30px 8px", lg: "20px 38px" },
               }}
             >
               Top Posts
@@ -161,23 +178,24 @@ function page() {
               sx={{
                 display: "flex",
                 flexDirection: "column",
-                gap: { xs: "20px", sm: "30px" },
+                gap: { xs: "10px", sm: "30px" },
               }}
             >
               <Heading
+                xsN="20px"
                 number="01 "
                 content="Empowering Pakistanis with Health Knowledge "
                 contentColor=""
                 numberColor="#E9501D"
                 headingColor=""
                 sx={{
-                 
                   fontSize: { xs: "16px", md: "20px" }, // Responsive font size
                   fontWeight: "bold",
                   color: "blue",
                 }}
               />
               <Heading
+                xsN="20px"
                 number="02 "
                 content="Empowering Pakistanis with Health Knowledge "
                 contentColor=""
@@ -185,6 +203,7 @@ function page() {
                 headingColor=""
               />
               <Heading
+                xsN="20px"
                 number="03 "
                 content="Empowering Pakistanis with Health Knowledge "
                 contentColor=""
@@ -192,6 +211,7 @@ function page() {
                 headingColor=""
               />
               <Heading
+                xsN="20px"
                 number="04 "
                 content="Empowering Pakistanis with Health Knowledge "
                 contentColor=""
@@ -199,6 +219,7 @@ function page() {
                 headingColor=""
               />
               <Heading
+                xsN="20px"
                 number="05"
                 content="Empowering Pakistanis with Health Knowledge "
                 contentColor=""
@@ -212,7 +233,7 @@ function page() {
                 width: { md: "100%", xs: "47%", xl: "100%" },
               }}
             >
-              <Instagram/>
+              <Instagram />
             </Box>
           </Box>
         </Box>
@@ -235,12 +256,17 @@ function page() {
         </Box>
       </Box>
 
+      <Box sx={{ display: "flex", justifyContent: "center" }}>
+        <Stack spacing={2}>
+          <Pagination count={4} variant="outlined" shape="rounded" />
+        </Stack>
+      </Box>
+
       <Box
         id="seveen"
         sx={{
           margin: "0 auto",
           marginTop: "4%",
-          marginBottom: "4%",
           width: "96%",
           background:
             "linear-gradient(80.65deg, rgba(233, 80, 29, 0.12) 5.4%, rgba(31, 139, 123, 0.12) 47.64%, rgba(235, 198, 98, 0.12) 97.13%)",
@@ -250,21 +276,22 @@ function page() {
           sx={{
             display: "flex",
             justifyContent: "space-evenly",
+            flexDirection: { md: "row", xs: "column" },
             marginLeft: { md: "0", xs: "5%" },
           }}
         >
           <Box
             sx={{
-              width: "10%",
+              width: { md: "10%", xs: "100%" },
               marginTop: "3%",
             }}
           >
-            <Heading number="02" numberColor="#E9501D" />
+            <Heading number="07" numberColor="#E9501D" />
           </Box>
 
           <Box
             sx={{
-              width: "70%",
+              width: { md: "70%", xs: "95%" },
               marginTop: "3%",
               textAlign: "center",
             }}
@@ -279,7 +306,6 @@ function page() {
                 fontWeight: "500",
                 fontSize: "32px",
                 lineHeight: "111.64%",
-                /* identical to box height, or 36px */
 
                 color: "#CFCFCF",
               }}
@@ -299,7 +325,6 @@ function page() {
           }}
         >
           <Box
-            // ref = {svgRef}
             sx={{
               animationName: "move",
               animationDuration: "10s",
@@ -307,16 +332,15 @@ function page() {
               animationIterationCount: " infinite",
 
               display: "flex",
-              gap: "10px", // Adjust the gap between grid items as needed
+              gap: "10px",
               width: "100%",
 
               margin: " 0  auto",
               marginTop: "3%",
 
-              // Enable smooth scrolling on iOS devices
               WebkitOverflowScrolling: "touch",
               "&::-webkit-scrollbar": {
-                display: "none", // Hide the scrollbar
+                display: "none",
               },
             }}
           >
@@ -325,13 +349,16 @@ function page() {
                 display: "inline-block",
                 width: { xs: "16%" },
               }}
-              // Assign the ref
             >
+<<<<<<< Updated upstream
               <Image
                 src={grp32} // Assuming the image names are sequential (grp32, grp33, ...)
                 alt="shazai"
                 style={{ width: "100%" }}
               />
+=======
+              <Image src={grp32} alt="shazai" style={{ width: "100%" }} />
+>>>>>>> Stashed changes
             </Box>
 
             <Box
@@ -420,9 +447,9 @@ function page() {
                 height: "79px",
                 fontStyle: "normal",
                 fontWeight: "600",
-                fontSize: { md: "40px", xs: "30px", lg: "44px", xl: "47px" },
+                fontSize: { md: "40px", xs: "20px", lg: "44px", xl: "47px" },
                 lineHeight: "120%",
-                /* identical to box height, or 79px */
+
                 margin: "0 auto",
                 color: "#E9501D",
               }}
@@ -433,11 +460,11 @@ function page() {
               sx={{
                 width: { md: "100%", xs: "80%" },
                 fontStyle: "normal",
-                fontWeight: "265",
-                fontSize: { md: "40px", xs: "20px", lg: "42px", xl: "44px" },
+                fontWeight: "300",
+                fontSize: { md: "40px", xs: "18px", lg: "42px", xl: "44px" },
                 lineHeight: "120%",
-                /* or 69px */
-                marginTop: { xs: "-8%", lg: "-5%", xl: "-2%" },
+
+                marginTop: { xs: "-16%", lg: "-5%", xl: "-2%" },
                 color: "#1E1E1E",
                 margin: "0 auto",
               }}
@@ -447,7 +474,7 @@ function page() {
 
             <Typography
               sx={{
-                width: { md: "100%", xs: "90%" },
+                width: { md: "100%", xs: "80%" },
                 padding: { md: "0", xs: "2%" },
                 fontStyle: "normal",
                 fontWeight: "300",
@@ -462,12 +489,13 @@ function page() {
 
             <Box
               sx={{
-                width: { md: "90%", xs: "70%" },
+                width: { md: "90%", xs: "90%" },
                 marginTop: { md: "5%", xs: "5%" },
                 display: { md: "flex", xs: "flex" },
                 justifyContent: { md: "start", xs: "space-evenly" },
                 marginBottom: { xs: "4%" },
                 gap: "10px",
+                margin: "0 auto",
               }}
             >
               <Image src={grp37} alt="shazai" style={{ width: "35%" }} />
@@ -476,8 +504,7 @@ function page() {
           </Box>
           <Box
             sx={{
-              width: { md: "45%", xs: "80%" },
-              // marginTop: {md: '0' , xs : '29%'},
+              width: { md: "45%", xs: "70%" },
               margin: { xs: "0 auto" },
             }}
           >
