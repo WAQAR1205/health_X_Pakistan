@@ -61,7 +61,7 @@ export default function Home() {
         }}>
 
           <Box sx={{
-            marginTop: '30%',
+            marginTop: {md: '30%' , xs: '0'},
             padding: '4%',
             width: { md: '100%', xs: '100%', lg: '50%', xl: '50%' },
           }}>
@@ -75,10 +75,10 @@ export default function Home() {
 
                 <Link href='/ContactUs'>
                   <Button
-                    width={{ xs: '23%', sm: '20%', md: '80%', lg: '90%', xl: '100%' }}
+                    width={{ xs: '30%', sm: '20%', md: '80%', lg: '90%', xl: '100%' }}
                     bg='#E9501D'
                     fontWeight='500'
-                    fs={{ md: '16px', lg: '18px', xl: '30px', xs: '10px', sm: '12px' }}
+                    fs={{ md: '16px', lg: '18px', xl: '30px', xs: '9px', sm: '12px' }}
                     lineHeight='100%'
                     color='#FFFFFF'
                     br='5px'
@@ -190,8 +190,6 @@ export default function Home() {
             alt="shazai"
               style={{
                 width: '100%',
-                // height: { md: '348px', xs: '10px' , sm: '10px'},
-
                 background: 'linear-gradient(80.65deg, rgba(233, 80, 29, 0.12) 5.4%, rgba(31, 139, 123, 0.12) 47.64%, rgba(235, 198, 98, 0.12) 97.13%), url(pexels-artem-podrez-6824191 (Original).png)',
                 borderRadius: '20px',
               }}
@@ -222,15 +220,15 @@ export default function Home() {
           }}>
             <Button
               bg='#1F8B7B'
-              fs={{ md: '18px', xs: "10px", sm: '12px', xl: '22px' }}
+              fs={{ md: '18px', xs: "9px", sm: '12px', xl: '22px' }}
               p='2%'
               color='#FFFFFF'
               br='5px'
-              width={{ md: '161px', xs: '20%', sm: '18%', xl: "40%" }}
+              width={{ md: '161px', xs: '30%', sm: '18%', xl: "40%" }}
               lineHeight='20px'
               fontWeight='500'
               title='Read more'
-              mt={{ xl: '6%' }}
+              mt={{ xl: '6%' , xs: '10%'}}
             />
           </Box>
         </Box>
@@ -241,7 +239,7 @@ export default function Home() {
           marginTop: { md: '0%', xs: '7%' },
           width: { md: '45%', xs: '100%' }
         }}>
-          <Content headingOne='Healthcare ' headingTwo='Management for All' content='A Global Approach in Pakistan' mdfs='25px' xsfs='25px' mdfsc='24px' xsfsc='20px' md='100%' mdc='100%' lg='35px' lgC='30px' xl='45px' xlC='40' />
+          <Content headingOne='Healthcare ' headingTwo='Management for All' content='A Global Approach in Pakistan' mdfs='25px' xsfs='18px' mdfsc='24px' xsfsc='18px' md='100%' mdc='100%' lg='35px' lgC='30px' xl='45px' xlC='40' />
           <Box>
             <Typography sx={{
               // position: 'absolute',
@@ -275,12 +273,11 @@ export default function Home() {
       <Box id='three' sx={{
         width: { md: '95%', xs: '90%', sm: '90%' },
         margin: '0 auto',
-        marginTop: { xs: "-90%", sm: '-70%', md: '3%' },
+        marginTop: { xs: "-150%", sm: '-70%', md: '3%' },
         background: '#253239',
       }}>
         <Box sx={{
           display: 'flex',
-          // flexWrap: { md: 'nowrap', xs: 'wrap', sm: 'warp' },
           flexDirection: { md: 'row', sm: 'column', xs: 'column' },
           justifyContent: 'space-around',
           alignItems: 'center',
@@ -290,13 +287,12 @@ export default function Home() {
             width: { md: '50%', xs: '100%' }
           }}>
             <Typography sx={{
-              // background: 'red',
               width: { md: '105%', xs: '100%', sm: '100%' },
               marginTop: '10%',
 
               fontStyle: 'normal',
               fontWeight: '700',
-              fontSize: { md: '33px', xs: '26px', sm: '30px', lg: '35px', xl: '37px' },
+              fontSize: { md: '33px', xs: '18px', sm: '30px', lg: '35px', xl: '37px' },
               lineHeight: { md: '112%', xs: '90%', sm: '90%' },
               /* or 52px */
 
@@ -324,7 +320,7 @@ export default function Home() {
           </Box>
 
           <Box sx={{
-            width: { md: '45%', xs: '100%' },
+            width: { md: '45%', xs: '110%' },
           }}>
             <Heading number='03' numberColorolor='#1F8B7B' heading='Our Solution'
               headingColor='#FFFFFF' content='We are committed to your Health' contentColor='#FFFFFF'
@@ -378,14 +374,13 @@ export default function Home() {
 
         <Box sx={{
           float: { md: 'right', xs: 'right' },
-          width: { md: '40%', xs: '80%' },
-          // background: 'red',
+          width: { md: '40%', xs: '100%' },
         }}>
           <Heading number='04' numberColor='#E9501D' heading='Our Team' headingColor='#2D4755' content='We are committed to your Health' contentColor='#2D4755' />
         </Box>
 
         <Box sx={{
-          marginTop: '3%',
+          marginTop: '5%',
         }}>
           <Team />
         </Box>
@@ -398,7 +393,7 @@ export default function Home() {
         marginTop: { md: '3%', xs: '6%' },
       }}>
 
-        <Heading number='05' numberColor='#E9501D' heading='App Integrations' headingColor='#2D4755' content='We are committed to your Health' contentColor='#2D4755' />
+        <Heading number='05' numberColor='#E9501D' heading='App Integrations' headingColor='#2D4755' content='We are committed to your Health' contentColor='#2D4755' xs='100%' />
 
         <Box sx={{
           width: '90%',
@@ -414,7 +409,6 @@ export default function Home() {
             height: { md: '500px', xs: '250px' },
             marginTop: { md: '0', xs: '8%' },
             margin: '0 auto'
-            // background: 'red'
           }}>
             <Image src={mobile} alt="shazai" style={{
               width: '100%',
@@ -432,7 +426,7 @@ export default function Home() {
             <Box sx={{
               textAlign: { xs: 'center' },
             }}>
-              <Button title='Download App' bg='#E9501D' border='1px solid' width={{ md: ' 36%', xs: '25%' }} br='5px' fs={{ md: '13px', xs: '10px', lg: '15px', xl: '18px' }} fontWeight='500' lineHeight='21px' color='#FFFFFF' mt='10%' p='2%' />
+              <Button title='Download App' bg='#E9501D' border='1px solid' width={{ md: ' 36%', xs: '40%' }} br='5px' fs={{ md: '13px', xs: '9px', lg: '15px', xl: '18px' }} fontWeight='500' lineHeight='21px' color='#FFFFFF' mt='10%' p='2%' />
             </Box>
           </Box>
         </Box>
@@ -451,11 +445,11 @@ export default function Home() {
           flexDirection: { md: 'row', xs: 'column' },
         }}>
           <Box sx={{
-            width: { md: '45%', xs: '90%' },
+            width: { md: '45%', xs: '100%' },
             margin: '0 auto',
-            marginTop: '4%',
+            marginTop: {md: '4%' , xs: '10%'},
           }}>
-            <Content headingOne='Frequently' headingTwo=' Asked Question' md='120%' xlH='120%' />
+            <Content headingOne='Frequently' headingTwo=' Asked Question' md='120%' xlH='120%' wxs='90%' />
           </Box>
 
           <Box sx={{

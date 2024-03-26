@@ -1,53 +1,3 @@
-
-// import lady from '../../../Images/lady.png'
-// import male from '../../../Images/male.png'
-// import canada from '../../../Images/canada.png'
-// import Doctor from './Doctor'
-
-// export default function Team(){
-//     const doctors = [
-//         { Country: 'Pakistan', img: lady, Name: 'Dr. Hareem Riaz', Speciality: 'General Practitioner' },
-//         { Country: 'Canada', img: canada, Name: 'Dr. Hareem Riaz', Speciality: 'General Practitioner' },
-//         { Country: 'Pakistan', img: male, Name: 'Dr. Hareem Riaz', Speciality: 'General Practitioner' }
-//     ];
-//     return(
-//         <Box sx={{
-//             clear: 'both',
-//             display: 'flex',
-//             justifyContent: 'space-around',
-//             flexDirection: {md: 'row' , xs: 'column'},
-//         }}>
-//             <Slider />
-//             {/* <Doctor /> */}
-//                    {doctors.map((doctor, index) => ( // Fix here: parentheses around parameters
-//         <Doctor key={index} img={doctor.img} country={doctor.Country} name={doctor.Name} speciality={doctor.Speciality} /> // Fix here: variable names corrected
-//       ))}
-//         </Box>
-
-//     )
-// }
-
-
-// import { Box } from "@mui/material"
-// import Crasol from '../crasol'
-
-// export default function Team (){
-
-//   return (
-//     <Box sx={{
-//       clear: 'both',
-//       display: 'flex',
-//       justifyContent: 'space-around',
-//       flexDirection: { md: 'row', xs: 'column' },
-//       width: '100%',
-//     }}>
-//       <Crasol />
-
-//     </Box>
-//   );
-// };
-
-
 import { Box, Typography } from '@mui/material'
 import Crasol from '../crasol'
 
@@ -61,7 +11,7 @@ export default function Team() {
         width: '98%',
         fontFamily: 'Poppins',
         fontStyle: 'normal',
-        margin: '0 auto'
+        margin: '0 auto',
       }}>
         <Box sx={{
           width: {md: '20%' , xs: '100%'},
@@ -70,7 +20,7 @@ export default function Team() {
 
           <Typography sx={{
             fontWeight: '300',
-            fontSize: {lg: '38px' , xs: '25' , md: '30px'},
+            fontSize: {lg: '38px' , xs: '20px' , md: '30px'},
             lineHeight: '112%',
           /* or 42px */
           
@@ -80,7 +30,7 @@ export default function Team() {
           </Typography>
           <Typography sx={{
             fontWeight: '600',
-            fontSize: {lg:'40px' , xs: '27px' , md: '30px'},
+            fontSize: {lg:'40px' , xs: '20px' , md: '30px'},
             lineHeight: '112%',
             /* or 52px */
             
@@ -94,7 +44,7 @@ export default function Team() {
           </Typography>
           <Typography sx={{
             fontWeight: '600',
-            fontSize: {lg: '40px' , xs: '27px' , md: '30px'},
+            fontSize: {lg: '40px' , xs: '20px' , md: '30px'},
             lineHeight: '112%',
             /* or 52px */
             

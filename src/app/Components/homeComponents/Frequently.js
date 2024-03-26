@@ -18,22 +18,24 @@ function Frequently() {
             margin: '0 auto',
             marginTop: '4%',
             width: '96%',
+            height: {xs: '900px' , md: 'auto'},
             background: 'linear-gradient(80.65deg, rgba(233, 80, 29, 0.12) 5.4%, rgba(31, 139, 123, 0.12) 47.64%, rgba(235, 198, 98, 0.12) 97.13%)',
         }}>
             <Box sx={{
                 display: 'flex',
                 justifyContent: 'space-evenly',
+                flexDirection: {md: 'row' , xs: 'column'} ,
                 marginLeft: { md: '0', xs: '5%' },
             }}>
                 <Box sx={{
-                    width: '10%',
+                    width: {md: '10%' , xs: '100%'},
                     marginTop: '3%'
                 }}>
                     <Heading number='07' numberColor='#E9501D' />
                 </Box>
 
                 <Box sx={{
-                    width: '70%',
+                    width: {md: '70%' , xs: '95%'},
                     marginTop: '3%',
                     textAlign: 'center'
                 }}>
@@ -159,7 +161,7 @@ function Frequently() {
                         height: '79px',
                         fontStyle: 'normal',
                         fontWeight: '600',
-                        fontSize: { md: '40px', xs: '30px', lg: '44px', xl: '47px' },
+                        fontSize: { md: '40px', xs: '20px', lg: '44px', xl: '47px' },
                         lineHeight: '120%',
                         /* identical to box height, or 79px */
                         margin: '0 auto',
@@ -168,13 +170,13 @@ function Frequently() {
                         Healthcare Solution
                     </Typography>
                     <Typography sx={{
-                        width: { md: '100%', xs: '100%' },
+                        width: { md: '100%', xs: '80%' },
                         fontStyle: 'normal',
                         fontWeight: '300',
-                        fontSize: { md: '40px', xs: '20px', lg: '42px', xl: '44px' },
+                        fontSize: { md: '40px', xs: '18px', lg: '42px', xl: '44px' },
                         lineHeight: '120%',
                         /* or 69px */
-                        marginTop: { xs: '-8%', lg: '-5%', xl: '-2%' },
+                        marginTop: { xs: '-16%', lg: '-5%', xl: '-2%' },
                         color: '#1E1E1E',
                         margin: '0 auto',
                     }}>
@@ -182,7 +184,7 @@ function Frequently() {
                     </Typography>
 
                     <Typography sx={{
-                        width: { md: '100%', xs: '90%' },
+                        width: { md: '100%', xs: '80%' },
                         padding: { md: '0', xs: '2%' },
                         fontStyle: 'normal',
                         fontWeight: '300',
@@ -195,23 +197,26 @@ function Frequently() {
                     </Typography>
 
                     <Box sx={{
-                        width: { md: '90%', xs: '70%' },
+                        width: { md: '90%', xs: '90%' },
                         marginTop: { md: '5%', xs: '5%' },
                         display: { md: 'flex', xs: 'flex' },
                         justifyContent: { md: 'start', xs: 'space-evenly' },
                         marginBottom: { xs: '4%' },
-                        gap: '10px'
+                        gap: '10px',
+                        margin: '0 auto',
                     }}>
-                        <Image src={grp37} alt="shazai" style={{ width: '35%' }} />
-                        <Image src={grp38} alt="shazai" style={{ width: '35%' }} />
+                        <Image src={grp37} alt="shazai" style={{ width: '45%' }} />
+                        <Image src={grp38} alt="shazai" style={{ width: '45%' }} />
                     </Box>
                 </Box>
                 <Box sx={{
-                    width: { md: '45%', xs: '80%' },
-                    // marginTop: {md: '0' , xs : '29%'},
+                    width: { md: '45%', xs: '70%' },
                     margin: { xs: '0 auto' },
                 }}>
-                    <Image src={shazai} alt="shazai" height={400} />
+                    <Image src={shazai} alt="shazai" style={{
+                        width: '100%',
+                        objectFit:"contain"
+                    }} />
                 </Box>
             </Box>
         </Box>
