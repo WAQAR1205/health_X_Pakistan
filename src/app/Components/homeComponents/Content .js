@@ -6,7 +6,7 @@ export default function Content({headingOne , headingTwo , content , mdfs = '33p
             <>
         <Box>
         <Typography sx={{
-            width: {md: md , lg: lgH , xl: xlH ,xs: '100%' , sm: '100%'},
+            width: {md: md , lg: lgH , xl: xlH ,xs: wxs , sm: '100%'},
             fontStyle: 'normal',
             fontWeight: '700',
             fontSize: {md: mdfs , xs: xsfs , lg: lg , xl: xl , sm: xsfs},
@@ -27,7 +27,7 @@ export default function Content({headingOne , headingTwo , content , mdfs = '33p
 
       <Box>
         <Typography sx={{
-            width: {md: mdc , xs: '100%' , lg: LgC , xl: XlC , sm: '90%'},
+            width: {md: mdc , xs: '110%' , lg: LgC , xl: XlC , sm: '90%'},
             marginTop: '3%',
             fontStyle: 'normal',
             fontWeight: '300',

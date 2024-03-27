@@ -5,7 +5,7 @@ export default function InputCom( {placeholder , Width , ml , type , mt , height
         <Input disableUnderline placeholder={placeholder} type={type} required sx={{
             fontWeight: '400',
             height: height,
-            fontSize: '17px',
+            fontSize: {md: '17px' , xs : '10px'},
             lineHeight: '25px',
             color: '#253239',
             padding: '1%',

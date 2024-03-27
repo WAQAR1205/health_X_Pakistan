@@ -33,14 +33,14 @@ function Navbar() {
                         justifyContent: 'space-between',    
                     }}>
                         <Box sx={{
-                            width: '50%', 
+                            width: {md: '50%' , xs: '90%'}, 
                         }}>
                             <Link href='/'>
                                 <Image
                                     src={img}
                                     alt="Example Image"
                                     style={{
-                                    width: '90%',
+                                    width: '100%',
                                     }}
                                     />
                             </Link>
@@ -73,7 +73,7 @@ function Navbar() {
                                     textDecoration: 'none', // Hide the underline
                                 },
                             }}>
-                                <Link href="/Solution">
+                                <Link href="/Individuals&Families">
                                     <Typography variant="body2" fontWeight="light" fontSize={{md: "10px" , lg: '16px' , xl: '20px'}}>
                                         Solution
                                     </Typography>
@@ -81,25 +81,24 @@ function Navbar() {
                             </ListItem>
                             <ListItem sx={{
                                 flexBasis: '8%',
-                                '& a': { // Apply styles to the anchor tag inside the ListItem
-                                    color: 'black', // Change the color to black
-                                    textDecoration: 'none', // Hide the underline
+                                '& a': { 
+                                    color: 'black', 
+                                    textDecoration: 'none', 
                                 },
                             }}>
-                                <Link href="#">
+                                <Link href="/BlogPage">
                                     <Typography variant="body2" fontWeight="light" fontSize={{md: "10px" , lg: '16px' , xl: '20px'}}>
-                                        Resources
+                                        Blog
                                     </Typography>
                                 </Link>
                             </ListItem>
                             <ListItem sx={{
                                 flexBasis: '15%',
-                                '& a': { // Apply styles to the anchor tag inside the ListItem
-                                    color: 'black', // Change the color to black
-                                    textDecoration: 'none', // Hide the underline
-                                },
+                                '& a': { 
+                                    color: 'black', 
+                                    textDecoration: 'none',                                 },
                             }}>
-                                <Link href="#">
+                                <Link href="/AboutUs">
                                     <Typography variant="body2" fontWeight="light" fontSize={{md: "10px" , lg: '16px' , xl: '20px'}}>
                                         About us
                                     </Typography>
@@ -162,21 +161,21 @@ function Navbar() {
                 >
                     <List>
                         <ListItem>
-                            <Link href="/Solution">
+                            <Link href="/Individuals&Families" style={{textDecoration: 'none'}}>
                                 <Typography variant="body2" fontWeight="light" fontSize="18px">
                                     Solution
                                 </Typography>
                             </Link>
                         </ListItem>
                         <ListItem>
-                            <Link href="#">
+                            <Link href="/BlogPage" style={{textDecoration: 'none'}}>
                                 <Typography variant="body2" fontWeight="light" fontSize="18px">
-                                    Resources
+                                    Blog
                                 </Typography>
                             </Link>
                         </ListItem>
                         <ListItem>
-                            <Link href="#">
+                            <Link href="/AboutUs" style={{textDecoration: 'none'}}>
                                 <Typography variant="body2" fontWeight="light" fontSize="18px">
                                     About us
                                 </Typography>

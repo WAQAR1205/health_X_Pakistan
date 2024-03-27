@@ -11,7 +11,7 @@ export default function Address({ img, Address = 'Address', mail }) {
                 textAlign: 'center',
                 border: '1px solid #E9501D',
                 height: {lg: '200px' , xs: '170px'},
-                width: {md: '30%' , lg: '25%' , xs: '60%'},
+                width: {md: '30%' , lg: '25%' , xs: '70%'},
                 textJustify: 'center',
                 background: isHover ? 'linear-gradient(80.65deg, rgba(233, 80, 29, 0.12) 5.4%, rgba(31, 139, 123, 0.12) 47.64%, rgba(235, 198, 98, 0.12) 97.13%)' : 'none',
                 boxShadow: '0px 4px 20px 0px #0000000D',
