@@ -13,18 +13,18 @@ export default function DigitalVideos({ img }) {
             
 
             <Box sx={{
-                //border: '1px solid black',
+                
                 display: 'flex',
                 justifyContent: {md:'space-between',sm:'center'},
                 flexDirection: { md: 'row', xs: 'column',sm: 'column' },
                 width: '100%',
                 fontFamily: 'Poppins',
                 fontStyle: 'normal',
-                // margin: '0 auto',
+                
             }}>
                 <Box sx={{
                     margin :'auto 0',
-                    //border: '1px solid black',
+                   
                     width: { md: '40%', xs: '100%' ,sm:'100%' },
                     
                 }}>
