@@ -22,7 +22,7 @@ function page() {
       <Box sx={{
         fontFamily: 'Poppins',
         fontStyle: 'normal',
-        width: { xs: '100%', sm: '100%', md: '70%', lg: '90%', xl: '90%' },
+        width: { xs: '100%', sm: '90%', md: '90%', lg: '90%', xl: '90%' },
         margin: 'auto'
       }}>
 
@@ -30,12 +30,13 @@ function page() {
           display: 'flex',
           justifyContent: 'space-between',
           alignItems: 'center',
+          flexDirection: { xs: 'column', md: 'row' },
 
 
 
         }}>
           <Box>
-            <Content headingOne='News &' headingTwo='&nbsp;Media' content='Empowering People through News and Media' colorone="#E9501D" colortwo="#1F8B7B" lgC="150%" lh="90%" />
+            <Content headingOne='News &' headingTwo='&nbsp;Media' content='Empowering People through News and Media' colorone="#E9501D" colortwo="#1F8B7B" lgC="150%" lh="90%"  lgfsc= '19px' mdfsc= '14px' xsfsc= '14px'  />
           </Box>
           <Box>
             <Heading number='01' heading='News & Media' content='Connecting Communities' numberColor='#E9501D'  contentColor='#2D4755' />
@@ -46,7 +47,7 @@ function page() {
         <Box sx={{
          display:'flex',
           flexWrap:'wrap',
-          gap:'20px',
+          gap:'2%',
           marginTop:'3%'
         }}>
 
@@ -62,25 +63,25 @@ function page() {
             <CardImage img={NewsCard2}/>
             <HalfCard heading={'Healthx transforming Pakistan in healthcare sector, says khaqan'} content={"Khaqan's endorsement of HealthX highlights its growing impact on Pakistan's healthcare sector. By leveraging technology to improve healthcare delivery"}/>
           </Box>
-          <Box>
+          <Box >
           <HalfCard heading={'Multinational healthcare company, Healthx enters Pakistan'} content={"As HealthX begins its journey in Pakistan, the company's entry signifies a major step"} />
 
           </Box>
           <Box sx={{
-            marginTop: '-20%'
+            marginTop: {md:'-21%',sm:'-28%'}
           }}>
             <CardImage img={NewsCard3}/>
             <HalfCard heading={'Healthx transforming Pakistan in healthcare sector, says khaqan'} content={"Khaqan's endorsement of HealthX highlights its growing impact on Pakistan's healthcare sector. By leveraging technology to improve healthcare delivery"}/>
           </Box>
-          <Box>
+          <Box >
+            <CardImage img={NewsCard4} />
+            <HalfCard heading={'Healthx transforming Pakistan in healthcare sector, says khaqan'} content={"Khaqan's endorsement of HealthX highlights its growing impact on Pakistan's healthcare sector. By leveraging technology to improve healthcare delivery"}/>
+          </Box>
+          <Box sx={{marginTop: {md:'-21%',sm:'-28%'}}}>
             <CardImage img={NewsCard4}/>
             <HalfCard heading={'Healthx transforming Pakistan in healthcare sector, says khaqan'} content={"Khaqan's endorsement of HealthX highlights its growing impact on Pakistan's healthcare sector. By leveraging technology to improve healthcare delivery"}/>
           </Box>
-          <Box sx={{marginTop: '-20%'}}>
-            <CardImage img={NewsCard4}/>
-            <HalfCard heading={'Healthx transforming Pakistan in healthcare sector, says khaqan'} content={"Khaqan's endorsement of HealthX highlights its growing impact on Pakistan's healthcare sector. By leveraging technology to improve healthcare delivery"}/>
-          </Box>
-          <Box sx={{marginTop: '-20%'}}>
+          <Box sx={{marginTop: {md:'-21%',sm:'-28%'}}}>
           <HalfCard heading={'Multinational healthcare company, Healthx enters Pakistan'} content={"As HealthX begins its journey in Pakistan, the company's entry signifies a major step"} />
 
           </Box>
@@ -98,12 +99,12 @@ function page() {
           <Box sx={{
             display: 'flex',
             justifyContent: 'space-between',
-            flexDirection: { xs: 'column', md: 'row' },
+            flexDirection: { xs: 'column',sm:'column', md: 'row' },
             alignItems: 'center',
           }}>
 
             <Box>
-              <Content headingTwo='Television' content='Impact On Society and Culture' lgC="150%" />
+              <Content headingTwo='Television' content='Impact On Society and Culture' lgC="150%" lh='90%' lgfsc= '19px' mdfsc= '14px' xsfsc= '14px'/>
             </Box>
 
             <Box >
@@ -118,6 +119,8 @@ function page() {
           </Box>
         </Box >
 
+        {/* Digital Videos */}
+        
         <Box sx={{
 
           marginTop: '5%',

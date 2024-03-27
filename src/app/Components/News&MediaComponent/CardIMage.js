@@ -5,7 +5,7 @@ export default function CardImage({img , marginTop}){
     return(
         <>
         <Box sx={{
-            width: '375px',
+            width: {md:'375px',sm:'210px',xs:"100%"},
             marginTop: marginTop,
         }}>
 

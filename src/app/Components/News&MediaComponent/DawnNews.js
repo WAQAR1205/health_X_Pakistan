@@ -10,16 +10,16 @@ export default function DawnNews({ img, heading, date }) {
                 display: 'flex',
                 flexDirection: 'column',
                 fontFamily: 'Poppins', fontStyle: 'normal',
-                maxWidth: '350px',
-                width: '100%',
-                height: '100%',
-                maxHeight: '280px',
+                maxWidth: {md:'90%',sm:'90%',xs:"98%"},
+                //width: '100%',
+                //height: '100%',
+                //maxHeight: {md:'280px',sm:'90%',xs:"90%"},
             }}>
 
-                <Typography sx={{ fontWeight: '500', fontSize: '13px', lineHeight: '25px', color: '#9E9E9E', marginTop: '2%' }}>
+                <Typography sx={{ fontWeight: '500', fontSize: '81.25%', lineHeight: '156.25%', color: '#9E9E9E', marginTop: '2%' }}>
                     {date}
                 </Typography>
-                <Typography variant='h5' sx={{ fontWeight: 'bold', fontSize: '18px', lineHeight: '25px', color: '#2D4755' }}>
+                <Typography variant='h5' sx={{ fontWeight: 'bold', fontSize: '112.50%', lineHeight: '156.25%', color: '#2D4755' }}>
                     {heading}
                 </Typography>
                 <Image src={img} style={{
@@ -30,7 +30,7 @@ export default function DawnNews({ img, heading, date }) {
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                     overflow: 'hidden',
-                    borderRadius: '8px',
+                    borderRadius: '3%',
                 }} />
             </Box>
 

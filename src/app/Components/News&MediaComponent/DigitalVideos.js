@@ -13,20 +13,20 @@ export default function DigitalVideos({ img }) {
             
 
             <Box sx={{
-                //border: '1px solid black',
+                
                 display: 'flex',
-                justifyContent: 'space-around',
-                flexDirection: { md: 'row', xs: 'column' },
+                justifyContent: {md:'space-between',sm:'center'},
+                flexDirection: { md: 'row', xs: 'column',sm: 'column' },
                 width: '100%',
                 fontFamily: 'Poppins',
                 fontStyle: 'normal',
-                // margin: '0 auto',
+                
             }}>
                 <Box sx={{
                     margin :'auto 0',
-                    //border: '1px solid black',
-                    width: { md: '40%', xs: '75%' },
-                    //height: '200px',
+                   
+                    width: { md: '40%', xs: '100%' ,sm:'100%' },
+                    
                 }}>
 
 
@@ -34,6 +34,7 @@ export default function DigitalVideos({ img }) {
                         fontWeight: '600',
                         fontSize: { lg: '40px', xs: '27px', md: '30px' },
                         lineHeight: '112%',
+                        textAlign: { xs: 'center', md: 'left' },
                         /* or 52px */
 
                         color: '#E9501D',
@@ -59,9 +60,9 @@ export default function DigitalVideos({ img }) {
                     </Typography>
                 </Box>
                 <Box sx={{
-                    width: { md: '70%', xs: '100%' },
+                    width: { md: '70%', xs: '100%' ,sm:'100%'},
                     marginTop: { md: '3%', xs: '10%' },
-                    marginBottom:'3%'
+                    marginBottom:'4%'
                 }}>
                     <DigitalVideosCrasol/>
                     
