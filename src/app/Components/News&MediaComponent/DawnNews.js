@@ -10,7 +10,7 @@ export default function DawnNews({ img, heading, date }) {
                 display: 'flex',
                 flexDirection: 'column',
                 fontFamily: 'Poppins', fontStyle: 'normal',
-                maxWidth: {md:'90%%',sm:'90%',xs:"100%"},
+                maxWidth: {md:'90%',sm:'90%',xs:"98%"},
                 //width: '100%',
                 //height: '100%',
                 //maxHeight: {md:'280px',sm:'90%',xs:"90%"},

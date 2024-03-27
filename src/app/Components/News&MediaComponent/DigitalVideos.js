@@ -26,7 +26,7 @@ export default function DigitalVideos({ img }) {
                     margin :'auto 0',
                     //border: '1px solid black',
                     width: { md: '40%', xs: '100%' ,sm:'100%' },
-                    //height: '200px',
+                    
                 }}>
 
 
@@ -62,7 +62,7 @@ export default function DigitalVideos({ img }) {
                 <Box sx={{
                     width: { md: '70%', xs: '100%' ,sm:'100%'},
                     marginTop: { md: '3%', xs: '10%' },
-                    marginBottom:'3%'
+                    marginBottom:'4%'
                 }}>
                     <DigitalVideosCrasol/>
                     
