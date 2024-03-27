@@ -6,9 +6,11 @@ export default function HalfCard({heading,content}){
             fontFamily: 'Poppins',
             fontStyle: 'normal',
             marginTop : '0px',
-            width: '375px',
+            width: {md:'375px',sm:'210px',xs:"100%"},
             boxShadow: 1,
-            borderRadius : 1
+            borderRadius : 1,
+            marginBottom:'5%',
+            
             
         }}>
             <Box sx={{

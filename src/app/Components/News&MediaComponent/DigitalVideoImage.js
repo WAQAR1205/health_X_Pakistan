@@ -10,9 +10,9 @@ export default function DawnNews({img,heading,time}) {
             // border:'1px solid black',
             display:'flex',
             flexDirection: 'column',
-            width:'270px',
+            width:{md:'85%',sm:'100%',xs:'100%'},
             fontFamily: 'Poppins', fontStyle: 'normal',
-             height: '250px',
+             //height: '250px',
              
         }}>
 
