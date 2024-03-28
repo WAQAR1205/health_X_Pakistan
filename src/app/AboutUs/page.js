@@ -1,7 +1,6 @@
 "use client"
 import React from 'react'
 import Navbar from '../Components/navbar'
-import Footer from '../Components/Footer'
 import Heading from '../Components/homeComponents/Heading'
 import Rating from '../Components/homeComponents/Rating'
 import { Box, Typography, } from '@mui/material'
@@ -9,9 +8,7 @@ import mobile from '../../Images/mobile.png'
 
 import homePageData from '../mockData/homePageData/homePage'
 import Image from 'next/image'
-
-import Content, { headingOne, } from '../Components/homeComponents/Content '
-
+import Content from '../Components/homeComponents/Content'
 function About() {
   return (
     <Box>

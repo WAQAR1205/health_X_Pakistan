@@ -1,6 +1,6 @@
 'use client'
 import { Box, Typography } from "@mui/material"
-import Content from '../Components/homeComponents/Content '
+import Content from "../Components/homeComponents/Content"
 import Heading from '../Components/homeComponents/Heading'
 import people from '../../Images/people.png'
 import solution from '../../Images/solution 1.png'
