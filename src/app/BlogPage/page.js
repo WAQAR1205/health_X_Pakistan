@@ -78,7 +78,8 @@ function page() {
           justifyContent: "space-around",
           flexDirection: { xs: "column", md: "row " },
           margin: "0 auto",
-          marginTop: "3%",
+          marginTop: "3%"
+
         }}
       >
         {/* secion1 */}
@@ -88,12 +89,13 @@ function page() {
             width: "45%",
           }}
         >
+
           <Box
-            x={{
-              display: "flex",
-              justifyContent: "space-around",
-              flexWrap: { md: "nowrap", xs: "wrap" },
-              flexDirection: { md: "row", xs: "column" },
+            sx={{
+              flexBasis: { md: "25%", xs: "90%" },
+              marginBottom: "20px",
+              flexDirection: { xs: "column", md: "row" },
+              alignItems: "center",
             }}
           >
             <Box
@@ -141,14 +143,14 @@ function page() {
                 </Button>
               </Box>
             </Box>
-
             <Typography
               sx={{
                 fontWeight: "300",
                 fontSize: { md: "22px", xs: "14px", xl: "20px" },
                 lineHeight: { lg: "90px", sm: "50px", xs: "50px" },
                 color: "#2D4755",
-                marginLeft: { xs: "8px", md: "8px", lg: "38px" },
+                marginLeft: { xs: "2px", md: "8px", lg: "38px" },
+                textAlign: { xs: "center", md: "left" }, // Center align text for smaller screens
               }}
             >
               ALL <br />
@@ -156,6 +158,7 @@ function page() {
               EVENTS
             </Typography>
           </Box>
+
 
           {/* top post */}
 
@@ -354,7 +357,7 @@ function page() {
                 display: "inline-block",
                 width: { xs: "16%" },
               }}
-              // Assign the ref
+            // Assign the ref
             >
               <Image
                 src={grp32} // Assuming the image names are sequential (grp32, grp33, ...)
