@@ -11,7 +11,7 @@ import govt from '../Images/govt-01 1.png'
 import mobile from '../Images/mobile.png'
 import homePageData from './mockData/homePageData/homePage'
 import Heading from './Components/homeComponents/Heading'
-import Content from './Components/homeComponents/Content '
+import Content from './Components/homeComponents/Content'
 import Point from './Components/homeComponents/Points'
 import Rating from './Components/homeComponents/Rating'
 import Link from 'next/link';

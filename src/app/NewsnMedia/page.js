@@ -1,6 +1,6 @@
 import { Box, Typography } from "@mui/material"
 import React from 'react'
-import Content from "../Components/homeComponents/Content "
+import Content from "../Components/homeComponents/Content"
 import Heading from "../Components/homeComponents/Heading"
 import NewsCard1 from "../../Images/news-card-1.png"
 import NewsCard2 from "../../Images/news-card-2.png"

@@ -1,5 +1,5 @@
 import { Box, Typography } from "@mui/material"
-import Content from "../homeComponents/Content "
+import Content from "../homeComponents/Content"
 import Heading from "../homeComponents/Heading"
 import Image from "next/image"
 import DigitalVideosCrasol from './DigitalVideosCrasol'
